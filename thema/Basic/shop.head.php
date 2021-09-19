@@ -80,7 +80,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			</div>
 			<!-- PC Search -->
 			<div class="header-search">
-				<form name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
+				<form autocomplete="off" name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
 					<input type="hidden" name="url" value="<?php echo (IS_YC) ? $at_href['isearch'] : $at_href['search']; ?>">
 					<div class="input-group input-group-sm">
 						<input type="text" name="stx" aria-label="Search for items, brands, or styles…" placeholder="Search for items, brands, or styles…" class="form-control input-sm" value="<?php echo $stx; ?>">
@@ -308,7 +308,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 
 	<div class="at-body">
 		<!-- Slider main container -->
-		<div class="swiper">
+		<div class="swiper main-slider">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
@@ -318,13 +318,12 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<div class="main-slide-content at-container">
 								<p class="asd1">with college life <br> sell&us</p>
 								<p class="asd2">Daily necessity. Electronics. Vintage. Streetwear. Books. <br>Whatever your Needs. Find it on Sell&Us.</p>
-								<a class="asd3" href="">More</a>
+								<!-- <a class="asd3" href="">More</a> -->
 							</div>
 						</div>
 					</div>
 					<div class="swiper-slide">Slide 2</div>
 					<div class="swiper-slide">Slide 3</div>
-					...
 				</div>
 				<!-- If we need pagination -->
 				<!-- <div class="swiper-pagination"></div> -->

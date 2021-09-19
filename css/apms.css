@@ -1518,6 +1518,10 @@ i.light-circle, img.light-circle, .fix-icon.light-circle i, .fix-icon.light-circ
 	margin-top:-3px;
 	background: rgb(240, 240, 240);
 }
+/* .div-sep-icon{
+	display: none;
+} */
+/* 21.09.14 이한결 */
 .div-separator {
     margin: 30px auto 0;
     border: 0 solid #e7e6e6;
@@ -1545,6 +1549,8 @@ i.light-circle, img.light-circle, .fix-icon.light-circle i, .fix-icon.light-circ
     text-align: center;
 	line-height:26px !important;
 }
+
+
 .div-sep-icon i {
 	margin:0 auto;
 }
@@ -2011,7 +2017,9 @@ ul.div-ring p {
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg); 
 }
+/* 21.09.14 사진 라벨 none */
 .label-cap { 
+	display: none;
 	z-index:2; 
 	font-family: tahoma; 
 	top: -11px; 
