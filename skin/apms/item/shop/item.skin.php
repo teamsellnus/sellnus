@@ -1,6 +1,6 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
-
+$wset['seller'] = 1;
 // 관련상품 전체 추출을 위해서 재세팅함
 $rmods = 100;
 $rrows = 1;

@@ -307,34 +307,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 	<?php } ?>
 
 	<div class="at-body">
-		<!-- Slider main container -->
-		<div class="swiper main-slider">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<img class="main-slide-img-1" src="./shop_1.jpg" alt="">
-						<div class="main-slide-content-wrap">
-							<div class="main-slide-content at-container">
-								<p class="asd1">with college life <br> sell&us</p>
-								<p class="asd2">Daily necessity. Electronics. Vintage. Streetwear. Books. <br>Whatever your Needs. Find it on Sell&Us.</p>
-								<!-- <a class="asd3" href="">More</a> -->
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-				</div>
-				<!-- If we need pagination -->
-				<!-- <div class="swiper-pagination"></div> -->
-
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-
-				<!-- If we need scrollbar -->
-				<!-- <div class="swiper-scrollbar"></div> -->
-				</div>
+		
 		<?php if ($col_name) { ?>
 			<div class="at-container">
 				<?php if ($col_name == "two") { ?>
