@@ -9,6 +9,11 @@ if ($header_skin)
 
 ?>
 <style>
+	@media (max-width: 991px){
+	.responsive .at-body .at-container{
+		padding:0 ;
+	}
+}
 	#globalHeader,
 	.at-menu,
 	.at-title,
@@ -87,10 +92,6 @@ if ($header_skin)
 		width: 50%;
 	}
 
-	section .content-box .login-form-box {
-		width: 50%;
-	}
-
 	section .content-box .login-form-box h2 {
 		/* color: #607d8b; */
 		color: #000;
@@ -116,7 +117,8 @@ if ($header_skin)
 		font-weight: bold;
 		color: #000;
 	}
-	section .content-box .login-form-box .input-box .form-group input{
+
+	section .content-box .login-form-box .input-box .form-group input {
 		width: 100%;
 		padding: 10px 20px;
 		outline: none;
@@ -129,10 +131,12 @@ if ($header_skin)
 		border-radius: 30px;
 		margin-bottom: 20px;
 	}
-	section .content-box .login-form-box .input-box .row{
-		margin:0;
+
+	section .content-box .login-form-box .input-box .row {
+		margin: 0;
 	}
-	section .content-box .login-form-box .remember{
+
+	section .content-box .login-form-box .remember {
 		width: 100%;
 		margin-bottom: 10px;
 		color: #607d8b;
@@ -140,24 +144,56 @@ if ($header_skin)
 		font-size: 14px;
 
 	}
-	section .content-box .login-form-box .remember .col-xs-6{
+
+	section .content-box .login-form-box .remember .col-xs-6 {
 		width: 100%;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		padding:0;
+		padding: 0;
 		margin-bottom: 20px;
 	}
-	section .content-box .login-form-box .remember .col-xs-6 button{
+
+	section .content-box .login-form-box .remember .col-xs-6 button {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	section .content-box .login-form-box .remember .btn.btn-color{
+
+	section .content-box .login-form-box .remember .btn.btn-color {
 		background-color: #000;
 		text-transform: uppercase;
 	}
+
+	section .content-box .login-form-box .remember .col-xs-6 button:hover {
+		background: purple;
+		transition: 0.25s ease-in-out;
+	}
+	@media (max-width:768px){
+    section .img-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .content-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .content-box .login-form-box {
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 0.9);
+        margin: 50px;
+    }
+}
+
 </style>
 
 <section>
@@ -192,8 +228,14 @@ if ($header_skin)
 				<div class="row remember">
 					<div class="col-xs-6">
 						<label class="checkbox-inline remember-me">
-							<input type="checkbox" name="auto_login" id="login_auto_login"> 자동로그인
+							<input type="checkbox" name="auto_login" id="login_auto_login">Remember me?
 						</label>
+					</div>
+				</div>
+				<div class="row remember">
+					<div class="col-xs-6">
+						<a href="./register.php"><i class="fa fa-sign-in"></i>&nbsp;SIGN UP</a>
+						<a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost"><i class="fa fa-search"></i> 정보찾기</a>
 					</div>
 				</div>
 			</form>
@@ -221,7 +263,6 @@ if ($header_skin)
 						?>
 							<a href="<?php echo $self_url; ?>?provider=kakao&amp;url=<?php echo $urlencode; ?>" class="sns-icon social_link sns-kakao" title="카카오">
 								<span class="ico"></span>
-								<span class="txt">카카오<i> 로그인</i></span>
 							</a>
 						<?php }     //end if 
 						?>
@@ -229,7 +270,6 @@ if ($header_skin)
 						?>
 							<a href="<?php echo $self_url; ?>?provider=facebook&amp;url=<?php echo $urlencode; ?>" class="sns-icon social_link sns-facebook" title="페이스북">
 								<span class="ico"></span>
-								<span class="txt">페이스북<i> 로그인</i></span>
 							</a>
 						<?php }     //end if 
 						?>
@@ -237,7 +277,6 @@ if ($header_skin)
 						?>
 							<a href="<?php echo $self_url; ?>?provider=google&amp;url=<?php echo $urlencode; ?>" class="sns-icon social_link sns-google" title="구글">
 								<span class="ico"></span>
-								<span class="txt">구글+<i> 로그인</i></span>
 							</a>
 						<?php }     //end if 
 						?>
@@ -285,13 +324,6 @@ if ($header_skin)
 					</div>
 				</div>
 			<?php } ?>
-
-			<div class="form-footer">
-				<p class="text-center">
-					<a href="./register.php"><i class="fa fa-sign-in"></i> 회원가입</a>
-					<a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost"><i class="fa fa-search"></i> 정보찾기</a>
-				</p>
-			</div>
 		</div>
 	</div>
 
