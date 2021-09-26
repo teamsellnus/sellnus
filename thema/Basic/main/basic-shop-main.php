@@ -205,7 +205,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 <article class="main_instagram_wrap">
 	<section class="main_instagram_intro_sec">
 		<span class="main_instagram_icon"><i class="fa fa-instagram"></i></span>
-		<p>@sellnus</p>
+		<p>sellnus</p>
 	</section>
 	<section class="main_instagram_image_sec">
 		<img class="main_instagram_img" src="../thema/basic/assets/img/instagram.png" alt="">
