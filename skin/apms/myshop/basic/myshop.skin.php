@@ -230,7 +230,7 @@ $(document).ready(function(){
 <?php if ($is_admin || $setup_href || $myshop_href) { ?>
 	<div class="text-center">
 		<?php if($myshop_href) { ?>
-			<a href="<?php echo $myshop_href;?>" class="btn btn-<?php echo $btn2;?> btn-sm"><i class="fa fa-th-large"></i> 마이샵관리</a>
+			<!-- <a href="<?php echo $myshop_href;?>" class="btn btn-<?php echo $btn2;?> btn-sm"><i class="fa fa-th-large"></i> 마이샵관리</a> -->
 		<?php } ?>
 		<?php if($is_admin) { ?>
 			<a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo G5_ADMIN_URL;?>/apms_admin/apms.admin.php?ap=thema"><i class="fa fa-cog"></i> 설정</a>

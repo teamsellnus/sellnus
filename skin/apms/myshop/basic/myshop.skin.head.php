@@ -2,6 +2,11 @@
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 $mb = apms_partner($it['pt_id']);
 ?>
+<style>
+.at-title{
+	display: none;
+}
+</style>
 <div class="panel panel-default view-author">
 	<!-- modify 09.18 by LHG -->
 	<!-- <div class="panel-heading">
@@ -10,7 +15,7 @@ $mb = apms_partner($it['pt_id']);
 		</div>
 		<h3 class="panel-title">Author</h3>
 	</div> -->
-	<div class="panel-body myshop_panel">
+	<div class="panel-body myshop-panel">
 		<div class="pull-left text-center auth-photo">
 			<div class="img-photo">
 				<?php echo ($author['photo']) ? '<img src="' . $author['photo'] . '" alt="">' : '<i class="fa fa-user"></i>'; ?>
@@ -47,13 +52,13 @@ $mb = apms_partner($it['pt_id']);
 </div>
 
 <aside>
-	<div class="row myshop_category_wrap">
+	<div class="row">
 		<div class="col-sm-3">
 			<div class="input-group">
-				<!-- <span class="input-group-addon"><i class="fa fa-tags"></i></span> -->
-				<select name="ca_id" onchange="location='./myshop.php?id=<?php echo $id; ?>&ca_id=' + this.value;" class="form-control input-sm">
+				<span class="input-group-addon"><i class="fa fa-tags"></i></span>
+				<select name="ca_id" onchange="location='./myshop.php?id=<?php echo $id;?>&ca_id=' + this.value;" class="form-control input-sm">
 					<option value="">카테고리</option>
-					<?php echo $category_options; ?>
+					<?php echo $category_options;?>
 				</select>
 			</div>
 			<div class="h15"></div>
@@ -63,15 +68,19 @@ $mb = apms_partner($it['pt_id']);
 		</div>
 		<div class="col-sm-3">
 			<div class="input-group pull-right">
-				<!-- <span class="input-group-addon"><i class="fa fa-sort-amount-desc"></i></span> -->
+				<span class="input-group-addon"><i class="fa fa-sort-amount-desc"></i></span>
 				<select name="sortodr" onchange="location='<?php echo $list_sort_href; ?>' + this.value;" class="form-control input-sm">
 					<option value="">정렬하기</option>
-					<option value="it_update_time&amp;sortodr=desc" <?php echo ($sort == 'it_update_time') ? ' selected' : ''; ?>>최신순</option>
-					<option value="pt_good&amp;sortodr=desc" <?php echo ($sort == 'pt_good') ? ' selected' : ''; ?>>인기순</option>
-					<!-- <option value="it_sum_qty&amp;sortodr=desc"<?php echo ($sort == 'it_sum_qty') ? ' selected' : ''; ?>>판매많은순</option> -->
-					<option value="it_price&amp;sortodr=asc" <?php echo ($sort == 'it_price' && $sortodr == 'asc') ? ' selected' : ''; ?>>저가순</option>
-					<option value="it_price&amp;sortodr=desc" <?php echo ($sort == 'it_price' && $sortodr == 'desc') ? ' selected' : ''; ?>>고가순</option>
-					<!-- <option value="it_use_avg&amp;sortodr=desc"<?php echo ($sort == 'it_use_avg') ? ' selected' : ''; ?>>평점높은순</option>
-					<option value="it_use_cnt&amp;sortodr=desc"<?php echo ($sort == 'it_use_cnt') ? ' selected' : ''; ?>>후기많은순</option>
-					<option value="pt_comment&amp;sortodr=desc"<?php echo ($sort == 'pt_comment') ? ' selected' : ''; ?>>댓글많은순</option> -->
-
+					<option value="it_sum_qty&amp;sortodr=desc"<?php echo ($sort == 'it_sum_qty') ? ' selected' : '';?>>판매많은순</option>
+					<option value="it_price&amp;sortodr=asc"<?php echo ($sort == 'it_price' && $sortodr == 'asc') ? ' selected' : '';?>>낮은가격순</option>
+					<option value="it_price&amp;sortodr=desc"<?php echo ($sort == 'it_price' && $sortodr == 'desc') ? ' selected' : '';?>>높은가격순</option>
+					<option value="it_use_avg&amp;sortodr=desc"<?php echo ($sort == 'it_use_avg') ? ' selected' : '';?>>평점높은순</option>
+					<option value="it_use_cnt&amp;sortodr=desc"<?php echo ($sort == 'it_use_cnt') ? ' selected' : '';?>>후기많은순</option>
+					<option value="pt_good&amp;sortodr=desc"<?php echo ($sort == 'pt_good') ? ' selected' : '';?>>추천많은순</option>
+					<option value="pt_comment&amp;sortodr=desc"<?php echo ($sort == 'pt_comment') ? ' selected' : '';?>>댓글많은순</option>
+					<option value="it_update_time&amp;sortodr=desc"<?php echo ($sort == 'it_update_time') ? ' selected' : '';?>>최근등록순</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</aside>
