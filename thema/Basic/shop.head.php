@@ -31,7 +31,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo $at_href['myshop']; ?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
@@ -103,7 +103,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo $at_href['myshop']; ?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">

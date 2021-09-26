@@ -11,7 +11,11 @@ if ($header_skin)
 <style>
 	@media (max-width: 991px){
 	.responsive .at-body .at-container{
+<<<<<<< HEAD
 		padding:0 !important;
+=======
+		padding:0 ;
+>>>>>>> feature/header
 	}
 }
 	#globalHeader,
