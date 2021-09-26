@@ -103,6 +103,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=list">판매하기</a></li>
 							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
@@ -129,7 +130,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
-						<li><a href="<?php echo $at_href['logout']; ?>">로그아웃 </a></li>
+						<!-- <li><a href="<?php echo $at_href['logout']; ?>">로그아웃 </a></li> -->
 					<?php } ?>
 				</ul>
 			</div>
@@ -148,7 +149,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<div class="header-logo en">
 						<!-- Mobile Logo -->
 						<a href="<?php echo $at_href['home']; ?>">
-							<b>아미나</b>
+							<b>Sell&Us</b>
 						</a>
 					</div>
 					<div class="header-icon">
