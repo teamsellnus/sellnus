@@ -124,7 +124,18 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 		}, 'google_translate_element');
 	}
 </script>
-
+<script>
+        window.addEventListener('scroll', function () {
+            let header = document.getElementById('globalHeader');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('header-active', windowPosition);
+            if (windowPosition > 0) {
+                document.querySelector('.at-lnb').style.display = 'none';
+            } else {
+				document.querySelector('.at-lnb').style.display = 'flex';
+            }
+        })
+</script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
 	var sub_show = "<?php echo $at_set['subv']; ?>";

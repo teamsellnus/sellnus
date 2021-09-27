@@ -362,6 +362,11 @@ blockquote {
 	font-size: 12px;
 }
 
+/* 스크롤 부분 */
+.header-active {
+    
+}
+
 @media all and (max-width:991px) {
 	.responsive .pc-header {
 		display: none;
