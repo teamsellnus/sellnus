@@ -142,7 +142,8 @@ $is_subw = (isset($at_set['subw']) && $at_set['subw'] > 0) ? $at_set['subw'] : 1
 $is_allm = (isset($at_set['allm']) && $at_set['allm'] > 0) ? $at_set['allm'] : 7;
 
 // 메뉴수
-$menu_cnt = count($menu);
+// $menu_cnt = count($menu);
+$menu_cnt = is_array($menu) ? count($menu) : 0;
 
 // 소셜아이콘
 $sns_share_url  = (IS_YC && IS_SHOP) ? G5_SHOP_URL : G5_URL;

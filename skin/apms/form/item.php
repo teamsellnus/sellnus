@@ -18,6 +18,7 @@ if($is_auth) { // 관리자일 때
 	$pg_anchor .='<li><a href="#anc_sitfrm_extra">여분필드</a></li>';
 }
 $pg_anchor .='</ul>';
+$it['pt_it'] = 1;
 
 ?>
 <style>
@@ -31,8 +32,6 @@ $pg_anchor .='</ul>';
 	.btn_confirm { margin-bottom:50px; }
 </style>
 
-<?php echo $pg_anchor; ?>
-
 <section id="anc_sitfrm_ini" class="anc-section">
     <h2 class="h2_frm">기본정보</h2>
 	<div class="tbl_frm01 tbl_wrap">
@@ -43,14 +42,17 @@ $pg_anchor .='</ul>';
             <col>
         </colgroup>
         <tbody>
-        <tr>
+        <tr style="display:none;">
             <th scope="row"><label for="it_name">상품종류</label></th>
             <td>
-				<?php echo help("상품종류에 따라 주문 및 결제후 이용방법이 달라집니다."); ?>
-				<select name="pt_it" id="pt_it" required>
-					<option value="">선택해 주세요.</option>
-					<?php echo apms_pt_it($it['pt_it']); ?>
-				</select>
+				<!-- <?php echo help("상품종류에 따라 주문 및 결제후 이용방법이 달라집니다."); ?> -->
+				<input type="hidden" name="pt_it" value="1">
+            </td>
+        </tr>
+		<tr>
+            <th scope="row"><label for="it_name">상품명</label></th>
+            <td>
+                <input type="text" name="it_name" value="<?php echo get_text(cut_str($it['it_name'], 250, "")); ?>" id="it_name" required class="frm_input required sl">
             </td>
         </tr>
 		<tr>
@@ -84,7 +86,7 @@ $pg_anchor .='</ul>';
 			</td>
         </tr>
 
-		<tr>
+		<tr style="display:none;">
             <th scope="row">상품코드</th>
             <td>
                 <?php if ($w == '') { // 추가 ?>
@@ -102,18 +104,12 @@ $pg_anchor .='</ul>';
                 <?php } ?>
             </td>
         </tr>
-		<tr>
-            <th scope="row"><label for="it_name">상품명</label></th>
-            <td>
-                <?php echo help("HTML 입력이 불가합니다."); ?>
-                <input type="text" name="it_name" value="<?php echo get_text(cut_str($it['it_name'], 250, "")); ?>" id="it_name" required class="frm_input required sl">
-            </td>
-        </tr>
+		
 		<tr>
             <th scope="row"><label for="it_basic">기본설명</label></th>
             <td>
                 <?php echo help("상품명 하단에 상품에 대한 추가적인 설명이 필요한 경우에 입력합니다. HTML 입력도 가능합니다."); ?>
-                <input type="text" name="it_basic" value="<?php echo get_text(html_purifier($it['it_basic'])); ?>" id="it_basic" class="frm_input sl">
+                <textarea placeholder="상품 설명을 입력해주세요." rows="6" name="it_basic" value="<?php echo get_text(html_purifier($it['it_basic'])); ?>" id="it_basic" class="frm_input sl"></textarea>
             </td>
         </tr>
 		<tr>
@@ -123,7 +119,7 @@ $pg_anchor .='</ul>';
                 <input type="text" name="pt_tag" value="<?php echo get_text($it['pt_tag']); ?>" id="pt_tag" class="frm_input sl">
             </td>
         </tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="pt_show">마이샵순서</label></th>
 			<td>
 				<?php echo help("숫자가 작을 수록 마이샵 상위에 출력되며, -2147483648 부터 2147483647 까지 입력가능합니다. 미입력시 자동으로 출력됩니다."); ?>
@@ -162,28 +158,28 @@ $pg_anchor .='</ul>';
 				</td>
 			</tr>
 		<?php } // 관리자 끝 ?>
-        <tr>
+        <tr style="display:none;">
             <th scope="row"><label for="it_maker">제조사</label></th>
             <td>
                 <?php echo help("입력하지 않으면 상품상세페이지에 출력하지 않습니다."); ?>
                 <input type="text" name="it_maker" value="<?php echo get_text($it['it_maker']); ?>" id="it_maker" class="frm_input" size="40">
             </td>
         </tr>
-        <tr>
+        <tr style="display:none;">
             <th scope="row"><label for="it_origin">원산지</label></th>
             <td>
                 <?php echo help("입력하지 않으면 상품상세페이지에 출력하지 않습니다."); ?>
                 <input type="text" name="it_origin" value="<?php echo get_text($it['it_origin']); ?>" id="it_origin" class="frm_input" size="40">
             </td>
         </tr>
-        <tr>
+        <tr style="display:none;">
             <th scope="row"><label for="it_brand">브랜드</label></th>
             <td>
                 <?php echo help("입력하지 않으면 상품상세페이지에 출력하지 않습니다."); ?>
                 <input type="text" name="it_brand" value="<?php echo get_text($it['it_brand']); ?>" id="it_brand" class="frm_input" size="40">
             </td>
         </tr>
-        <tr>
+        <tr style="display:none;">
             <th scope="row"><label for="it_model">모델</label></th>
             <td>
                 <?php echo help("입력하지 않으면 상품상세페이지에 출력하지 않습니다."); ?>
@@ -224,9 +220,16 @@ $pg_anchor .='</ul>';
             <th scope="row"><label for="it_use">판매가능</label></th>
             <td>
                 <?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크를 해제해 놓으면 출력되지 않으며, 주문도 받지 않습니다."); ?>
-                <label><input type="checkbox" name="it_use" value="1" id="it_use" <?php echo ($it['it_use']) ? "checked" : ""; ?>> 예</label>
+                <label><input type="checkbox" name="it_use" value="1" id="it_use" checked<?php echo ($it['it_use']) ? "checked" : ""; ?>> 예</label>
             </td>
         </tr>
+		<tr>
+			<th scope="row"><label for="it_soldout">상품품절</label></th>
+			<td>
+				<?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크해 놓으면 품절상품으로 표시됩니다."); ?>
+				<input type="checkbox" name="it_soldout" value="1" id="it_soldout" <?php echo ($it['it_soldout']) ? "checked" : ""; ?>> 예
+			</td>
+		</tr>
 		<tr>
             <th scope="row">상품설명</th>
             <td>
@@ -239,14 +242,14 @@ $pg_anchor .='</ul>';
 				<?php echo editor_html('it_explan', get_text(html_purifier($it['it_explan']), 0)); ?>
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
             <th scope="row">모바일 상품설명</th>
             <td>
 				<a href="<?php echo G5_BBS_URL;?>/helper.php" target="_blank" class="btn_frmline win_scrap">기능안내</a>
 				<a href="<?php echo G5_BBS_URL;?>/helper.php?act=map" target="_blank" class="btn_frmline win_scrap">구글지도</a>			
 			</td>
         </tr>
-		<tr>
+		<tr style="display:none;">
             <td colspan="2" class="iframe"> 
 				<?php echo editor_html('it_mobile_explan', get_text(html_purifier($it['it_mobile_explan']), 0)); ?>
 			</td>
@@ -283,11 +286,11 @@ $pg_anchor .='</ul>';
 	</div>
 </section>
 
-<?php echo $frm_submit; ?>
+<!-- <?php echo $frm_submit; ?> -->
 
-<?php echo $pg_anchor; ?>
+<!-- <?php echo $pg_anchor; ?> -->
 
-<section id="anc_sitfrm_compact">
+<section id="anc_sitfrm_compact" style="display: none;">
 	<h2 class="h2_frm">상품요약정보</h2>
 	<div class="local_desc02 local_desc">
 		<p><strong>전자상거래 등에서의 상품 등의 정보제공에 관한 고시</strong>에 따라 총 35개 상품군에 대해 상품 특성 등을 양식에 따라 입력할 수 있습니다.</p>
@@ -320,12 +323,11 @@ $pg_anchor .='</ul>';
 	</script>
 </section>
 
-<?php echo $frm_submit; ?>
+<!-- <?php echo $frm_submit; ?>
 
-<?php echo $pg_anchor; ?>
+<?php echo $pg_anchor; ?> -->
 
 <section id="anc_sitfrm_cost">
-	<h2 class="h2_frm">가격 및 재고</h2>
 	<div class="tbl_frm01 tbl_wrap">
 		<table>
 		<caption>가격 및 재고 입력</caption>
@@ -349,7 +351,7 @@ $pg_anchor .='</ul>';
 				</td>
 			</tr>
 		<?php } // 관리자 끝 ?>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_point_type">포인트 유형</label></th>
 			<td>
 				<?php echo help("포인트 유형을 설정할 수 있습니다. 비율로 설정했을 경우 설정 기준금액의 %비율로 포인트가 지급됩니다."); ?>
@@ -372,25 +374,18 @@ $pg_anchor .='</ul>';
 				</script>
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_point">포인트</label></th>
 			<td>
 				<?php echo help("주문완료후 환경설정에서 설정한 주문완료 설정일 후 회원에게 부여하는 포인트입니다.\n또, 포인트부여를 '아니오'로 설정한 경우 신용카드, 계좌이체로 주문하는 회원께는 부여하지 않습니다."); ?>
 				<input type="text" name="it_point" value="<?php echo $it['it_point']; ?>" id="it_point" class="frm_input" size="8"> <span id="it_point_unit"><?php if($it['it_point_type']) echo '%'; else echo '점'; ?></span>
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_supply_point">추가옵션상품 포인트</label></th>
 			<td>
 				<?php echo help("상품의 추가옵션상품 구매에 일괄적으로 지급하는 포인트입니다. 0으로 설정하시면 구매포인트를 지급하지 않습니다.\n주문완료후 환경설정에서 설정한 주문완료 설정일 후 회원에게 부여하는 포인트입니다.\n또, 포인트부여를 '아니오'로 설정한 경우 신용카드, 계좌이체로 주문하는 회원께는 부여하지 않습니다."); ?>
 				<input type="text" name="it_supply_point" value="<?php echo $it['it_supply_point']; ?>" id="it_supply_point" class="frm_input" size="8"> 점
-			</td>
-		</tr>
-		<tr>
-			<th scope="row"><label for="it_soldout">상품품절</label></th>
-			<td>
-				<?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크해 놓으면 품절상품으로 표시됩니다."); ?>
-				<input type="checkbox" name="it_soldout" value="1" id="it_soldout" <?php echo ($it['it_soldout']) ? "checked" : ""; ?>> 예
 			</td>
 		</tr>
 		<?php if($is_auth) { // 관리자일 때만 출력 ?>
@@ -409,28 +404,28 @@ $pg_anchor .='</ul>';
 				<input type="text" name="it_stock_qty" value="<?php echo $it['it_stock_qty']; ?>" id="it_stock_qty" class="frm_input" size="8"> 개
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_noti_qty">재고 통보수량</label></th>
 			<td>
 				<?php echo help("상품의 재고가 통보수량보다 작을 때 쇼핑몰 현황 재고부족상품에 표시됩니다.<br>옵션이 있는 상품은 개별 옵션의 통보수량이 적용됩니다."); ?>
 				<input type="text" name="it_noti_qty" value="<?php echo $it['it_noti_qty']; ?>" id="it_noti_qty" class="frm_input" size="8"> 개
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_buy_min_qty">최소구매수량</label></th>
 			<td>
 				<?php echo help("상품 구매시 최소 구매 수량을 설정합니다."); ?>
 				<input type="text" name="it_buy_min_qty" value="<?php echo $it['it_buy_min_qty']; ?>" id="it_buy_min_qty" class="frm_input" size="8"> 개
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_buy_max_qty">최대구매수량</label></th>
 			<td>
 				<?php echo help("상품 구매시 최대 구매 수량을 설정합니다."); ?>
 				<input type="text" name="it_buy_max_qty" value="<?php echo $it['it_buy_max_qty']; ?>" id="it_buy_max_qty" class="frm_input" size="8"> 개
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label for="it_notax">상품과세 유형</label></th>
 			<td>
 				<?php echo help("상품의 과세유형(과세, 비과세)을 설정합니다."); ?>
@@ -443,7 +438,7 @@ $pg_anchor .='</ul>';
 		<?php 
 			$opt_subject = explode(',', $it['it_option_subject']); 
 		?>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row">상품선택옵션</th>
 			<td>
 				<div class="sit_option tbl_frm01">
@@ -622,7 +617,7 @@ $pg_anchor .='</ul>';
 			$spl_subject = explode(',', $it['it_supply_subject']);
 			$spl_count = count($spl_subject);
 		?>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row">상품추가옵션</th>
 			<td>
 				<div id="sit_supply_frm" class="sit_option tbl_frm01">
@@ -840,7 +835,7 @@ $pg_anchor .='</ul>';
 				</script>
 			</td>
 		</tr>
-		<tr>
+		<tr style="display:none;">
 			<th scope="row"><label>상품메모옵션</label></th>
 			<td>
 				<?php echo help("텍스트 입력 옵션으로 미입력시 출력되지 않습니다. 옵션 항목명을 입력해 주세요."); ?>
@@ -855,9 +850,9 @@ $pg_anchor .='</ul>';
 </section>
 
 <section id="anc_sitfrm_sendcost">
-	<h2 class="h2_frm">배송비</h2>
+	<!-- <h2 class="h2_frm">배송비</h2> -->
 	<div class="local_desc02 local_desc">
-		<p>쇼핑몰설정 &gt; 배송비유형 설정보다 <strong>개별상품 배송비설정이 우선</strong> 적용됩니다.</p>
+		<!-- <p>쇼핑몰설정 &gt; 배송비유형 설정보다 <strong>개별상품 배송비설정이 우선</strong> 적용됩니다.</p> -->
 	</div>
 
 	<div class="tbl_frm01 tbl_wrap">
@@ -869,7 +864,7 @@ $pg_anchor .='</ul>';
 		</colgroup>
 		<tbody>
 			<tr>
-				<th scope="row"><label for="it_sc_type">배송비 유형</label></th>
+				<th scope="row"><label for="it_sc_type">배송비</label></th>
 				<td>
 					<?php echo help("배송비 유형을 선택하면 자동으로 항목이 변환됩니다."); ?>
 					<select name="it_sc_type" id="it_sc_type">
@@ -1037,16 +1032,10 @@ $pg_anchor .='</ul>';
 	</section>
 <?php } ?>
 
-<?php echo $frm_submit; ?>
-
-<?php echo $pg_anchor; ?>
-
 <section id="anc_sitfrm_img" class="anc-section">
-    <h2 class="h2_frm">이미지</h2>
-	<div class="local_desc02 local_desc">
+	<!-- <div class="local_desc02 local_desc">
 		{이미지:1}, {이미지:2} 와 같이 이미지 번호를 입력하면 해당 첨부이미지를 내용에 출력할 수 있습니다.
-	</div>
-
+	</div> -->
 	<div class="tbl_frm01 tbl_wrap">
         <table>
         <caption>이미지 업로드</caption>
@@ -1057,7 +1046,7 @@ $pg_anchor .='</ul>';
         <tbody>
         <?php for($i=1; $i<=10; $i++) { ?>
         <tr>
-            <th scope="row"><label for="it_img1">이미지 <?php echo $i; ?></label></th>
+            <th scope="row"><label for="it_img1">Image <?php echo $i; ?></label></th>
             <td>
                 <input type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
                 <?php
@@ -1085,11 +1074,7 @@ $pg_anchor .='</ul>';
     </div>
 </section>
 
-<?php echo $frm_submit; ?>
-
-<?php echo $pg_anchor; ?>
-
-<section id="anc_sitfrm_relation" class="srel anc-section">
+<section id="anc_sitfrm_relation" class="srel anc-section" style="display:none;">
     <h2 class="h2_frm">관련상품</h2>
     <div class="local_desc02 local_desc">
         <p>
@@ -1220,7 +1205,6 @@ $pg_anchor .='</ul>';
 
 </section>
 
-<?php echo $frm_submit; ?>
 
 <?php if($is_auth) { ?>
 	<?php echo $pg_anchor; ?>
@@ -1335,13 +1319,10 @@ $pg_anchor .='</ul>';
 
 	</section>
 
-	<?php echo $frm_submit; ?>
-
 <?php } ?>
 
-<?php echo $pg_anchor; ?>
 
-<section id="anc_sitfrm_opt" class="anc-section">
+<section id="anc_sitfrm_opt" class="anc-section" style="display:none;">
     <h2 class="h2_frm">옵션사항</h2>
 	<div class="tbl_frm01 tbl_wrap">
         <table>
@@ -1531,11 +1512,7 @@ $pg_anchor .='</ul>';
 	</div>
 </section>
 
-<?php echo $frm_submit; ?>
-
-<?php echo $pg_anchor; ?>
-
-<section id="anc_sitfrm_attach" class="anc-section">
+<section id="anc_sitfrm_attach" class="anc-section" style="display: none;">
     <h2 class="h2_frm">파일첨부</h2>
     <div class="tbl_frm01 tbl_wrap">
         <table>
@@ -1591,7 +1568,6 @@ $pg_anchor .='</ul>';
     </div>
 </section>
 
-<?php echo $frm_submit; ?>
 
 <?php if($is_auth) { // 관리자일 때만 출력 ?>
 
