@@ -1,4 +1,3 @@
-
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 include_once(THEMA_PATH . '/assets/thema.php');
@@ -14,7 +13,9 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 				<ul>
 					<li><a href="javascript:;" id="favorite">즐겨찾기</a></li>
 					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">앱 다운로드</a></li>
-					<li><div id="google_translate_element"></div></li>
+					<li>
+						<div id="google_translate_element"></div>
+					</li>
 					<?php
 					$tweek = array("일", "월", "화", "수", "목", "금", "토");
 					?>
@@ -31,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/myshop.php?id=<?php echo urlencode($member['mb_id']); ?>">내 상점</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
@@ -103,8 +104,8 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=list">판매하기</a></li>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/partner/?ap=list">판매하기</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/myshop.php?id=<?php echo urlencode($member['mb_id']); ?>">내 상점</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
@@ -162,16 +163,16 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			</div>
 		</header>
 		<!-- Menu -->
-	<nav class="at-menu">
-		<!-- PC Menu -->
-		<div class="pc-menu">
-			<!-- Menu Button & Right Icon Menu -->
-			<div class="at-container">
-				<div class="nav-right nav-rw nav-height">
-					<ul>
-						<?php if (IS_YC) { //영카트 
-						?>
-							<!-- <li class="nav-show">
+		<nav class="at-menu">
+			<!-- PC Menu -->
+			<div class="pc-menu">
+				<!-- Menu Button & Right Icon Menu -->
+				<div class="at-container">
+					<div class="nav-right nav-rw nav-height">
+						<ul>
+							<?php if (IS_YC) { //영카트 
+							?>
+								<!-- <li class="nav-show">
 								<a href="<?php echo $at_href['cart']; ?>" onclick="sidebar_open('sidebar-cart'); return false;" <?php echo tooltip('쇼핑'); ?>>
 									<i class="fa fa-shopping-bag"></i>
 									<?php if ($member['cart'] || $member['today']) { ?>
@@ -181,8 +182,8 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 									<?php } ?>
 								</a>
 							</li> -->
-						<?php } ?>
-						<!-- <li>
+							<?php } ?>
+							<!-- <li>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');" <?php echo tooltip('알림'); ?>>
 								<i class="fa fa-bell"></i>
 								<span class="label bg-orangered en" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
@@ -195,95 +196,92 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								<i class="fa fa-search"></i>
 							</a>
 						</li> -->
-						<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
-							<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
-								<i class="fa fa-bars"></i>
-							</a>
-						</li>
-					</ul>
-					<div class="clearfix"></div>
+							<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
+								<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
+									<i class="fa fa-bars"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
 				</div>
-			</div>
-			<?php include_once(THEMA_PATH . '/menu.php');	// 메뉴 불러오기 
-			?>
-			<div class="clearfix"></div>
-			<div class="nav-back"></div>
-		</div><!-- .pc-menu -->
+				<?php include_once(THEMA_PATH . '/menu.php');	// 메뉴 불러오기 
+				?>
+				<div class="clearfix"></div>
+				<div class="nav-back"></div>
+			</div><!-- .pc-menu -->
 
-		<!-- PC All Menu -->
-		<div class="pc-menu-all">
-			<div id="menu-all" class="collapse">
-				<div class="at-container table-responsive">
-					<table class="table">
-						<tr>
-							<?php
-							$az = 0;
-							for ($i = 1; $i < $menu_cnt; $i++) {
+			<!-- PC All Menu -->
+			<div class="pc-menu-all">
+				<div id="menu-all" class="collapse">
+					<div class="at-container table-responsive">
+						<table class="table">
+							<tr>
+								<?php
+								$az = 0;
+								for ($i = 1; $i < $menu_cnt; $i++) {
 
-								if (!$menu[$i]['gr_id']) continue;
+									if (!$menu[$i]['gr_id']) continue;
 
-								// 줄나눔
-								if ($az && $az % $is_allm == 0) {
-									echo '</tr><tr>' . PHP_EOL;
-								}
-							?>
-								<td class="<?php echo $menu[$i]['on']; ?>">
-									<a class="menu-a" href="<?php echo $menu[$i]['href']; ?>" <?php echo $menu[$i]['target']; ?>>
-										<?php echo $menu[$i]['name']; ?>
-										<?php if ($menu[$i]['new'] == "new") { ?>
-											<i class="fa fa-bolt new"></i>
-										<?php } ?>
-									</a>
-									<?php if ($menu[$i]['is_sub']) { //Is Sub Menu 
-									?>
-										<div class="sub-1div">
-											<ul class="sub-1dul">
-												<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
+									// 줄나눔
+									if ($az && $az % $is_allm == 0) {
+										echo '</tr><tr>' . PHP_EOL;
+									}
+								?>
+									<td class="<?php echo $menu[$i]['on']; ?>">
+										<a class="menu-a" href="<?php echo $menu[$i]['href']; ?>" <?php echo $menu[$i]['target']; ?>>
+											<?php echo $menu[$i]['name']; ?>
+											<?php if ($menu[$i]['new'] == "new") { ?>
+												<i class="fa fa-bolt new"></i>
+											<?php } ?>
+										</a>
+										<?php if ($menu[$i]['is_sub']) { //Is Sub Menu 
+										?>
+											<div class="sub-1div">
+												<ul class="sub-1dul">
+													<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
 
-													<?php if ($menu[$i]['sub'][$j]['line']) { //구분라인 
+														<?php if ($menu[$i]['sub'][$j]['line']) { //구분라인 
+														?>
+															<li class="sub-1line"><a><?php echo $menu[$i]['sub'][$j]['line']; ?></a></li>
+														<?php } ?>
+
+														<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>">
+															<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
+																<?php echo $menu[$i]['sub'][$j]['name']; ?>
+																<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
+																	<i class="fa fa-bolt sub-1new"></i>
+																<?php } ?>
+															</a>
+														</li>
+													<?php } //for 
 													?>
-														<li class="sub-1line"><a><?php echo $menu[$i]['sub'][$j]['line']; ?></a></li>
-													<?php } ?>
-
-													<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>">
-														<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
-															<?php echo $menu[$i]['sub'][$j]['name']; ?>
-															<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
-																<i class="fa fa-bolt sub-1new"></i>
-															<?php } ?>
-														</a>
-													</li>
-												<?php } //for 
-												?>
-											</ul>
-										</div>
-									<?php } ?>
-								</td>
-							<?php $az++;
-							} //for 
-							?>
-						</tr>
-					</table>
-					<div class="menu-all-btn">
-						<div class="btn-group">
-							<a class="btn btn-lightgray" href="<?php echo $at_href['main']; ?>"><i class="fa fa-home"></i></a>
-							<a href="javascript:;" class="btn btn-lightgray" data-toggle="collapse" data-target="#menu-all"><i class="fa fa-times"></i></a>
+												</ul>
+											</div>
+										<?php } ?>
+									</td>
+								<?php $az++;
+								} //for 
+								?>
+							</tr>
+						</table>
+						<div class="menu-all-btn">
+							<div class="btn-group">
+								<a class="btn btn-lightgray" href="<?php echo $at_href['main']; ?>"><i class="fa fa-home"></i></a>
+								<a href="javascript:;" class="btn btn-lightgray" data-toggle="collapse" data-target="#menu-all"><i class="fa fa-times"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div><!-- .pc-menu-all -->
+			</div><!-- .pc-menu-all -->
 
-		<!-- Mobile Menu -->
-		<div class="m-menu">
-			<?php include_once(THEMA_PATH . '/menu-m.php');	// 메뉴 불러오기 
-			?>
-		</div><!-- .m-menu -->
-	</nav><!-- .at-menu -->
+			<!-- Mobile Menu -->
+			<div class="m-menu">
+				<?php include_once(THEMA_PATH . '/menu-m.php');	// 메뉴 불러오기 
+				?>
+			</div><!-- .m-menu -->
+		</nav><!-- .at-menu -->
 	</header>
-
-
-	
 
 	<div class="clearfix"></div>
 
@@ -308,7 +306,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 	<?php } ?>
 
 	<div class="at-body">
-		
+
 		<?php if ($col_name) { ?>
 			<div class="at-container">
 				<?php if ($col_name == "two") { ?>

@@ -1,8 +1,8 @@
 <?php
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 include_once(G5_EDITOR_LIB);
-include_once(G5_LIB_PATH.'/iteminfo.lib.php');
-include_once(G5_LIB_PATH.'/apms.partner.lib.php');
+include_once(G5_LIB_PATH . '/iteminfo.lib.php');
+include_once(G5_LIB_PATH . '/apms.partner.lib.php');
 $upload_max_filesize = number_format($default['pt_upload_size']) . ' 바이트';
 
 //분류권한
@@ -142,10 +142,10 @@ if ($w == "" && !$fn) {
 } else { // 입력폼이 있다면...
 
 	$frow = array();
-	if($it_id) {
+	if ($it_id) {
 		$fn = ($cfn) ? $fn : $ca['pt_form'];
 		$frow = apms_form_skin($fn);
-		if(!$frow['pi_id']) {
+		if (!$frow['pi_id']) {
 			$crow = array();
 			$crow = apms_form_skin('', $it['ca_id']);
 			$fn = $crow['pi_id'];
@@ -162,11 +162,11 @@ if ($w == "" && !$fn) {
 	}
 
 	// 등록폼
-	$form_skin_path = G5_SKIN_PATH.'/apms/form';
-	$form_skin_url = G5_SKIN_URL.'/apms/form';
-	$fskin_file = $form_skin_path.'/'.$fskin;
+	$form_skin_path = G5_SKIN_PATH . '/apms/form';
+	$form_skin_url = G5_SKIN_URL . '/apms/form';
+	$fskin_file = $form_skin_path . '/' . $fskin;
 
-	include_once(G5_PLUGIN_PATH.'/jquery-ui/datepicker.php');
+	include_once(G5_PLUGIN_PATH . '/jquery-ui/datepicker.php');
 
 	// 분류리스트
 	$category_select = '';
@@ -179,17 +179,16 @@ if ($w == "" && !$fn) {
 	}
 	$sql .= " order by ca_order, ca_id ";
 	$result = sql_query($sql);
-	for ($i=0; $row=sql_fetch_array($result); $i++)
-	{
+	for ($i = 0; $row = sql_fetch_array($result); $i++) {
 		$len = strlen($row['ca_id']) / 2 - 1;
 
 		$nbsp = "";
-		for ($i=0; $i<$len; $i++)
+		for ($i = 0; $i < $len; $i++)
 			$nbsp .= "&nbsp;&nbsp;&nbsp;";
 
 
-		if($row['as_line']) {
-			$category_select .= "<option value=\"\">".$nbsp."------------</option>\n";
+		if ($row['as_line']) {
+			$category_select .= "<option value=\"\">" . $nbsp . "------------</option>\n";
 		}
 
 		$category_select .= "<option value=\"{$row['ca_id']}\">$nbsp{$row['ca_name']}</option>\n";
@@ -200,7 +199,7 @@ if ($w == "" && !$fn) {
 		$script .= "ca_sell_email['{$row['ca_id']}'] = '{$row['ca_sell_email']}';\n";
 	}
 
-	if(!$category_select) {
+	if (!$category_select) {
 		alert("지정한 등록폼을 사용하는 분류가 없습니다.\\n\\n다른 등록폼을 선택해 주세요.");
 	}
 
@@ -347,13 +346,14 @@ if ($w == "" && !$fn) {
 			<input type="hidden" name="fn" value="<?php echo $fn; ?>">
 			<input type="hidden" name="sca" value="<?php echo $sca; ?>">
 			<input type="hidden" name="sst" value="<?php echo $sst; ?>">
-			<input type="hidden" name="sod"  value="<?php echo $sod; ?>">
+			<input type="hidden" name="sod" value="<?php echo $sod; ?>">
 			<input type="hidden" name="sfl" value="<?php echo $sfl; ?>">
-			<input type="hidden" name="stx"  value="<?php echo $stx; ?>">
+			<input type="hidden" name="stx" value="<?php echo $stx; ?>">
 			<input type="hidden" name="page" value="<?php echo $page; ?>">
 
 			<?php @include_once($fskin_file); ?>
 
 		</form>
 	</div>
-<?php } //닫기 ?>
+<?php } //닫기 
+?>
