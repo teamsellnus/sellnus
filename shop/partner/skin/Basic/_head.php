@@ -1,145 +1,319 @@
-<?php 
+<?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 
-add_stylesheet('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800" type="text/css">',0);
-add_stylesheet('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,200,100" type="text/css">',0);
-add_stylesheet('<link rel="stylesheet" href="'.$skin_url.'/assets/css/bootstrap.min.css" type="text/css" media="screen">',0);
-add_stylesheet('<link rel="stylesheet" href="'.$skin_url.'/style.css" type="text/css" media="screen">',0);
+// add_stylesheet('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800" type="text/css">', 0);
+// add_stylesheet('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,200,100" type="text/css">', 0);
+// add_stylesheet('<link rel="stylesheet" href="' . $skin_url . '/assets/css/bootstrap.min.css" type="text/css" media="screen">', 0);
+// add_stylesheet('<link rel="stylesheet" href="' . $skin_url . '/style.css" type="text/css" media="screen">', 0);
+include_once(THEMA_PATH . '/assets/thema.php');
+
+add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="' . THEMA_URL . '/assets/bs3/css/bootstrap.min.css" type="text/css">', 0);
+add_stylesheet('<link rel="stylesheet" href="' . COLORSET_URL . '/colorset.css" type="text/css">', 0);
 
 ?>
+<style>
+	@media (min-width: 768px) {
+		#wrapper {
+			padding: 0 !important;
+		}
 
-<div id="wrapper">
-	<!-- Sidebar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top en" role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="./">
-				<span>
-					<?php echo ($member['photo']) ? '<img src="'.$member['photo'].'" alt="" class="photo">' : '<i class="fa fa-cubes fa-lg"></i>'; //사진 ?>
-					My Admin
-				</span>
-			</a>
-		</div>
+		#page-wrapper {
+			width:100%;
+			margin-top: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.item-con-wrap{
+			width:1200px;
+		}
+	}
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav side-nav">
-				<?php if(IS_SELLER) { ?>
-					<li class="bg-blue">
-						<a><span class="white"><i class="fa fa-shopping-cart fa-lg"></i> 판매자(셀러)</span></a>
-					</li>
-					<li<?php if(!$ap) echo ' class="active"';?>>
-						<a href="./"><i class="fa fa-dashboard fa-lg"></i> 대시보드</a>
-					</li>
-					<li<?php if($ap == 'list' || $ap == 'item') echo ' class="active"';?>>
-						<a href="./?ap=list"><i class="fa fa-cube fa-lg"></i> 자료관리</a>
-					</li>
-					<li<?php if($ap == 'comment') echo ' class="active"';?>>
-						<a href="./?ap=comment"><i class="fa fa-comment fa-lg"></i> 댓글관리</a>
-					</li>
-					<li<?php if($ap == 'qalist') echo ' class="active"';?>>
-						<a href="./?ap=qalist"><i class="fa fa-question-circle fa-lg"></i> 문의관리</a>
-					</li>
-					<li<?php if($ap == 'uselist') echo ' class="active"';?>>
-						<a href="./?ap=uselist"><i class="fa fa-star fa-lg"></i> 후기관리</a>
-					</li>
-					<li<?php if($ap == 'salelist') echo ' class="active"';?>>
-						<a href="./?ap=salelist"><i class="fa fa-line-chart fa-lg"></i> 판매현황</a>
-					</li>
-					<li<?php if($ap == 'saleitem') echo ' class="active"';?>>
-						<a href="./?ap=saleitem"><i class="fa fa-shopping-cart fa-lg"></i> 판매자료</a>
-					</li>
-					<li<?php if($ap == 'delivery') echo ' class="active"';?>>
-						<a href="./?ap=delivery"><i class="fa fa-truck fa-lg"></i> 배송관리</a>
-					</li>
-					<li<?php if($ap == 'sendcost') echo ' class="active"';?>>
-						<a href="./?ap=sendcost"><i class="fa fa-tag fa-lg"></i> 배송비용</a>
-					</li>
-					<li<?php if($ap == 'cancelitem') echo ' class="active"';?>>
-						<a href="./?ap=cancelitem"><i class="fa fa-cart-arrow-down fa-lg"></i> 취소내역</a>
-					</li>
-					<li<?php if($ap == 'paylist') echo ' class="active"';?>>
-						<a href="./?ap=paylist"><i class="fa fa-calculator fa-lg"></i> 출금관리</a>
-					</li>
-				<?php } ?>
-				<?php if(IS_MARKETER) { ?>
-					<li class="bg-green">
-						<a><span class="white"><i class="fa fa-database fa-lg"></i> 추천인(마케터)</span></a>
-					</li>
-					<li<?php if(!$ap) echo ' class="active"';?>>
-						<a href="./"><i class="fa fa-dashboard fa-lg"></i> 대시보드</a>
-					</li>
-					<li<?php if($ap == 'mitem') echo ' class="active"';?>>
-						<a href="./?ap=mitem"><i class="fa fa-cube fa-lg"></i> 수익자료</a>
-					</li>
-					<li<?php if($ap == 'mlist') echo ' class="active"';?>>
-						<a href="./?ap=mlist"><i class="fa fa-line-chart fa-lg"></i> 수익현황</a>
-					</li>
-					<li<?php if($ap == 'mitemlist') echo ' class="active"';?>>
-						<a href="./?ap=mitemlist"><i class="fa fa-database fa-lg"></i> 수익내역</a>
-					</li>
-					<li<?php if($ap == 'mcancelitem') echo ' class="active"';?>>
-						<a href="./?ap=mcancelitem"><i class="fa fa-cart-arrow-down fa-lg"></i> 취소내역</a>
-					</li>
-					<li<?php if($ap == 'mpaylist') echo ' class="active"';?>>
-						<a href="./?ap=mpaylist"><i class="fa fa-calculator fa-lg"></i> 출금관리</a>
-					</li>
-				<?php } ?>
-			</ul>
-			<ul class="nav navbar-nav navbar-left">
-				<li class="hidden-xs">
-					<a>
-						<i class="fa fa-user fa-lg"></i>
-						<?php echo xp_icon($member['mb_id'], $member['level']);?>
-						<?php echo $member['mb_nick'];?>
-					</a>
-				</li>
-				<?php if($member['admin']) { ?>
-					<li><a href="<?php echo G5_ADMIN_URL;?>"><i class="fa fa-cog fa-lg"></i> 관리자</a></li>
-				<?php } ?>
-				<li>
-					<a href="<?php echo $at_href['response'];?>" target="_blank" class="win_memo">
-						<i class="fa fa-retweet fa-lg"></i> 내글반응
-						<?php if ($member['response']) { ?>
-							<span class="badge bg-blue"><?php echo number_format($member['response']);?></span>
-						<?php } ?>
-					</a>		
-				</li>
-				<li>
-					<a href="<?php echo $at_href['memo'];?>" target="_blank" class="win_memo">
-						<i class="fa fa-envelope-o fa-lg"></i> 쪽지함
-						<?php if ($member['memo']) { ?>
-							<span class="badge bg-green"><?php echo number_format($member['memo']);?></span>
-						<?php } ?>
-					</a>		
-				</li>
-				<li>
-					<a href="<?php echo $at_href['secret'];?>"><i class="fa fa-user-secret fa-lg"></i> 1:1문의</a>
-				</li>
-				<?php if(IS_SELLER) { ?>
+	.navbar {
+		background-color: #fff !important;
+	}
+</style>
+
+<div id="thema_wrapper" class="wrapper <?php echo $is_thema_layout; ?> <?php echo $is_thema_font; ?>">
+	<header id="globalHeader">
+		<!-- LNB -->
+		<aside class="at-lnb">
+			<!-- LNB Left -->
+			<div class="lnb-left">
+				<ul>
+					<li><a href="javascript:;" id="favorite">즐겨찾기</a></li>
+					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">앱 다운로드</a></li>
 					<li>
-						<a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>"><i class="fa fa-home fa-lg"></i> 마이샵</a>
+						<div id="google_translate_element"></div>
 					</li>
-				<?php } ?>
-				<li>
-					<a href="<?php echo G5_SHOP_URL;?>"><i class="fa fa-shopping-cart fa-lg"></i> 쇼핑몰</a>
-				</li>
-				<li>
-					<a href="<?php echo G5_URL;?>"><i class="fa fa-users fa-lg"></i> 커뮤니티</a>
-				</li>
-				<li>
-					<a href="<?php echo $at_href['logout'];?>">
-						<i class="fa fa-sign-out fa-lg"></i> 로그아웃
-					</a>
-				</li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</nav>
+					<?php
+					$tweek = array("일", "월", "화", "수", "목", "금", "토");
+					?>
+					<!-- <li><a><?php echo date('m월 d일'); ?>(<?php echo $tweek[date("w")]; ?>)</a></li> -->
+				</ul>
+			</div>
+			<!-- LNB Right -->
+			<div class="lnb-right">
+				<ul>
+					<?php if ($is_member) { // 로그인 상태 
+					?>
+						<li><a href="javascript:;" onclick="sidebar_open('sidebar-user');"><b><?php echo $member['mb_nick']; ?></b></a></li>
+						<?php if ($member['admin']) { ?>
+							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
+						<?php } ?>
+						<?php if ($member['partner']) { ?>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/myshop.php?id=<?php echo urlencode($member['mb_id']); ?>">내 상점</a></li>
+						<?php } ?>
+						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
+							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
+								알림 <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
+							</a>
+						</li>
+					<?php } else { // 로그아웃 상태 
+					?>
+						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">로그인</a></li>
+						<li><a href="<?php echo $at_href['reg']; ?>">회원가입</a></li>
+						<li><a href="<?php echo $at_href['lost']; ?>" class="win_password_lost">정보찾기 </a></li>
+					<?php } ?>
+					<?php if (IS_YC) { // 영카트 사용하면 
+					?>
+						<?php if ($member['cart'] || $member['today']) { ?>
+							<li>
+								<a href="<?php echo $at_href['cart']; ?>" onclick="sidebar_open('sidebar-cart'); return false;">
+									쇼핑 <b class="blue"><?php echo number_format($member['cart'] + $member['today']); ?></b>
+								</a>
+							</li>
+						<?php } ?>
+						<!-- <li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰'; ?></a></li> -->
+						<li><span style="color:#000; font-size: 2em;"><i class="fa fa-globe"></i></span></li>
+					<?php } ?>
+					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
+					<?php if ($is_member) { ?>
+						<li><a href="<?php echo $at_href['logout']; ?>">로그아웃 </a></li>
+					<?php } ?>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</aside>
 
+
+		<!-- PC 상단 헤더 수정 -->
+		<!-- PC Header -->
+		<header class="pc-header">
+			<!-- PC Logo -->
+			<div class="header-logo">
+				<a href="<?php echo $at_href['home']; ?>">
+					Sell&Us
+				</a>
+				<!-- <span class="header-desc">
+					testing
+				</span> -->
+			</div>
+			<!-- PC Search -->
+			<div class="header-search">
+				<form autocomplete="off" name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
+					<input type="hidden" name="url" value="<?php echo (IS_YC) ? $at_href['isearch'] : $at_href['search']; ?>">
+					<div class="input-group input-group-sm">
+						<input type="text" name="stx" aria-label="Search for items, brands, or styles…" placeholder="Search for items, brands, or styles…" class="form-control input-sm" value="<?php echo $stx; ?>">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-sm"><i class="fa fa-search fa-lg"></i></button>
+						</span>
+					</div>
+				</form>
+				<!-- <div class="header-keyword">
+					<?php echo apms_widget('basic-keyword', 'basic-keyword', 'q=베이직테마,아미나빌더,그누보드,영카트'); // 키워드 
+					?>
+				</div> -->
+			</div>
+			<div class="lnb-right">
+				<ul>
+					<?php if ($is_member) { // 로그인 상태 
+					?>
+						<!-- <li><a href="javascript:;" onclick="sidebar_open('sidebar-user');"><b><?php echo $member['mb_nick']; ?></b></a></li> -->
+						<?php if ($member['admin']) { ?>
+							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
+						<?php } ?>
+						<?php if ($member['partner']) { ?>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/partner/?ap=list">판매하기</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/myshop.php?id=<?php echo urlencode($member['mb_id']); ?>">내 상점</a></li>
+						<?php } ?>
+						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
+							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
+								알림 <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
+							</a>
+						</li>
+					<?php } else { // 로그아웃 상태 
+					?>
+						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">로그인</a></li>
+						<!-- <li><a href="<?php echo $at_href['reg']; ?>">회원가입</a></li>
+						<li><a href="<?php echo $at_href['lost']; ?>" class="win_password_lost">정보찾기 </a></li> -->
+					<?php } ?>
+					<?php if (IS_YC) { // 영카트 사용하면 
+					?>
+						<?php if ($member['cart'] || $member['today']) { ?>
+							<!-- <li>
+								<a href="<?php echo $at_href['cart']; ?>" onclick="sidebar_open('sidebar-cart'); return false;">
+									쇼핑 <b class="blue"><?php echo number_format($member['cart'] + $member['today']); ?></b>
+								</a>
+							</li> -->
+						<?php } ?>
+						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰'; ?></a></li>
+					<?php } ?>
+					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
+					<?php if ($is_member) { ?>
+						<!-- <li><a href="<?php echo $at_href['logout']; ?>">로그아웃 </a></li> -->
+					<?php } ?>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</header>
+
+		<!-- Mobile Header -->
+		<header class="m-header">
+			<div class="at-container">
+				<div class="header-wrap">
+					<div class="header-icon">
+						<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
+							<i class="fa fa-user"></i>
+						</a>
+					</div>
+					<div class="header-logo en">
+						<!-- Mobile Logo -->
+						<a href="<?php echo $at_href['home']; ?>">
+							<b>Sell&Us</b>
+						</a>
+					</div>
+					<div class="header-icon">
+						<a href="javascript:;" onclick="sidebar_open('sidebar-search');">
+							<i class="fa fa-search"></i>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</header>
+		<!-- Menu -->
+		<nav class="at-menu">
+			<!-- PC Menu -->
+			<div class="pc-menu">
+				<!-- Menu Button & Right Icon Menu -->
+				<div class="at-container">
+					<div class="nav-right nav-rw nav-height">
+						<ul>
+							<?php if (IS_YC) { //영카트 
+							?>
+								<!-- <li class="nav-show">
+								<a href="<?php echo $at_href['cart']; ?>" onclick="sidebar_open('sidebar-cart'); return false;" <?php echo tooltip('쇼핑'); ?>>
+									<i class="fa fa-shopping-bag"></i>
+									<?php if ($member['cart'] || $member['today']) { ?>
+										<span class="label bg-green en">
+											<?php echo number_format($member['cart'] + $member['today']); ?>
+										</span>
+									<?php } ?>
+								</a>
+							</li> -->
+							<?php } ?>
+							<!-- <li>
+							<a href="javascript:;" onclick="sidebar_open('sidebar-response');" <?php echo tooltip('알림'); ?>>
+								<i class="fa fa-bell"></i>
+								<span class="label bg-orangered en" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
+									<span class="msgCount"><?php echo number_format($member['response'] + $member['memo']); ?></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" onclick="sidebar_open('sidebar-search');" <?php echo tooltip('검색'); ?>>
+								<i class="fa fa-search"></i>
+							</a>
+						</li> -->
+							<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
+								<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
+									<i class="fa fa-bars"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<?php include_once(THEMA_PATH . '/menu.php');	// 메뉴 불러오기 
+				?>
+				<div class="clearfix"></div>
+				<div class="nav-back"></div>
+			</div><!-- .pc-menu -->
+
+			<!-- PC All Menu -->
+			<div class="pc-menu-all">
+				<div id="menu-all" class="collapse">
+					<div class="at-container table-responsive">
+						<table class="table">
+							<tr>
+								<?php
+								$az = 0;
+								for ($i = 1; $i < $menu_cnt; $i++) {
+
+									if (!$menu[$i]['gr_id']) continue;
+
+									// 줄나눔
+									if ($az && $az % $is_allm == 0) {
+										echo '</tr><tr>' . PHP_EOL;
+									}
+								?>
+									<td class="<?php echo $menu[$i]['on']; ?>">
+										<a class="menu-a" href="<?php echo $menu[$i]['href']; ?>" <?php echo $menu[$i]['target']; ?>>
+											<?php echo $menu[$i]['name']; ?>
+											<?php if ($menu[$i]['new'] == "new") { ?>
+												<i class="fa fa-bolt new"></i>
+											<?php } ?>
+										</a>
+										<?php if ($menu[$i]['is_sub']) { //Is Sub Menu 
+										?>
+											<div class="sub-1div">
+												<ul class="sub-1dul">
+													<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
+
+														<?php if ($menu[$i]['sub'][$j]['line']) { //구분라인 
+														?>
+															<li class="sub-1line"><a><?php echo $menu[$i]['sub'][$j]['line']; ?></a></li>
+														<?php } ?>
+
+														<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>">
+															<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
+																<?php echo $menu[$i]['sub'][$j]['name']; ?>
+																<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
+																	<i class="fa fa-bolt sub-1new"></i>
+																<?php } ?>
+															</a>
+														</li>
+													<?php } //for 
+													?>
+												</ul>
+											</div>
+										<?php } ?>
+									</td>
+								<?php $az++;
+								} //for 
+								?>
+							</tr>
+						</table>
+						<div class="menu-all-btn">
+							<div class="btn-group">
+								<a class="btn btn-lightgray" href="<?php echo $at_href['main']; ?>"><i class="fa fa-home"></i></a>
+								<a href="javascript:;" class="btn btn-lightgray" data-toggle="collapse" data-target="#menu-all"><i class="fa fa-times"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .pc-menu-all -->
+
+			<!-- Mobile Menu -->
+			<div class="m-menu">
+				<?php include_once(THEMA_PATH . '/menu-m.php');	// 메뉴 불러오기 
+				?>
+			</div><!-- .m-menu -->
+		</nav><!-- .at-menu -->
+	</header>
+
+	<div class="clearfix"></div>
 	<div id="page-wrapper">
+		<div class="item-con-wrap">

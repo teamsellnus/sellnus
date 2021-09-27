@@ -15,98 +15,115 @@ if ($w == "") {
 
 	$html_title = " 등록";
 
-    // 옵션은 쿠키에 저장된 값을 보여줌. 다음 입력을 위한것임
-    //$it[ca_id] = _COOKIE[ck_ca_id];
-    $it['ca_id'] = get_cookie("ck_ca_id");
-    $it['ca_id2'] = get_cookie("ck_ca_id2");
-    $it['ca_id3'] = get_cookie("ck_ca_id3");
-    if (!$it['ca_id']) {
+	// 옵션은 쿠키에 저장된 값을 보여줌. 다음 입력을 위한것임
+	//$it[ca_id] = _COOKIE[ck_ca_id];
+	$it['ca_id'] = get_cookie("ck_ca_id");
+	$it['ca_id2'] = get_cookie("ck_ca_id2");
+	$it['ca_id3'] = get_cookie("ck_ca_id3");
+	if (!$it['ca_id']) {
 		$pt_where = ($is_cauth) ? "" : "where pt_use = '1'";
 		$sql = " select ca_id from {$g5['g5_shop_category_table']} $pt_where order by ca_order, ca_id limit 1 ";
-        $row = sql_fetch($sql);
-        if (!$row['ca_id'])
-            alert("등록된 분류가 없습니다. 관리자에게 문의해 주십시오.", "./index.php");
+		$row = sql_fetch($sql);
+		if (!$row['ca_id'])
+			alert("등록된 분류가 없습니다. 관리자에게 문의해 주십시오.", "./index.php");
 
 		$it['ca_id'] = $row['ca_id'];
-    }
+	}
 
 	$it['it_maker']  = stripslashes(get_cookie("ck_maker"));
-    $it['it_origin'] = stripslashes(get_cookie("ck_origin"));
-
+	$it['it_origin'] = stripslashes(get_cookie("ck_origin"));
 } else if ($w == "u") {
 
 	$html_title = " 수정";
 
-    $sql = " select * from {$g5['g5_shop_item_table']} where it_id = '$it_id' ";
-    $it = sql_fetch($sql);
+	$sql = " select * from {$g5['g5_shop_item_table']} where it_id = '$it_id' ";
+	$it = sql_fetch($sql);
 
-	if(!$it)
-		alert('상품정보가 존재하지 않습니다.'); 
+	if (!$it)
+		alert('상품정보가 존재하지 않습니다.');
 
-    if (!$is_auth) {
-		if($it['pt_id'] != $member['mb_id'])
-            alert("\'{$member['mb_id']}\' 님께서 수정 할 권한이 없는 상품입니다.");
+	if (!$is_auth) {
+		if ($it['pt_id'] != $member['mb_id'])
+			alert("\'{$member['mb_id']}\' 님께서 수정 할 권한이 없는 상품입니다.");
 	}
 
 	// 첫번째 분류
 	$ca_id = $it['ca_id'];
 
-    $sql = " select * from {$g5['g5_shop_category_table']} where ca_id = '$ca_id' ";
-    $ca = sql_fetch($sql);
+	$sql = " select * from {$g5['g5_shop_category_table']} where ca_id = '$ca_id' ";
+	$ca = sql_fetch($sql);
 
-	$ss_name = 'ss_item_'.$it_id;
+	$ss_name = 'ss_item_' . $it_id;
 	if (!get_session($ss_name)) {
 		set_session($ss_name, TRUE);
 	}
-
 } else {
-   goto_url("./");
+	goto_url("./");
 }
 
-$qstr  = $qstr.'&amp;sca='.$sca.'&amp;ap=list&amp;page='.$page;
+$qstr  = $qstr . '&amp;sca=' . $sca . '&amp;ap=list&amp;page=' . $page;
 
-$frm_submit = '<div class="btn_confirm01 btn_confirm"><input type="submit" value="확인" class="btn_submit" accesskey="s"> <a href="./?'.$qstr.'" class="btn_frmline">목록</a>';
-if($it_id) $frm_submit .= PHP_EOL.'<a href="'.G5_SHOP_URL.'/item.php?it_id='.$it_id.'" target="blank" class="btn_frmline">보기</a> <a href="./?ap=item" class="btn_frmline">신규</a>';
+$frm_submit = '<div class="btn_confirm01 btn_confirm"><input type="submit" value="확인" class="btn_submit" accesskey="s"> <a href="./?' . $qstr . '" class="btn_frmline">목록</a>';
+if ($it_id) $frm_submit .= PHP_EOL . '<a href="' . G5_SHOP_URL . '/item.php?it_id=' . $it_id . '" target="blank" class="btn_frmline">보기</a> <a href="./?ap=item" class="btn_frmline">신규</a>';
 $frm_submit .= '</div>';
 
-include_once($skin_path.'/itemform.skin.php');
+include_once($skin_path . '/itemform.skin.php');
 
 // 입력폼 선택
 $flist_cnt = count($flist);
 
 // 등록폼이 1개일 때
-if($flist_cnt == 1 && $w == "") {
+if ($flist_cnt == 1 && $w == "") {
 	$fn = $flist[0]['pi_id'];
-	if($it_id) $cfn = 1;
+	if ($it_id) $cfn = 1;
 }
 
-if($w == "" && !$fn) {
+if ($w == "" && !$fn) {
 
 ?>
 	<style>
-		.new_win { line-height:1.4; }
-		.new_win h1 { line-height:60px; margin:0px; font-weight:bold; }
-		.itemform { margin:0 auto; max-width:300px; }
-		.itemform ul { list-style:none; margin:0; padding:15px 15px 30px; }
-		.itemform ul li { line-height:32px; }
+		.new_win {
+			line-height: 1.4;
+		}
+
+		.new_win h1 {
+			line-height: 60px;
+			margin: 0px;
+			font-weight: bold;
+		}
+
+		.itemform {
+			margin: 0 auto;
+			max-width: 300px;
+		}
+
+		.itemform ul {
+			list-style: none;
+			margin: 0;
+			padding: 15px 15px 30px;
+		}
+
+		.itemform ul li {
+			line-height: 32px;
+		}
 	</style>
 	<div class="new_win">
 		<h1><b>상품 등록폼 선택</b></h1>
 		<form name="fitemform" onsubmit="return fitemformcheck(this)">
-		<input type="hidden" name="ap" value="item">
-		<input type="hidden" name="w" value="<?php echo $w; ?>">
-		<?php if($it_id) { ?>
-			<input type="hidden" name="it_id" value="<?php echo $it_id; ?>">
-			<input type="hidden" name="cfn" value="1">
-		<?php } ?>
-		<div class="itemform">
-			<ul>
-			<?php for($i=0; $i < $flist_cnt; $i++) { ?>
-				<li><label><input type="radio" name="fn" value="<?php echo $flist[$i]['pi_id'];?>"> <?php echo $flist[$i]['pi_name'];?></label></li>
+			<input type="hidden" name="ap" value="item">
+			<input type="hidden" name="w" value="<?php echo $w; ?>">
+			<?php if ($it_id) { ?>
+				<input type="hidden" name="it_id" value="<?php echo $it_id; ?>">
+				<input type="hidden" name="cfn" value="1">
 			<?php } ?>
-			</ul>
-		</div>
-		<?php echo $frm_submit;?>
+			<div class="itemform">
+				<ul>
+					<?php for ($i = 0; $i < $flist_cnt; $i++) { ?>
+						<li><label><input type="radio" name="fn" value="<?php echo $flist[$i]['pi_id']; ?>"> <?php echo $flist[$i]['pi_name']; ?></label></li>
+					<?php } ?>
+				</ul>
+			</div>
+			<?php echo $frm_submit; ?>
 
 		</form>
 	</div>
@@ -194,58 +211,134 @@ if($w == "" && !$fn) {
 	$is_reserve_none = ($is_auth || $reserve_none > 0) ? false : true;
 
 	list($pt_rdate, $pt_rhour, $pt_rminute) = apms_reserve_end($it['pt_reserve']);
-	if($default['pt_reserve_cache'] > 0) list($pt_edate, $pt_ehour, $pt_eminute) = apms_reserve_end($it['pt_end'],1);
+	if ($default['pt_reserve_cache'] > 0) list($pt_edate, $pt_ehour, $pt_eminute) = apms_reserve_end($it['pt_end'], 1);
 
 	// 파트너 분류
 	$sql_pt = "and pt_use = '1'";
 
-	$form_title = $fname.' '.$html_title;
+	$form_title = $fname . ' ' . $html_title;
 
 ?>
 	<style>
-		.new_win { line-height:1.4; overflow:hidden; }
-		.new_win h1 { font-size:16px; font-weight:bold; line-height:60px; margin:0; }
-		.new_win h2 { font-size:14px; padding:0px; line-height:40px; margin:0 20px 10px; font-weight:bold; }
-		.new_win .anchor { margin:10px 0px !important; }
-		.new_win .local_desc { margin-top:-10px; }
-		.new_win .tbl_wrap { margin:0 0 20px; }
-		.new_win .tbl_wrap label { margin:0; }
-		.new_win .tbl_wrap th { text-align:right; padding-left:6px; padding-right:6px; }
-		.new_win .tbl_wrap th label { font-weight:bold; }
-		.new_win .tbl_wrap caption { display:none; }
-		.new_win .compare_wrap { margin:0 0 10px; }
-		.new_win .compare_wrap h3 { font-size:14px; font-weight:bold; }
-		.new_win td label { font-weight:normal !important; }
-		.new_win fieldset legend { display:none !important; }
-		#sit_compact { margin:0 0 -1px; }
-		#sit_option_addfrm_btn { top:45px; }
+		.new_win {
+			overflow: hidden;
+		}
+
+		.new_win h1 {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 60px;
+			margin: 0;
+		}
+
+		.new_win h2 {
+			height: 100px;
+			font-size: 26px;
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center;
+			border-bottom: 2px solid rgb(30, 29, 41);
+		}
+
+		.new_win .anchor {
+			margin: 10px 0px !important;
+		}
+
+		.new_win .local_desc {
+			margin-top: -10px;
+		}
+
+		.new_win .tbl_wrap {
+			margin: 0 0 20px;
+			width: 100%;
+			height: 100%;
+		}
+		.new_win .tbl_wrap table {
+			width: 100%;
+			height: 100%;
+			
+		}
+		.new_win .tbl_wrap label {
+			margin: 0;
+		}
+		.new_win .tbl_wrap table tbody tr{
+			line-height: 70px;
+			display: flex;
+			width: 100%;
+		}
+		.new_win .tbl_wrap th {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding-left: 6px;
+			padding-right: 6px;
+			width: 200px;
+			text-align: center;
+    		font-size: 18px;
+		}
+		.new_win .tbl_wrap td{
+			flex: 1 1 0%;
+		}
+
+		.new_win .tbl_wrap th label {
+			font-weight: bold;
+		}
+
+		.new_win .tbl_wrap caption {
+			display: none;
+		}
+
+		.new_win .compare_wrap {
+			margin: 0 0 10px;
+		}
+
+		.new_win .compare_wrap h3 {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.new_win td label {
+			font-weight: normal !important;
+		}
+
+		.new_win fieldset legend {
+			display: none !important;
+		}
+
+		#sit_compact {
+			margin: 0 0 -1px;
+		}
+
+		#sit_option_addfrm_btn {
+			top: 45px;
+		}
 	</style>
 	<div class="new_win">
-		<div style="float:right; margin:20px;">
+		<div style="float:right; margin:20px; display:none;">
 			<form name="changeitemform">
 				<input type="hidden" name="ap" value="item">
 				<input type="hidden" name="w" value="<?php echo $w; ?>">
 				<input type="hidden" name="sca" value="<?php echo $sca; ?>">
 				<input type="hidden" name="sst" value="<?php echo $sst; ?>">
-				<input type="hidden" name="sod"  value="<?php echo $sod; ?>">
+				<input type="hidden" name="sod" value="<?php echo $sod; ?>">
 				<input type="hidden" name="sfl" value="<?php echo $sfl; ?>">
-				<input type="hidden" name="stx"  value="<?php echo $stx; ?>">
+				<input type="hidden" name="stx" value="<?php echo $stx; ?>">
 				<input type="hidden" name="page" value="<?php echo $page; ?>">
 
-				<?php if($it_id) { ?>
+				<?php if ($it_id) { ?>
 					<input type="hidden" name="it_id" value="<?php echo $it_id; ?>">
 					<input type="hidden" name="cfn" value="1">
 				<?php } ?>
 				<select name="fn">
-					<?php echo apms_form_option('select', $flist, $fn);?>
+					<?php echo apms_form_option('select', $flist, $fn); ?>
 				</select>
 				<button type="submit" class="btn_frmline">폼변경</button>
 			</form>
 		</div>
 
-		<h1><?php echo $form_title;?></h1>
+		<!-- <h1><?php echo $form_title; ?></h1> -->
 
-		<div style="clear:both;"></div>	
+		<div style="clear:both;"></div>
 
 		<form name="fitemform" action="./itemformupdate.php" method="post" enctype="MULTIPART/FORM-DATA" autocomplete="off" onsubmit="return fitemformcheck(this)">
 			<input type="hidden" name="codedup" value="<?php echo $default['de_code_dup_use']; ?>">
