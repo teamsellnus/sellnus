@@ -223,5 +223,6 @@ if( is_admin($mb['mb_id']) && is_dir(G5_DATA_PATH.'/tmp/') ){
     }
 }
 
+// 21.09.29 로그인 성공 링크 수정 by LHG
 goto_url($link);
 ?>
