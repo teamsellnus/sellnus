@@ -12,18 +12,14 @@ $line = 'navy';
 
 ?>
 <style>
-	.widget-side .div-title-underbar { margin-bottom:15px; }
+	.widget-index	.widget-side .div-title-underbar { margin-bottom:15px; }
 	.widget-side .div-title-underbar span { padding-bottom:4px; }
 	.widget-side .div-title-underbar span b { font-weight:500; }
 	.widget-box { margin-bottom:25px; }
 </style>
 
 <div class="widget-side">
-
-	<div class="hidden-sm hidden-xs">
-		<!-- 로그인 시작 -->
-		<div class="div-title-underbar">
-			<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
 				<b><?php echo ($is_member) ? 'Profile' : 'Login';?></b>
 			</span>
 		</div>
