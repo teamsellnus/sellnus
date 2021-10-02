@@ -19,9 +19,7 @@ $line = 'navy';
 </style>
 
 <div class="widget-side">
-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
-				<b><?php echo ($is_member) ? 'Profile' : 'Login';?></b>
-			</span>
+<?php echo $line;?> <?php echo $font;?>
 		</div>
 
 		<div class="widget-box">

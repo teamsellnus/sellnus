@@ -6,10 +6,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css" medi
 
 ?>
 
-<section class="board-list<?php echo (G5_IS_MOBILE) ? ' font-14' : '';?>"> 
-
+<section class="board-list<?php echo (G5_IS_MOBILE) ? ' font-14' : '';?> at-container"> 
 	<?php if($is_category) include_once($board_skin_path.'/category.skin.php'); // 카테고리	?>
-
 	<div class="list-wrap">
 		<form name="fboardlist" id="fboardlist" action="./board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post" role="form" class="form">
 			<input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">

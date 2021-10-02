@@ -29,8 +29,8 @@ $widget_id = apms_id(); // Random ID
 ?>
 <style>
 	#<?php echo $widget_id;?> { margin-right:<?php echo $gap * (-1);?>px; margin-bottom:<?php echo $gapb * (-1);?>px; }
-	#<?php echo $widget_id;?> .post-row { width:<?php echo apms_img_width($item);?>%; }
-	#<?php echo $widget_id;?> .post-list { margin-right:<?php echo $gap;?>px; margin-bottom:<?php echo $gapb;?>px; }
+	#<?php echo $widget_id;?> .post-row { width:100%; }
+	#<?php echo $widget_id;?> .post-list { width:100%; height: 100%; margin-right:<?php echo $gap;?>px; margin-bottom:<?php echo $gapb;?>px; }
 	#<?php echo $widget_id;?> .post-image { width:<?php echo $img_width;?>px; height:<?php echo $img_height;?>px; }
 	#<?php echo $widget_id;?> .post-subject { height:<?php echo $line_height;?>px; }
 	#<?php echo $widget_id;?> .img-wrap { padding-bottom:<?php echo $img_h;?>%; }
@@ -53,7 +53,7 @@ $widget_id = apms_id(); // Random ID
 	?>
 	@media (max-width:1199px) { 
 		.responsive #<?php echo $widget_id;?> { margin-right:<?php echo $lgg * (-1);?>px; margin-bottom:<?php echo $lgb * (-1);?>px; }
-		.responsive #<?php echo $widget_id;?> .post-row { width:<?php echo apms_img_width($lg);?>%; } 
+		.responsive #<?php echo $widget_id;?> .post-row { width:100%; } 
 		.responsive #<?php echo $widget_id;?> .post-list { margin-right:<?php echo $lgg;?>px; margin-bottom:<?php echo $lgb;?>px; }
 	}
 	@media (max-width:991px) { 
@@ -81,7 +81,7 @@ $widget_id = apms_id(); // Random ID
 			include($widget_path.'/widget.rows.php');
 		}
 	?>
-	<div class="clearfix"></div>
+	<!-- <div class="clearfix"></div> -->
 </div>
 <?php if($setup_href) { ?>
 	<div class="btn-wset text-center p10">

@@ -172,7 +172,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 					</li>
 				<?php } //for ?>
 				<!-- 우측공간 확보용 -->
-				<li class="menu-li nav-rw"><a>&nbsp;</a></li>
+				<!-- <li class="menu-li nav-rw"><a>&nbsp;</a></li> -->
 				</ul>
 			</div><!-- .nav-top -->
 		</div>	<!-- .nav-container -->
