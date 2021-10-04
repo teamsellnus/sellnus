@@ -1461,16 +1461,16 @@ instagram api
 	width: 100%;
 	position: relative;
 }
-.main_right_side_mywrite_wrap ul{
+.main_right_side_mywrite_wrap .main_right_side_myInfoBx{
 	width: 100%;
 	padding:0;
 	margin:0;
 }
-.main_right_side_mywrite_wrap ul li{
+.main_right_side_mywrite_wrap .main_right_side_myInfoBx li{
 	list-style: none;
 	text-align: left;
 }
-.main_right_side_mywrite_wrap ul li a{
+.main_right_side_mywrite_wrap .main_right_side_myInfoBx li a{
 	display: flex;
 	justify-content: flex-start;
     padding:10px 10px 10px 15px;
@@ -1489,7 +1489,7 @@ instagram api
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     /* border:1px solid #783e94; */
     border-radius: 0.5em;
 	width: 100%;
@@ -1503,16 +1503,53 @@ instagram api
 	width: 100%;
 	margin-bottom: 15px;
 }
+.main_right_side_mywrite_wrap .main_right_side_tagsBx{
+	width: auto;
+	padding:0;
+	margin:0;
+}
+.main_right_side_mywrite_wrap .main_right_side_tagsBx li{
+	list-style: none;
+	text-align: left;
+}
+.main_right_side_mywrite_wrap .main_right_side_tagsBx li a{
+	display: flex;
+	justify-content: flex-start;
+    padding:10px 10px 10px 15px;
+	width: 100%;
+    background-color: #e8e8e8;
+    border-radius: 3px;
+    line-height: 25px;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+	cursor: pointer;
+}
 /********************************************************
 ■ community-main : 커뮤니티 메인
 ********************************************************/
-.board-list{
-	padding:50px 0 0 0 !important;
+.main_commu_wrap{
+	/* margin: 50px 0; */
+}
+.main_commu_tit{
+	font-size:2.3em;
+	font-weight: 600;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	background-color: #fff;
 	width: 100%;
-	height: 100%;
+	height: 70px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+}
+.main_commu_tit1{
+	width: 100%;
+	max-width: 1200px;
+	line-height: 70px;
+}
+.board-list{
+	width: 100%;
+	height: 100%;
 }
 .list-btn-box{
 	
@@ -1520,8 +1557,94 @@ instagram api
 .list-wrap{
 	height: 100%;
 }
+.list-wrap .form .table-responsive table{
+	border-collapse: separate;
+}
+.list-wrap .form .table-responsive table tbody tr{
+	padding: 50px 0;
+}
+.list-wrap .form .table-responsive table tbody td{
+	padding: 50px 0; 
+}
 .spec_commu_board_wrap{
-
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	width: 100%;
+    height: 100%;
+	min-height: 200px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 2em;
+    padding: 20px 20px;
+	box-shadow: 5px 10px 10px 4px rgb(0 0 0 / 20%);
+}
+.spec_commu_board_wrap:not(:last-child){
+	margin-bottom: 30px;
+}
+.spec_commu_board_wrap .spec_commu_user_sec {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	color:#888;
+}
+.spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_box .spec_commu_user_img {
+	width:30px;
+	height:30px;
+	position: relative;
+	border-radius: 2em;
+}
+.spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_box {
+	display: flex;
+	align-items: center;
+}
+.spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_box .spec_commu_user{
+	font-size: 1.5em;
+	margin-left:10px;
+}
+.spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_date{
+	font-size: 1.1em;
+}
+.spec_commu_board_wrap .spec_commu_subject_sec{
+	width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.spec_commu_board_wrap .spec_commu_subject_sec .spec_commu_subject_title{
+	font-size: 2em;
+	font-weight: 700;
+}
+.spec_commu_board_wrap .spec_commu_subject_sec .spec_commu_subject_content{
+	font-size: 1.5em;
+	font-weight: 500;
+	color:#666;
+}
+.spec_commu_board_wrap .post-row{
+	width: 100%;
+    height: 100%;
+    min-height: 250px;
+    background-color: #fff;
+    border-radius: 1em;
+    margin-bottom: 30px;
+    box-shadow: 5px 10px 15px 4px rgb(0 0 0 / 20%);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-responsive .spec_commu_href{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.spec_commu_sub_info_sec{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 /********************************************************
 ■ Footer : 하단 푸터
@@ -1529,8 +1652,24 @@ instagram api
 .at-footer {
 	width:100%;
 	height:100%;
+	background-color: #fff;
 }
-
+.at-footer .wrapper-container{
+	width:100%;
+	height:100%;
+	background-color: #fff;
+}
+.at-footer .wrapper-container:first-child{
+	background-color: #752482;
+    overflow: hidden;
+    padding-bottom: 4.85714rem;
+}
+.at-footer .wrapper-container:first-child::after{
+	background-color: #752482;
+    border-bottom: 4.78571rem solid #fff;
+    border-right: 100vw solid transparent;
+    content: "";
+}
 .en .at-footer .at-links {
 	font-size: 12px;
 }

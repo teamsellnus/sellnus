@@ -29,6 +29,8 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<?php if ($member['admin']) { ?>
 						<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 					<?php } ?>
+					<li>FORUM</li>
+					<li>TOPICS</li>
 					<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 						<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
 						<i class="fa fa-comments"></i> <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
@@ -36,7 +38,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					</li>
 					<?php if (IS_YC) { // 영카트 사용하면 
 					?>
-						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰'; ?></a></li>
+						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'community' : 'shop'; ?></a></li>
 						<li><span style="color:#000; font-size: 2em;"><i class="fa fa-globe"></i></span></li>
 					<?php } ?>
 

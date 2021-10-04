@@ -40,8 +40,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css" medi
 	<style>.view-wrap .apms-autowrap { max-width:<?php echo (G5_IS_MOBILE) ? '100%' : $boset['video'];?> !important;}</style>
 <?php } ?>
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
-
-<div class="view-wrap<?php echo (G5_IS_MOBILE) ? ' view-mobile font-14' : '';?>">
+<div class="main_commu_tit ">
+	<p class="main_commu_tit1"><?php echo $board['bo_subject']; ?></p>
+</div>
+<div class="view-wrap<?php echo (G5_IS_MOBILE) ? ' view-mobile font-14' : '';?> at-container">
 	<h1><?php if($view['photo']) { ?><img src="<?php echo $view['photo'];?>" class="photo" alt=""><?php } ?><?php echo cut_str(get_text($view['wr_subject']), 70); ?></h1>
 	<div class="panel panel-default view-head<?php echo ($attach_list) ? '' : ' no-attach';?>">
 		<div class="panel-heading">

@@ -48,6 +48,12 @@ $side = ($at_set['side']) ? 'left' : 'right';
 	.pull-left{
 		float:right;
 	}
+	.at-row{
+		padding-top: 50px;
+	}
+	.at-col{
+		padding-top:0 !important;
+	}
 </style>
 
 <div class="at-container widget-index">
@@ -113,6 +119,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">scholarship</a></li>
 								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">issues</a></li>
 								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">information</a></li>
+								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">jobs</a></li>
 							</ul>
 						</div>
 						<div class="row">
@@ -169,7 +176,6 @@ $side = ($at_set['side']) ? 'left' : 'right';
 				<div class="main_center_header_wrap">
 					<h1>Latest Posts</h1>
 					<a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=notice">
-						<span class="pull-right lightgray <?php echo $font; ?>">+</span>
 						<span class="<?php echo $line; ?> <?php echo $font; ?>">
 							<b>View all</b>
 						</span>
@@ -278,17 +284,18 @@ $side = ($at_set['side']) ? 'left' : 'right';
 			<div class="row">
 				<div class="col-md-12 col-sm-6">
 					<div class="main_right_side_mywrite_wrap">
-						<ul>
+						<ul class="main_right_side_myInfoBx">
 							<li><a href="<?php echo G5_BBS_URL ?>/mypost.php"><span><i class="fa fa-list-ul"></i></span>&nbsp;&nbsp;내가 쓴 글</a></li>
 							<li><a href=""><span><i class="fa fa-comment"></i></span>&nbsp;&nbsp;댓글 단 글</a></li>
 							<li><a href=""><span><i class="fa fa-clipboard"></i></span>&nbsp;&nbsp;내 스크랩</a></li>
 						</ul>
 						<div class="main_right_tags_wrap">
 							<p>popular tags</p>
-							<ul>
-								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php"><span><i class="fa fa-list-ul"></i></span>&nbsp;&nbsp;내가 쓴 글</a></li>
-								<li><a href=""><span><i class="fa fa-comment"></i></span>&nbsp;&nbsp;댓글 단 글</a></li>
-								<li><a href=""><span><i class="fa fa-clipboard"></i></span>&nbsp;&nbsp;내 스크랩</a></li>
+							<ul class="main_right_side_tagsBx">
+								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">college</a></li>
+								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">scholarship</a></li>
+								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">essays</a></li>
+								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">campus life</a></li>
 							</ul>
 						</div>
 					</div>

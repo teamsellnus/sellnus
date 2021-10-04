@@ -13,8 +13,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css" medi
 	.item-label label { font-weight: normal !important; }
 </style>
 
-
-<div id="bo_w" class="write-wrap<?php echo (G5_IS_MOBILE) ? ' font-14' : '';?>">
+<div class="main_commu_tit ">
+	<p class="main_commu_tit1"><?php echo $board['bo_subject']; ?></p>
+</div>
+<div id="bo_w" class="write-wrap<?php echo (G5_IS_MOBILE) ? ' font-14' : '';?> at-container">
     <div class="well">
 		<h2><?php echo $g5['title'] ?></h2>
 	</div>

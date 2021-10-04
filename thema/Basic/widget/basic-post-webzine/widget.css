@@ -73,16 +73,21 @@
     letter-spacing: -1px;
     padding-right: 1px;
     font-size:20px;
-}
-.basic-post-webzine .post-subject {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.basic-post-webzine .post-subject a{
+    font-size: 2rem;
+	font-weight: 700;
+}
 .basic-post-webzine .post-subject span{
     display: none;
 }
-
+.basic-post-webzine .post-subject p{
+    font-size: 1.5rem;
+	font-weight: 500;
+}
 .basic-post-webzine .post-text {
     font-size: 0.8em;
     color: #888;
@@ -100,9 +105,16 @@
 .basic-post-webzine .post-text span{
     font-size: 2em;
     color: #555;
+    margin-left: 10px;
 }
 .basic-post-webzine .post-text .post-user-icon{
     font-size:40px;
+}
+.basic-post-webzine .post-text .post-user-img{
+    width:40px;
+	height:40px;
+	position: relative;
+	border-radius: 2em;
 }
 
 .basic-post-webzine .post-sp {
@@ -115,10 +127,16 @@
 }
 .basic-post-webzine .post-sub-info{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 .basic-post-webzine .post-sub-info span{
     font-size: 1.3em;
     color: #555;
+}
+.basic-post-webzine .post-sub-info .post-sub-info-goodBx span:not(:last-child){
+    margin-right: 15px;
+}
+.basic-post-webzine .post-sub-info .post-sub-info-userBx{
+    
 }

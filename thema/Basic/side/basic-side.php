@@ -12,14 +12,41 @@ $line = 'navy';
 
 ?>
 <style>
-	.widget-index	.widget-side .div-title-underbar { margin-bottom:15px; }
-	.widget-side .div-title-underbar span { padding-bottom:4px; }
-	.widget-side .div-title-underbar span b { font-weight:500; }
-	.widget-box { margin-bottom:25px; }
+	.widget-index .at-main,
+	.widget-index .at-side {
+		padding-bottom: 0px;
+	}
+
+	.widget-index .div-title-underbar {
+		margin-bottom: 15px;
+	}
+
+	.widget-index .div-title-underbar span {
+		padding-bottom: 4px;
+	}
+
+	.widget-index .div-title-underbar span b {
+		font-weight: 500;
+	}
+
+	.widget-index .widget-img img {
+		display: block;
+		max-width: 100%;
+		/* 배너 이미지 */
+	}
+
+	.widget-box {
+		margin-bottom: 25px;
+	}
+
+	h1 {
+		margin: 0 !important;
+	}
 </style>
 
-<div class="widget-side">
-<?php echo $line;?> <?php echo $font;?>
+<div class="widget-index">
+<?php echo $line;?> <?php echo $font;?>"
+
 		</div>
 
 		<div class="widget-box">

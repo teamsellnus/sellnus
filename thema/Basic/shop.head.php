@@ -62,9 +62,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<?php } ?>
 				</ul>
 			</div>
-			<div class="clearfix"></div>
 		</aside>
-
 
 		<!-- PC 상단 헤더 수정 -->
 		<!-- PC Header -->
@@ -74,9 +72,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 				<a href="<?php echo $at_href['home']; ?>">
 					Sell&Us
 				</a>
-				<!-- <span class="header-desc">
-					testing
-				</span> -->
 			</div>
 			<!-- PC Search -->
 			<div class="header-search">
@@ -134,7 +129,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<?php } ?>
 				</ul>
 			</div>
-			<div class="clearfix"></div>
 		</header>
 
 		<!-- Mobile Header -->
@@ -167,7 +161,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 		<div class="pc-menu">
 			<!-- Menu Button & Right Icon Menu -->
 			<div class="at-container">
-				<div class="nav-right nav-rw nav-height">
+				<div class="nav-right nav-height">
 					<ul>
 						<?php if (IS_YC) { //영카트 
 						?>

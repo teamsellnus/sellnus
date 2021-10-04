@@ -2,7 +2,7 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // 분류항목 출력
-if($sca && $boset['cateshow']) {
+if ($sca && $boset['cateshow']) {
 	$is_category = false;
 }
 
@@ -16,41 +16,11 @@ if ($is_good) $colspan++;
 if ($is_nogood) $colspan++;
 
 $list_cnt = count($list);
-
+$userImg = apms_photo_url(G5_SKIN_URL.'/board/basic/img/icon_user.png');
 ?>
 
 <div class="table-responsive">
-	<table class="table div-table list-pc bg-white">
-	<thead>
-	<tr>
-		<?php if ($is_checkbox) { ?>
-		<th scope="col">
-			<label for="chkall" class="sound_only">현재 페이지 게시물 전체</label>
-			<input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
-		</th>
-		<?php } ?>
-		<th scope="col">번호</th>
-		<?php if($boset['img']) { $icon = apms_fa($boset['icon']); //포토용 아이콘 ?>
-			<th scope="col">포토</th>
-		<?php } ?>
-		<?php if($is_category) { ?>
-			<th scope="col">분류</th>
-		<?php } ?>
-		<th scope="col">제목</th>
-		<th scope="col">글쓴이</th>
-		<th scope="col"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜</a></th>
-		<th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?><nobr>조회</nobr></a></th>
-		<?php if($is_good) { ?>
-			<th scope="col"><?php echo subject_sort_link('wr_good', $qstr2, 1) ?><nobr>추천</nobr></a></th>
-		<?php } ?>
-		<?php if($is_nogood) { ?>
-			<th scope="col"><?php echo subject_sort_link('wr_nogood', $qstr2, 1) ?><nobr>비추</nobr></a></th>
-		<?php } ?>
-	</tr>
-	</thead>
-	<tbody>
-	<?php for ($i=0; $i < $list_cnt; $i++) { 
-
+	<?php for ($i = 0; $i < $list_cnt; $i++) {
 		//아이콘 체크
 		$wr_icon = '';
 		$is_lock = false;
@@ -75,62 +45,77 @@ $list_cnt = count($list);
 			$num = '<span class="wr-icon wr-notice"></span>';
 			$list[$i]['ca_name'] = '공지';
 		} else {
-			$num = '<span class="en">'.$list[$i]['num'].'</span>';
+			$num = '<span class="en">' . $list[$i]['num'] . '</span>';
 		}
 	?>
-	<tr<?php echo $tr_css; ?>>
-		<?php if ($is_checkbox) { ?>
-			<td class="text-center">
+		<div class="spec_commu_board_wrap">
+			<?php if ($is_checkbox) { ?>
 				<label for="chk_wr_id_<?php echo $i ?>" class="sound_only"><?php echo $list[$i]['subject'] ?></label>
 				<input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
-			</td>
-		<?php } ?>
-		<td class="text-center font-11">
-			<?php echo $num;?>
-		</td>
-		<?php if ($boset['img']) { 
-			$img = apms_wr_thumbnail($bo_table, $list[$i], 50, 50, false, true); // 썸네일
-			$img['src'] = (!$img['src'] && $boset['photo']) ? apms_photo_url($list[$i]['mb_id']) : $img['src']; // 회원사진		
-		?>
-			<td class="list-img text-center">
-				<a href="<?php echo $list[$i]['href'];?>">
-					<?php if($img['src']) { ?>
-						<img src="<?php echo $img['src'];?>" alt="<?php echo $img['alt'];?>">
+			<?php } ?>
+			<?php if ($boset['img']) {
+				$img = apms_wr_thumbnail($bo_table, $list[$i], 50, 50, false, true); // 썸네일
+				$img['src'] = (!$img['src'] && $boset['photo']) ? apms_photo_url($list[$i]['mb_id']) : $img['src']; // 회원사진		
+			?>
+				<td class="list-img text-center">
+					<a href="<?php echo $list[$i]['href']; ?>">
+						<?php if ($img['src']) { ?>
+							<img src="<?php echo $img['src']; ?>" alt="<?php echo $img['alt']; ?>">
+						<?php } else { ?>
+							<?php echo $icon; ?>
+						<?php } ?>
+					</a>
+				</td>
+			<?php } ?>
+			<?php if ($is_category) { ?>
+				<td class="text-center">
+					<a href="<?php echo $list[$i]['ca_name_href'] ?>"><span class="text-muted font-11"><?php echo $list[$i]['ca_name'] ?></span></a>
+				</td>
+			<?php } ?>
+			<div class="spec_commu_user_sec">
+				<div class="spec_commu_user_box">
+					<?php if (!empty(apms_photo_url($list[$i]['mb_id']))) { ?>
+						<img class="spec_commu_user_img" src="<?php echo apms_photo_url($list[$i]['mb_id']); ?>" alt="">
 					<?php } else { ?>
-						<?php echo $icon;?>
+						<img class="spec_commu_user_img" src="<?php echo G5_SKIN_URL.'/board/basic/img/icon_user.png'?>" alt="">
 					<?php } ?>
+					<span class="spec_commu_user">Posted by <?php echo $list[$i]['name']; ?></span>
+				</div>
+				<span class="spec_commu_user_date"><?php echo apms_date($list[$i]['date'],  'H:i', 'm.d', 'Y.m.d'); ?></span>
+			</div>
+			<div class="spec_commu_subject_sec">
+				<a class="spec_commu_subject_title" href="<?php echo $list[$i]['href']; ?>">
+					<?php echo $list[$i]['icon_reply']; ?>
+					<?php echo $wr_icon; ?>
+					<?php echo $list[$i]['subject']; ?>
 				</a>
-			</td>
-		<?php } ?>
-		<?php if ($is_category) { ?>
-			<td class="text-center">
-				<a href="<?php echo $list[$i]['ca_name_href'] ?>"><span class="text-muted font-11"><?php echo $list[$i]['ca_name'] ?></span></a>
-			</td>
-		<?php } ?>
-		<td class="list-subject<?php echo $subject_css;?>">
-			<a href="<?php echo $list[$i]['href'];?>">
-				<?php echo $list[$i]['icon_reply']; ?>
-				<?php echo $wr_icon;?>
-				<?php echo $list[$i]['subject']; ?>
-				<?php if ($list[$i]['comment_cnt']) { ?>
-					<span class="sound_only">댓글</span><span class="count orangered">+<?php echo $list[$i]['comment_cnt']; ?></span><span class="sound_only">개</span>
-				<?php } ?>
-			</a>
-		</td>
-		<td><b><?php echo $list[$i]['name'] ?></b></td>
-		<td class="text-center en font-11"><?php echo apms_date($list[$i]['date'], 'orangered', 'H:i', 'm.d', 'Y.m.d'); ?></td>
-		<td class="text-center en font-11"><?php echo $list[$i]['wr_hit'] ?></td>
-		<?php if ($is_good) { ?>
-			<td class="text-center en font-11"><?php echo $list[$i]['wr_good'] ?></td>
-		<?php } ?>
-		<?php if ($is_nogood) { ?>
-			<td class="text-center en font-11"><?php echo $list[$i]['wr_nogood'] ?></td>
-		<?php } ?>
-	</tr>
+			</div>
+			<div class="spec_commu_subject_sec">
+				<a class="spec_commu_subject_content" href="<?php echo $userImg['src']; ?>">
+					<?php echo cut_str(strip_tags($list[$i]['wr_content']), 100); ?>
+				</a>
+			</div>
+			<div class="spec_commu_sub_info_sec">
+				<div class="spec_commu_sub_goodbx">
+					<?php if ($is_good) { ?>
+						<td class="text-center en font-11"><?php echo $list[$i]['wr_good'] ?></td>
+					<?php } ?>
+					<?php if ($is_nogood) { ?>
+						<td class="text-center en font-11"><?php echo $list[$i]['wr_nogood'] ?></td>
+					<?php } ?>
+				</div>
+				<div class="spec_commu_sub_userbx">
+					<span class="text-center en font-11"><i class="fa fa-eye"></i><?php echo $list[$i]['wr_hit'] ?></span>
+					<?php if ($list[$i]['comment_cnt']) { ?>
+						<span class="sound_only">댓글</span><span class="count"><i class="fa fa-comment"></i><?php echo $list[$i]['comment_cnt']; ?></span><span class="sound_only">개</span>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
 	<?php } ?>
 	<?php if (!$is_list) { ?>
-		<tr><td colspan="<?php echo $colspan;?>" class="text-center text-muted list-none">게시물이 없습니다.</td></tr>
+		<tr>
+			<td colspan="<?php echo $colspan; ?>" class="text-center text-muted list-none">게시물이 없습니다.</td>
+		</tr>
 	<?php } ?>
-	</tbody>
-	</table>
 </div>

@@ -85,7 +85,11 @@ for ($i = 0; $i < $list_cnt; $i++) {
 				<div class="post-content">
 					<div class="post-text post-ko txt-short ellipsis post-title-wrap">
 						<div class="post-icon-sec">
-							<span class="post-user-icon"><i class="fa fa-user-circle"></i>&nbsp;</span>
+								<?php if (!empty(apms_photo_url($list[$i]['mb_id']))) { // 회원사진 있을 때 ?>
+									<img class="post-user-img" src="<?php echo apms_photo_url($list[$i]['mb_id']); ?>" alt=""> 
+								<?php } else { // 회원사진 없을 때 ?>
+									<img class="post-user-img" src="<?php echo G5_SKIN_URL.'/board/basic/img/icon_user.png'?>" alt="">
+								<?php } ?>
 							<span>
 								Posted by <?php echo $list[$i]['name']; ?>
 							</span>
@@ -105,18 +109,24 @@ for ($i = 0; $i < $list_cnt; $i++) {
 							<?php echo $wr_icon; ?>
 							<?php echo $list[$i]['subject']; ?>
 							<?php if ($is_cont) { ?>
-								<div class="post-text">
+								<p class="post-text">
 									<?php echo apms_cut_text($list[$i]['content'], 150); ?>
-								</div>
+								</p>
 							<?php } ?>
 						</a>
 					</div>
 					<div class="post-sub-info txt-short ellipsis">
-						<?php if ($list[$i]['comment']) { ?>
+						<div class="post-sub-info-goodBx">
+							<span class="text-center en font-11"><span><i class="fa fa-arrow-up"></i></span>&nbsp;<?php echo $list[$i]['wr_good'] ?></span>
+							<span class="text-center en font-11"><span><i class="fa fa-arrow-down"></i></span>&nbsp;<?php echo $list[$i]['wr_nogood'] ?></span>
+						</div>
+						<div class="post-sub-info-userBx">
+							<?php if ($list[$i]['comment']) { ?>
 								<span class="count orangered"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;<?php echo $list[$i]['comment']; ?></span>
 							<?php } else { ?>
 								<span class="count orangered"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;<?php echo $list[$i]['comment']; ?></span>
 							<?php } ?>
+						</div>
 					</div>				
 				</div>
 			</div>
