@@ -72,7 +72,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 				</div>
 				<div class="footer_menu_social_sec">
 					<div class="footer_contentsBx">
-						<a href="" class="contact_link">follow us</a>
+						<p class="contact_link">follow us</p>
 					</div>
 					<div class="footer_icon_linksBx">
 						<a class="icon_link" href=""><span><i class="fa fa-instagram"></i></span></a>
