@@ -12,9 +12,8 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			<!-- LNB Left -->
 			<div class="lnb-left">
 				<ul>
-					<li><a href="javascript:;" id="favorite">즐겨찾기</a></li>
-					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">앱 다운로드</a></li>
-					<li><div id="google_translate_element"></div></li>
+					<li><a href="javascript:;" id="favorite">Favorites</a></li>
+					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">App Downloads</a></li>
 					<?php
 					$tweek = array("일", "월", "화", "수", "목", "금", "토");
 					?>
@@ -31,18 +30,18 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
-								알림 <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
+								Message <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
 							</a>
 						</li>
 					<?php } else { // 로그아웃 상태 
 					?>
-						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">로그인</a></li>
-						<li><a href="<?php echo $at_href['reg']; ?>">회원가입</a></li>
-						<li><a href="<?php echo $at_href['lost']; ?>" class="win_password_lost">정보찾기 </a></li>
+						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">Login</a></li>
+						<li><a href="<?php echo $at_href['reg']; ?>">Signup</a></li>
+						<li><a href="<?php echo $at_href['lost']; ?>" class="win_password_lost">forget the password? </a></li>
 					<?php } ?>
 					<?php if (IS_YC) { // 영카트 사용하면 
 					?>
@@ -53,12 +52,12 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li>
 						<?php } ?>
-						<!-- <li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰'; ?></a></li> -->
+						<!-- <li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li> -->
 						<li><span style="color:#000; font-size: 2em;"><i class="fa fa-globe"></i></span></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
-						<li><a href="<?php echo $at_href['logout']; ?>">로그아웃 </a></li>
+						<li><a href="<?php echo $at_href['logout']; ?>">Logout </a></li>
 					<?php } ?>
 				</ul>
 			</div>
@@ -98,14 +97,10 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">판매하기</a></li>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">내 상점</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell IT</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
 						<?php } ?>
-						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
-							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
-								알림 <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
-							</a>
-						</li>
+						
 					<?php } else { // 로그아웃 상태 
 					?>
 						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">로그인</a></li>
@@ -121,7 +116,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li> -->
 						<?php } ?>
-						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰'; ?></a></li>
+						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
