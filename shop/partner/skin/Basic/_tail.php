@@ -1,28 +1,9 @@
-<?php 
-if (!defined('_GNUBOARD_')) exit; // ���� ������ ���� �Ұ� 
-?>
-		</div><!-- /.item-con-wrap -->
-	</div><!-- /#page-wrapper -->
-</div><!-- /#wrapper -->
+<?php
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
-<!-- JavaScript -->
-<script type="text/javascript" src="<?php echo $skin_url;?>/assets/js/bootstrap.min.js"></script>
-<script>
-	var sub_show = "<?php echo $at_set['subv']; ?>";
-	var sub_hide = "<?php echo $at_set['subh']; ?>";
-	var menu_startAt = "<?php echo ($m_sat) ? $m_sat : 0; ?>";
-	var menu_sub = "<?php echo $m_sub; ?>";
-	var menu_subAt = "<?php echo ($m_subsat) ? $m_subsat : 0; ?>";
-</script>
-<script src="<?php echo THEMA_URL; ?>/assets/bs3/js/bootstrap.min.js"></script>
-<script src="<?php echo THEMA_URL; ?>/assets/js/sly.min.js"></script>
-<script src="<?php echo THEMA_URL; ?>/assets/js/custom.js"></script>
-<?php if ($is_sticky_nav) { ?>
-	<script src="<?php echo THEMA_URL; ?>/assets/js/sticky.js"></script>
-<?php } ?>
+if(USE_G5_THEME && defined('G5_THEME_PATH') && G5_IS_MOBILE)
+    include_once(G5_MSHOP_PATH.'/shop.tail.php');
+else
+    include_once(G5_SHOP_PATH.'/shop.tail.php');
 
-<?php echo apms_widget('basic-sidebar'); //사이드바 및 모바일 메뉴(UI) 
-?>
-
-<?php if ($is_designer || $is_demo) include_once(THEMA_PATH . '/assets/switcher.php'); //Style Switcher 
 ?>
