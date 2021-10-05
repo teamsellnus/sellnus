@@ -19,64 +19,78 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 <?php if (!$is_main_footer) { ?>
 	<footer class="at-footer">
-		<nav class="at-links">
-			<div class="at-container">
-				<ul class="pull-left">
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">사이트 소개</a></li>
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=provision">이용약관</a></li>
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=privacy">개인정보처리방침</a></li>
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=noemail">이메일 무단수집거부</a></li>
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=disclaimer">책임의 한계와 법적고지</a></li>
-				</ul>
-				<ul class="pull-right">
-					<li><a href="<?php echo G5_BBS_URL; ?>/page.php?hid=guide">이용안내</a></li>
-					<li><a href="<?php echo $at_href['secret']; ?>">문의하기</a></li>
-					<li><a href="<?php echo $as_href['pc_mobile']; ?>"><?php echo (G5_IS_MOBILE) ? 'PC' : '모바일'; ?>버전</a></li>
-				</ul>
-				<div class="clearfix"></div>
+		<div class="footer_container">
+			<div class="wrapper container_inner">
+				<div class="footer_menu_links_sec">
+					<div class="footer_linksBx">
+						<a class="tit" href="#!"><?php echo $config['cf_title']; ?></a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">Our story</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=provision">Our people</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=privacy">Our products</a>
+					</div>
+					<div class="footer_linksBx">
+						<a class="tit" href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'shop' : 'community'; ?></a>
+						<?php
+						$az = 0;
+						for ($i = 1; $i < $menu_cnt; $i++) {
+							if (!$menu[$i]['gr_id']) continue;
+						?>
+							<?php if ($menu[$i]['is_sub']) {
+							?>
+								<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
+									<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
+										<?php echo $menu[$i]['sub'][$j]['name']; ?>
+										<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
+											<i class="fa fa-bolt sub-1new"></i>
+										<?php } ?>
+									</a>
+								<?php } //for 
+								?>
+							<?php } ?>
+						<?php $az++;
+						} //for 
+						?>
+					</div>
+					<!-- 추후 수정 -->
+					<div class="footer_linksBx">
+						<a class="tit" href="#!">topics</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">Our story</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=provision">Our people</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=privacy">Our products</a>
+					</div>
+					<div class="footer_linksBx">
+						<a class="tit" href="#!">privacy</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">Terms of Use</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=provision">Privacy Policies</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=privacy">Safety Centre</a>
+					</div>
+					<!-- press 추후 생기면 추가
+					<div class="footer_linksBx">
+						<a class="tit" href="#!">PRESS</a>
+						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">Press Releases</a>
+					</div> -->
+				</div>
+				<div class="footer_menu_social_sec">
+					<div class="footer_contentsBx">
+						<a href="" class="contact_link">follow us</a>
+					</div>
+					<div class="footer_icon_linksBx">
+						<a class="icon_link" href=""><span><i class="fa fa-instagram"></i></span></a>
+						<a class="icon_link" href=""><span><i class="fa fa-twitter"></i></span></a>
+						<a class="icon_link" href=""><span><i class="fa fa-facebook"></i></span></a>
+						<a class="icon_link" href=""><span><i class="fa fa-github"></i></span></a>
+						<a class="icon_link" href=""><span><i class="fa fa-google"></i></span></a>
+					</div>
+				</div>
+
 			</div>
-		</nav>
-		<div class="at-infos">
-			<div class="at-container">
-				<?php if (IS_YC) { // YC5 
-				?>
-					<div class="media">
-						<!-- <div class="pull-right hidden-xs">
-						</div>
-						<div class="pull-left hidden-xs">
-							<i class="fa fa-leaf"></i>
-						</div> -->
-						<div class="media-body">
-							<ul class="at-about hidden-xs">
-								<li class="at-about-logo"><b><?php echo $default['de_admin_company_name']; ?></b></li>
-								<!-- <li>대표 : <?php echo $default['de_admin_company_owner']; ?></li>
-								<li><?php echo $default['de_admin_company_addr']; ?></li>
-								<li>전화 : <span><?php echo $default['de_admin_company_tel']; ?></span></li>
-								<li>사업자등록번호 : <span><?php echo $default['de_admin_company_saupja_no']; ?></span></li>
-								<li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자정보확인</a></li>
-								<li>통신판매업신고 : <span><?php echo $default['de_admin_tongsin_no']; ?></span></li>
-								<li>개인정보관리책임자 : <?php echo $default['de_admin_info_name']; ?></li>
-								<li>이메일 : <span><?php echo $default['de_admin_info_email']; ?></span></li> -->
-							</ul>
-
-							<div class="clearfix"></div>
-
-							<div class="copyright">
-								<strong><?php echo $config['cf_title']; ?> <i class="fa fa-copyright"></i></strong>
-								<span>All rights reserved.</span>
-							</div>
-
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				<?php } else { // G5 
-				?>
-					<div class="at-copyright">
-						<i class="fa fa-leaf"></i>
-						<strong><?php echo $config['cf_title']; ?> <i class="fa fa-copyright"></i></strong>
-						All rights reserved.
-					</div>
-				<?php } ?>
+		</div>
+		<div class="footer_container">
+			<div class="container_inner">
+				<div class="foot_copyright">
+					<span class="footer_logo"><?php echo $config['cf_title']; ?></span>
+					&nbsp;<i class="fa fa-copyright"></i>All rights reserved.
+				</div>
 			</div>
 		</div>
 	</footer>
