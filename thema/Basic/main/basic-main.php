@@ -83,10 +83,6 @@ $side = ($at_set['side']) ? 'left' : 'right';
 							$az = 0;
 							for ($i = 1; $i < $menu_cnt; $i++) {
 								if (!$menu[$i]['gr_id']) continue;
-								// 줄나눔
-								// if ($az && $az % $is_allm == 0) {
-								//     echo '</tr><tr>' . PHP_EOL;
-								// }
 							?>
 								<div class="<?php echo $menu[$i]['on']; ?>">
 									<?php if ($menu[$i]['is_sub']) {

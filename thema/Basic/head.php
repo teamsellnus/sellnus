@@ -29,7 +29,8 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 					<?php if ($member['admin']) { ?>
 						<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 					<?php } ?>
-					<li>FORUM</li>
+					<!-- 임시요소 메뉴, 카테고리 확정 안남 -->
+					<li>FORUM</li> 
 					<li>TOPICS</li>
 					<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 						<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
