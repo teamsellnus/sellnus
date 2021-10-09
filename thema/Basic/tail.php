@@ -110,7 +110,29 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!-- JavaScript -->
 <script type="text/javascript">
-	const swiper = new Swiper('.main-slider', {
+	var swiper = new Swiper('.main-slider', {
+		// Optional parameters
+		loop: true,
+		slidesPerView: 1,
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		roundLengths: true,
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
+	});
+</script>
+<script type="text/javascript">
+	var swiper = new Swiper('.details-slider', {
 		// Optional parameters
 		loop: true,
 		slidesPerView: 1,

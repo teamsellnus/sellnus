@@ -7,7 +7,7 @@ if(USE_G5_THEME && defined('G5_THEME_PATH')) {
 }
 
 include_once(G5_LIB_PATH.'/iteminfo.lib.php');
-
+add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">', 0);
 //이벤트
 $ev_id = (isset($ev_id) && $ev_id) ? $ev_id : '';
 if($ev_id) {

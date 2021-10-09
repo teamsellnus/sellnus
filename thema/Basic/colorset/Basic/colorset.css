@@ -157,7 +157,7 @@ blockquote {
 
 @media all and (max-width:991px) {
 	.responsive .at-body .at-container {
-		padding: 0px 10px !important;
+		/* padding: 0px 10px !important; */
 	}
 	.responsive .at-body .at-row {
 		margin-left: 0px;

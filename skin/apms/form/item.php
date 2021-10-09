@@ -1048,7 +1048,7 @@ $it['pt_it'] = 1;
         <tr>
             <th scope="row"><label for="it_img1">Image <?php echo $i; ?></label></th>
             <td>
-                <input type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
+                <input multiple="multiple" type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
                 <?php
                 $it_img = G5_DATA_PATH.'/item/'.$it['it_img'.$i];
                 if(is_file($it_img) && $it['it_img'.$i]) {
