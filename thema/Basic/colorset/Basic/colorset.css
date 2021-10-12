@@ -981,6 +981,18 @@ blockquote {
 	justify-content: center;
 	color: #fff;
 }
+@media screen and (max-width: 767px) {
+	.swiper-button-prev::after,
+  	.swiper-button-next::after {
+    	font-size: 16px !important;
+	}
+	.swiper-button-prev {
+		left: 6px !important;
+	}
+	.swiper-button-next {
+		right: 6px !important;
+	}
+}
 
 .main-slide-img-1 {
 	width: 100%;
