@@ -982,6 +982,9 @@ blockquote {
 	color: #fff;
 }
 @media screen and (max-width: 767px) {
+	.main-slider {
+		margin-bottom: 80px;
+	}
 	.swiper-button-prev::after,
   	.swiper-button-next::after {
     	font-size: 16px !important;
@@ -1052,6 +1055,20 @@ blockquote {
 	text-decoration: none;
 	border-radius: 10px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+	.asd1 {
+		font-size: 2.7rem;
+	}
+
+	.asd2 {
+		font-size: 1.4rem;
+	}
+
+	.asd3 {
+		font-size: .95rem;
+	}
 }
 
 .asd3:hover {
@@ -1171,6 +1188,24 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+	.main_category_wrap {
+		height: 120vw;
+		flex-direction: column;
+		align-items: stretch;
+		margin-bottom: 80px;
+	}
+
+	.main_category_sec1 {
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 12px;
+	}
+
+	.main_category_sec2 {
+		margin-left: 0;
+		width: 100%;
+	}
+
 	.main_category_title {
 		padding: 8px 18px !important;
 		font-size: 0.8rem !important;
