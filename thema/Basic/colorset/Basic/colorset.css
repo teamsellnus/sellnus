@@ -1857,6 +1857,30 @@ instagram api
     border-left: 100vw solid transparent;
     content: "";
 }
+@media screen and (max-width: 767px) {
+	.at-footer .footer_container:first-child::after {
+		display: none !important;
+	}
+	.at-footer .wrapper.footer_container .container_inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: stretch;
+	}
+	.footer_menu_links_sec {
+		width: 100vw !important;
+	}
+	.footer_menu_links_sec .footer_linksBx a {
+		text-align: center !important;
+	}
+	.footer_menu_social_sec {
+		width: calc(100vw - 16px) !important;
+		margin-right: 16px !important;
+	}
+	.container_inner .foot_copyright {
+		float: right;
+	}
+}
 .at-footer .container_inner {
     max-width: 120rem;
     padding: 0 0;
