@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 21-09-30 07:50
+-- 생성 시간: 21-10-13 19:59
 -- 서버 버전: 10.4.19-MariaDB
 -- PHP 버전: 7.4.20
 
@@ -100,10 +100,10 @@ CREATE TABLE `g5_apms_cache` (
 --
 
 INSERT INTO `g5_apms_cache` (`c_id`, `c_name`, `c_text`, `c_datetime`) VALUES
-(1, 'apms_mobile_shop_menu', 'a:6:{i:0;a:2:{s:11:\"count_write\";i:0;s:13:\"count_comment\";i:0;}i:1;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"10\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"생활용품\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=10\";s:6:\"target\";s:0:\"\";}i:2;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"30\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"가방\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=30\";s:6:\"target\";s:0:\"\";}i:3;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"40\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:10:\"Womenswear\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=40\";s:6:\"target\";s:0:\"\";}i:4;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"50\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"Menswear\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=50\";s:6:\"target\";s:0:\"\";}i:5;a:15:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:3:\"sub\";a:1:{i:0;a:16:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"gr_id\";s:2:\"20\";s:3:\"hid\";s:4:\"2010\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"testing\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:4:\"href\";s:41:\"http://localhost/shop/list.php?ca_id=2010\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"gr_id\";s:2:\"20\";s:6:\"is_sub\";b:1;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:16:\"디지털/가전\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=20\";s:6:\"target\";s:0:\"\";}}', '2021-09-13 22:18:17'),
-(2, 'apms_pc_shop_menu', 'a:6:{i:0;a:2:{s:11:\"count_write\";i:0;s:13:\"count_comment\";i:0;}i:1;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"10\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"생활용품\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=10\";s:6:\"target\";s:0:\"\";}i:2;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"30\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"가방\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=30\";s:6:\"target\";s:0:\"\";}i:3;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"40\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:10:\"Womenswear\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=40\";s:6:\"target\";s:0:\"\";}i:4;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"50\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"Menswear\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=50\";s:6:\"target\";s:0:\"\";}i:5;a:15:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:3:\"sub\";a:1:{i:0;a:16:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"gr_id\";s:2:\"20\";s:3:\"hid\";s:4:\"2010\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"testing\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:4:\"href\";s:41:\"http://localhost/shop/list.php?ca_id=2010\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"gr_id\";s:2:\"20\";s:6:\"is_sub\";b:1;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:16:\"디지털/가전\";s:4:\"href\";s:39:\"http://localhost/shop/list.php?ca_id=20\";s:6:\"target\";s:0:\"\";}}', '2021-09-13 22:18:17'),
-(3, 'apms_mobile_bbs_menu', 'N;', '2021-09-13 22:18:17'),
-(4, 'apms_pc_bbs_menu', 'N;', '2021-09-13 22:18:17');
+(1, 'apms_mobile_shop_menu', 'a:6:{i:0;a:2:{s:11:\"count_write\";i:0;s:13:\"count_comment\";i:0;}i:1;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"10\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"생활용품\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=10\";s:6:\"target\";s:0:\"\";}i:2;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"30\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"가방\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=30\";s:6:\"target\";s:0:\"\";}i:3;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"40\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:10:\"Womenswear\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=40\";s:6:\"target\";s:0:\"\";}i:4;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"50\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"Menswear\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=50\";s:6:\"target\";s:0:\"\";}i:5;a:15:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:3:\"sub\";a:1:{i:0;a:16:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"gr_id\";s:2:\"20\";s:3:\"hid\";s:4:\"2010\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"testing\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:4:\"href\";s:49:\"http://localhost/sellnus/shop/list.php?ca_id=2010\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"gr_id\";s:2:\"20\";s:6:\"is_sub\";b:1;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:16:\"디지털/가전\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=20\";s:6:\"target\";s:0:\"\";}}', '2021-10-03 20:49:29'),
+(2, 'apms_pc_shop_menu', 'a:6:{i:0;a:2:{s:11:\"count_write\";i:0;s:13:\"count_comment\";i:0;}i:1;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"10\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"생활용품\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=10\";s:6:\"target\";s:0:\"\";}i:2;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"30\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"가방\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=30\";s:6:\"target\";s:0:\"\";}i:3;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"40\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:10:\"Womenswear\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=40\";s:6:\"target\";s:0:\"\";}i:4;a:14:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:5:\"gr_id\";s:2:\"50\";s:6:\"is_sub\";b:0;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"Menswear\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=50\";s:6:\"target\";s:0:\"\";}i:5;a:15:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"multi\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:3:\"sub\";a:1:{i:0;a:16:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"gr_id\";s:2:\"20\";s:3:\"hid\";s:4:\"2010\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"testing\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:4:\"href\";s:49:\"http://localhost/sellnus/shop/list.php?ca_id=2010\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"gr_id\";s:2:\"20\";s:6:\"is_sub\";b:1;s:3:\"new\";s:3:\"old\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:16:\"디지털/가전\";s:4:\"href\";s:47:\"http://localhost/sellnus/shop/list.php?ca_id=20\";s:6:\"target\";s:0:\"\";}}', '2021-10-03 20:49:29'),
+(3, 'apms_mobile_bbs_menu', 'a:2:{i:0;a:2:{s:11:\"count_write\";i:10;s:13:\"count_comment\";i:3;}i:1;a:19:{s:5:\"gr_id\";s:9:\"community\";s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:2:\"sg\";i:1;s:3:\"sub\";a:6:{i:0;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:4:\"free\";s:3:\"hid\";s:4:\"free\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"general\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:52:\"http://localhost/sellnus/bbs/board.php?bo_table=free\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:1;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"1\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:6:\"notice\";s:3:\"hid\";s:6:\"notice\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"notice\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:2:\"10\";s:7:\"comment\";s:1:\"3\";s:4:\"href\";s:54:\"http://localhost/sellnus/bbs/board.php?bo_table=notice\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:2;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:8:\"freshman\";s:3:\"hid\";s:8:\"freshman\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"freshman\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:56:\"http://localhost/sellnus/bbs/board.php?bo_table=freshman\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:3;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:11:\"information\";s:3:\"hid\";s:11:\"information\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:11:\"information\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:59:\"http://localhost/sellnus/bbs/board.php?bo_table=information\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:4;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:6:\"issues\";s:3:\"hid\";s:6:\"issues\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"issues\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:54:\"http://localhost/sellnus/bbs/board.php?bo_table=issues\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:5;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:5:\"clubs\";s:3:\"hid\";s:5:\"clubs\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:5:\"clubs\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:53:\"http://localhost/sellnus/bbs/board.php?bo_table=clubs\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"count\";i:10;s:7:\"comment\";i:3;s:3:\"cnt\";i:6;s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"커뮤니티\";s:4:\"href\";s:52:\"http://localhost/sellnus/bbs/board.php?bo_table=free\";s:6:\"target\";s:0:\"\";s:3:\"new\";s:3:\"old\";s:5:\"multi\";s:1:\"0\";s:6:\"is_sub\";b:1;}}', '2021-10-03 20:49:29'),
+(4, 'apms_pc_bbs_menu', 'a:2:{i:0;a:2:{s:11:\"count_write\";i:10;s:13:\"count_comment\";i:3;}i:1;a:19:{s:5:\"gr_id\";s:9:\"community\";s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"0\";s:3:\"max\";s:1:\"0\";s:5:\"order\";s:1:\"0\";s:2:\"sg\";i:1;s:3:\"sub\";a:6:{i:0;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:4:\"free\";s:3:\"hid\";s:4:\"free\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:7:\"general\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:52:\"http://localhost/sellnus/bbs/board.php?bo_table=free\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:1;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"1\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"1\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:6:\"notice\";s:3:\"hid\";s:6:\"notice\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"notice\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:2:\"10\";s:7:\"comment\";s:1:\"3\";s:4:\"href\";s:54:\"http://localhost/sellnus/bbs/board.php?bo_table=notice\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:2;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:8:\"freshman\";s:3:\"hid\";s:8:\"freshman\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:8:\"freshman\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:56:\"http://localhost/sellnus/bbs/board.php?bo_table=freshman\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:3;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:11:\"information\";s:3:\"hid\";s:11:\"information\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:11:\"information\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:59:\"http://localhost/sellnus/bbs/board.php?bo_table=information\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:4;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:6:\"issues\";s:3:\"hid\";s:6:\"issues\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:6:\"issues\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:54:\"http://localhost/sellnus/bbs/board.php?bo_table=issues\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}i:5;a:19:{s:4:\"show\";s:1:\"0\";s:5:\"grade\";s:1:\"2\";s:5:\"equal\";s:1:\"0\";s:3:\"min\";s:1:\"2\";s:3:\"max\";s:2:\"10\";s:5:\"gr_id\";s:9:\"community\";s:8:\"bo_table\";s:5:\"clubs\";s:3:\"hid\";s:5:\"clubs\";s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:5:\"clubs\";s:6:\"target\";s:0:\"\";s:4:\"line\";s:0:\"\";s:2:\"sp\";s:1:\"0\";s:7:\"is_page\";b:0;s:5:\"count\";s:1:\"0\";s:7:\"comment\";s:1:\"0\";s:4:\"href\";s:53:\"http://localhost/sellnus/bbs/board.php?bo_table=clubs\";s:3:\"new\";s:3:\"old\";s:6:\"is_sub\";b:0;}}s:5:\"count\";i:10;s:7:\"comment\";i:3;s:3:\"cnt\";i:6;s:4:\"icon\";s:0:\"\";s:4:\"menu\";s:12:\"커뮤니티\";s:4:\"href\";s:52:\"http://localhost/sellnus/bbs/board.php?bo_table=free\";s:6:\"target\";s:0:\"\";s:3:\"new\";s:3:\"old\";s:5:\"multi\";s:1:\"0\";s:6:\"is_sub\";b:1;}}', '2021-10-03 20:49:29');
 
 -- --------------------------------------------------------
 
@@ -171,11 +171,12 @@ CREATE TABLE `g5_apms_data` (
 --
 
 INSERT INTO `g5_apms_data` (`id`, `type`, `data_q`, `data_1`, `data_2`, `data_3`, `data_4`, `data_5`, `data_6`, `data_7`, `data_8`, `data_9`, `data_10`, `data_set`) VALUES
-(1, 11, '', 'Basic', 'Basic', '', '', '', '', '', '', '', '', 'a:17:{s:5:\"thema\";s:5:\"Basic\";s:6:\"layout\";s:0:\"\";s:2:\"pc\";s:0:\"\";s:4:\"size\";s:0:\"\";s:10:\"background\";s:0:\"\";s:7:\"bgcolor\";s:0:\"\";s:2:\"bg\";s:6:\"center\";s:3:\"nav\";s:4:\"both\";s:4:\"subv\";s:5:\"slide\";s:4:\"subh\";s:0:\"\";s:4:\"subw\";s:0:\"\";s:2:\"mh\";s:0:\"\";s:2:\"ms\";s:0:\"\";s:4:\"allm\";s:0:\"\";s:5:\"mfile\";s:10:\"basic-main\";s:4:\"page\";s:1:\"9\";s:5:\"sfile\";s:15:\"basic-shop-side\";}'),
+(1, 11, '', 'Basic', 'Basic', '', '', '', '', '', '', '', '', 'a:17:{s:5:\"thema\";s:5:\"Basic\";s:6:\"layout\";s:0:\"\";s:2:\"pc\";s:0:\"\";s:4:\"size\";s:0:\"\";s:10:\"background\";s:0:\"\";s:7:\"bgcolor\";s:0:\"\";s:2:\"bg\";s:6:\"center\";s:3:\"nav\";s:4:\"both\";s:4:\"subv\";s:5:\"slide\";s:4:\"subh\";s:0:\"\";s:4:\"subw\";s:0:\"\";s:2:\"mh\";s:0:\"\";s:2:\"ms\";s:0:\"\";s:4:\"allm\";s:0:\"\";s:5:\"mfile\";s:10:\"basic-main\";s:4:\"page\";s:1:\"9\";s:5:\"sfile\";s:10:\"basic-side\";}'),
 (2, 15, '', 'Basic', 'Basic', '', '', '', '', '', '', '', '', 'a:18:{s:5:\"thema\";s:5:\"Basic\";s:6:\"layout\";s:0:\"\";s:2:\"pc\";s:0:\"\";s:4:\"size\";s:0:\"\";s:10:\"background\";s:0:\"\";s:7:\"bgcolor\";s:0:\"\";s:2:\"bg\";s:6:\"center\";s:3:\"nav\";s:4:\"both\";s:4:\"subv\";s:5:\"slide\";s:4:\"subh\";s:0:\"\";s:4:\"subw\";s:0:\"\";s:2:\"mh\";s:0:\"\";s:2:\"ms\";s:0:\"\";s:4:\"allm\";s:1:\"7\";s:5:\"mfile\";s:15:\"basic-shop-main\";s:4:\"page\";s:2:\"12\";s:5:\"sfile\";s:10:\"basic-side\";s:4:\"side\";s:1:\"1\";}'),
 (19, 100, 'SMB-wm2', 'a:1:{s:4:\"rows\";s:0:\"\";}', '', '', '', '', '', '', '', '', '', 'a:34:{s:7:\"thumb_w\";s:3:\"400\";s:7:\"thumb_h\";s:3:\"540\";s:6:\"shadow\";s:0:\"\";s:4:\"item\";s:0:\"\";s:2:\"lg\";s:0:\"\";s:2:\"md\";s:0:\"\";s:2:\"sm\";s:0:\"\";s:2:\"xs\";s:0:\"\";s:3:\"gap\";s:0:\"\";s:3:\"lgg\";s:0:\"\";s:3:\"mdg\";s:0:\"\";s:3:\"smg\";s:0:\"\";s:3:\"xsg\";s:0:\"\";s:4:\"gapb\";s:0:\"\";s:3:\"lgb\";s:0:\"\";s:3:\"mdb\";s:0:\"\";s:3:\"smb\";s:0:\"\";s:3:\"xsb\";s:0:\"\";s:4:\"line\";s:1:\"2\";s:4:\"star\";s:0:\"\";s:4:\"rows\";s:1:\"2\";s:4:\"page\";s:0:\"\";s:5:\"type2\";s:1:\"1\";s:5:\"type3\";s:1:\"1\";s:5:\"ca_id\";s:2:\"10\";s:5:\"ex_ca\";s:0:\"\";s:7:\"newtime\";s:0:\"\";s:3:\"new\";s:3:\"red\";s:4:\"sort\";s:0:\"\";s:4:\"rank\";s:0:\"\";s:4:\"term\";s:0:\"\";s:7:\"dayterm\";s:0:\"\";s:7:\"pt_list\";s:0:\"\";s:5:\"cache\";s:0:\"\";}'),
 (15, 100, 'SMB10', 'a:1:{s:4:\"rows\";s:0:\"\";}', '', '', '', '', '', '', '', '', '', 'a:34:{s:7:\"thumb_w\";s:3:\"400\";s:7:\"thumb_h\";s:3:\"540\";s:6:\"shadow\";s:0:\"\";s:4:\"item\";s:0:\"\";s:2:\"lg\";s:0:\"\";s:2:\"md\";s:0:\"\";s:2:\"sm\";s:0:\"\";s:2:\"xs\";s:0:\"\";s:3:\"gap\";s:0:\"\";s:3:\"lgg\";s:0:\"\";s:3:\"mdg\";s:0:\"\";s:3:\"smg\";s:0:\"\";s:3:\"xsg\";s:0:\"\";s:4:\"gapb\";s:0:\"\";s:3:\"lgb\";s:0:\"\";s:3:\"mdb\";s:0:\"\";s:3:\"smb\";s:0:\"\";s:3:\"xsb\";s:0:\"\";s:4:\"line\";s:1:\"2\";s:4:\"star\";s:0:\"\";s:4:\"rows\";s:1:\"2\";s:4:\"page\";s:0:\"\";s:5:\"type2\";s:1:\"1\";s:5:\"type3\";s:1:\"1\";s:5:\"ca_id\";s:2:\"10\";s:5:\"ex_ca\";s:0:\"\";s:7:\"newtime\";s:0:\"\";s:3:\"new\";s:3:\"red\";s:4:\"sort\";s:0:\"\";s:4:\"rank\";s:0:\"\";s:4:\"term\";s:0:\"\";s:7:\"dayterm\";s:0:\"\";s:7:\"pt_list\";s:0:\"\";s:5:\"cache\";s:0:\"\";}'),
-(17, 100, 'SMB-wm6', 'a:1:{s:4:\"rows\";s:0:\"\";}', '', '', '', '', '', '', '', '', '', 'a:32:{s:7:\"thumb_w\";s:0:\"\";s:7:\"thumb_h\";s:0:\"\";s:6:\"shadow\";s:0:\"\";s:4:\"item\";s:0:\"\";s:2:\"lg\";s:0:\"\";s:2:\"md\";s:0:\"\";s:2:\"sm\";s:0:\"\";s:2:\"xs\";s:0:\"\";s:3:\"gap\";s:0:\"\";s:3:\"lgg\";s:0:\"\";s:3:\"mdg\";s:0:\"\";s:3:\"smg\";s:0:\"\";s:3:\"xsg\";s:0:\"\";s:4:\"gapb\";s:0:\"\";s:3:\"lgb\";s:0:\"\";s:3:\"mdb\";s:0:\"\";s:3:\"smb\";s:0:\"\";s:3:\"xsb\";s:0:\"\";s:4:\"line\";s:1:\"2\";s:4:\"star\";s:0:\"\";s:4:\"rows\";s:1:\"8\";s:4:\"page\";s:0:\"\";s:5:\"ca_id\";s:0:\"\";s:5:\"ex_ca\";s:0:\"\";s:7:\"newtime\";s:0:\"\";s:3:\"new\";s:3:\"red\";s:4:\"sort\";s:0:\"\";s:4:\"rank\";s:0:\"\";s:4:\"term\";s:0:\"\";s:7:\"dayterm\";s:0:\"\";s:7:\"pt_list\";s:0:\"\";s:5:\"cache\";s:0:\"\";}');
+(17, 100, 'SMB-wm6', 'a:1:{s:4:\"rows\";s:0:\"\";}', '', '', '', '', '', '', '', '', '', 'a:32:{s:7:\"thumb_w\";s:0:\"\";s:7:\"thumb_h\";s:0:\"\";s:6:\"shadow\";s:0:\"\";s:4:\"item\";s:0:\"\";s:2:\"lg\";s:0:\"\";s:2:\"md\";s:0:\"\";s:2:\"sm\";s:0:\"\";s:2:\"xs\";s:0:\"\";s:3:\"gap\";s:0:\"\";s:3:\"lgg\";s:0:\"\";s:3:\"mdg\";s:0:\"\";s:3:\"smg\";s:0:\"\";s:3:\"xsg\";s:0:\"\";s:4:\"gapb\";s:0:\"\";s:3:\"lgb\";s:0:\"\";s:3:\"mdb\";s:0:\"\";s:3:\"smb\";s:0:\"\";s:3:\"xsb\";s:0:\"\";s:4:\"line\";s:1:\"2\";s:4:\"star\";s:0:\"\";s:4:\"rows\";s:1:\"8\";s:4:\"page\";s:0:\"\";s:5:\"ca_id\";s:0:\"\";s:5:\"ex_ca\";s:0:\"\";s:7:\"newtime\";s:0:\"\";s:3:\"new\";s:3:\"red\";s:4:\"sort\";s:0:\"\";s:4:\"rank\";s:0:\"\";s:4:\"term\";s:0:\"\";s:7:\"dayterm\";s:0:\"\";s:7:\"pt_list\";s:0:\"\";s:5:\"cache\";s:0:\"\";}'),
+(57, 100, 'CMB-wm1', 'a:1:{s:4:\"rows\";s:1:\"8\";}', '', '', '', '', '', '', '', '', '', 'a:36:{s:7:\"thumb_w\";s:0:\"\";s:7:\"thumb_h\";s:0:\"\";s:4:\"rows\";s:1:\"5\";s:4:\"page\";s:0:\"\";s:4:\"main\";s:0:\"\";s:4:\"item\";s:0:\"\";s:2:\"lg\";s:0:\"\";s:2:\"md\";s:0:\"\";s:2:\"sm\";s:0:\"\";s:2:\"xs\";s:0:\"\";s:3:\"gap\";s:0:\"\";s:3:\"lgg\";s:0:\"\";s:3:\"mdg\";s:0:\"\";s:3:\"smg\";s:0:\"\";s:3:\"xsg\";s:0:\"\";s:4:\"gapb\";s:0:\"\";s:3:\"lgb\";s:0:\"\";s:3:\"mdb\";s:0:\"\";s:3:\"smb\";s:0:\"\";s:3:\"xsb\";s:0:\"\";s:4:\"line\";s:1:\"6\";s:5:\"modal\";s:0:\"\";s:5:\"dtype\";s:0:\"\";s:4:\"date\";s:1:\"1\";s:4:\"dtxt\";s:1:\"1\";s:7:\"bo_list\";s:0:\"\";s:7:\"gr_list\";s:0:\"\";s:7:\"ca_list\";s:0:\"\";s:7:\"newtime\";s:0:\"\";s:3:\"new\";s:3:\"red\";s:4:\"sort\";s:0:\"\";s:4:\"rank\";s:0:\"\";s:4:\"term\";s:0:\"\";s:7:\"dayterm\";s:0:\"\";s:7:\"mb_list\";s:0:\"\";s:5:\"cache\";s:0:\"\";}');
 
 -- --------------------------------------------------------
 
@@ -374,7 +375,8 @@ INSERT INTO `g5_apms_page` (`id`, `gr_id`, `co_id`, `html_id`, `bo_subject`, `bo
 (39, '', '', 'privacy', '개인정보처리방침', '', 'both', 1, 'privacy.php', '{아이콘:plus-circle} Privacy', '사이트 개인정보처리방침', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', ''),
 (40, '', '', 'noemail', '이메일 무단수집 거부', '', 'both', 1, 'noemail.php', '{아이콘:ban} Rejection of E-mail Collection', '이메일 무단수집 거부', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', ''),
 (41, '', '', 'disclaimer', '책임의 한계와 법적고지', '', 'both', 1, 'disclaimer.php', '{아이콘:minus-circle} Lines of Responsibility', '책임의 한계와 법적고지', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', ''),
-(42, '', '', 'guide', '이용안내', '', 'both', 1, 'guide.php', '{아이콘:info-circle} User Guide', '사이트 이용안내', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '');
+(42, '', '', 'guide', '이용안내', '', 'both', 1, 'guide.php', '{아이콘:info-circle} User Guide', '사이트 이용안내', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', ''),
+(43, 'shop', '', '보드', '', '', 'both', 2, 'basic', '', '', '', '', '', '', '', 'color', '', '', 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -559,6 +561,16 @@ CREATE TABLE `g5_apms_response` (
   `regdate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 테이블의 덤프 데이터 `g5_apms_response`
+--
+
+INSERT INTO `g5_apms_response` (`id`, `it_id`, `bo_table`, `wr_id`, `co_id`, `subject`, `mb_id`, `my_id`, `my_name`, `reply_cnt`, `comment_cnt`, `comment_reply_cnt`, `good_cnt`, `nogood_cnt`, `use_cnt`, `qa_cnt`, `type`, `confirm`, `regdate`) VALUES
+(1, '', 'notice', 4, 5, 'thanks', 'sellnus', 'test123', 'ewts', 0, 1, 0, 0, 0, 0, 0, 2, 0, '2021-10-03 01:33:59'),
+(2, '', 'notice', 15, 16, 'nice', 'test123', 'sellnus', 'sellnus', 0, 1, 0, 0, 0, 0, 0, 2, 0, '2021-10-03 20:56:55'),
+(3, '', 'notice', 12, 0, 'sellnus', 'sellnus', 'test123', 'ewts', 0, 0, 0, 1, 0, 0, 0, 2, 0, '2021-10-03 21:05:32'),
+(4, '', 'notice', 11, 0, 'Lorem ipsum', 'sellnus', 'test123', 'ewts', 0, 0, 0, 1, 0, 0, 0, 2, 0, '2021-10-03 21:05:38');
+
 -- --------------------------------------------------------
 
 --
@@ -708,7 +720,8 @@ INSERT INTO `g5_apms_tag` (`id`, `type`, `idx`, `tag`, `cnt`, `desc`, `regdate`,
 (4, 1, 'A', 'asd', 1, '', '2021-09-19 16:00:47', '2021-09-19 16:00:47'),
 (5, 1, 'Q', 'qwewqeqwe', 1, '', '2021-09-19 19:02:22', '2021-09-19 19:02:22'),
 (6, 1, 'A', 'asdasd', 1, '', '2021-09-27 20:24:17', '2021-09-27 20:24:17'),
-(7, 1, 'A', 'asdasdasdsadsa', 1, '', '2021-09-27 20:45:49', '2021-09-27 20:45:49');
+(7, 1, 'A', 'asdasdasdsadsa', 1, '', '2021-09-27 20:45:49', '2021-09-27 20:45:49'),
+(8, 1, 'T', 'testing', 1, '', '2021-10-02 04:06:12', '2021-10-02 04:06:12');
 
 -- --------------------------------------------------------
 
@@ -738,7 +751,8 @@ INSERT INTO `g5_apms_tag_log` (`id`, `it_id`, `bo_table`, `wr_id`, `tag_id`, `ta
 (4, '1632034820', '', 0, 4, 'asd', '', '2021-09-19 16:00:47', '2021-09-19 16:00:47'),
 (5, '1632045642', '', 0, 5, 'qwewqeqwe', '', '2021-09-19 19:02:22', '2021-09-19 19:02:22'),
 (6, '1632741831', '', 0, 6, 'asdasd', '', '2021-09-27 20:24:17', '2021-09-27 20:24:17'),
-(7, '1632743116', '', 0, 7, 'asdasdasdsadsa', '', '2021-09-27 20:45:49', '2021-09-27 20:45:49');
+(7, '1632743116', '', 0, 7, 'asdasdasdsadsa', '', '2021-09-27 20:45:49', '2021-09-27 20:45:49'),
+(8, '', 'notice', 1, 8, 'testing', 'sellnus', '2021-10-02 04:06:12', '2021-10-02 04:06:12');
 
 -- --------------------------------------------------------
 
@@ -863,6 +877,15 @@ CREATE TABLE `g5_autosave` (
   `as_content` text NOT NULL,
   `as_datetime` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 테이블의 덤프 데이터 `g5_autosave`
+--
+
+INSERT INTO `g5_autosave` (`as_id`, `mb_id`, `as_uid`, `as_subject`, `as_content`, `as_datetime`) VALUES
+(1, 'test123', 2021100823072774, 'testing', 'testing', '2021-10-08 23:08:28'),
+(2, 'sellnus', 2021101216303780, 'ㅁㄴㅇㅁㄴㅇㄴㅁㅇ', 'ㅇㄴㅁㅇㄴㅁㅇㄴ', '2021-10-12 16:31:38'),
+(4, 'sellnus', 2021101217423444, 'testing2', 'testing', '2021-10-12 17:43:34');
 
 -- --------------------------------------------------------
 
@@ -1018,10 +1041,14 @@ CREATE TABLE `g5_board` (
 --
 
 INSERT INTO `g5_board` (`bo_table`, `gr_id`, `bo_subject`, `bo_mobile_subject`, `bo_device`, `bo_admin`, `bo_list_level`, `bo_read_level`, `bo_write_level`, `bo_reply_level`, `bo_comment_level`, `bo_upload_level`, `bo_download_level`, `bo_html_level`, `bo_link_level`, `bo_count_delete`, `bo_count_modify`, `bo_read_point`, `bo_write_point`, `bo_comment_point`, `bo_download_point`, `bo_use_category`, `bo_category_list`, `bo_use_sideview`, `bo_use_file_content`, `bo_use_secret`, `bo_use_dhtml_editor`, `bo_use_rss_view`, `bo_use_good`, `bo_use_nogood`, `bo_use_name`, `bo_use_signature`, `bo_use_ip_view`, `bo_use_list_view`, `bo_use_list_file`, `bo_use_list_content`, `bo_table_width`, `bo_subject_len`, `bo_mobile_subject_len`, `bo_page_rows`, `bo_mobile_page_rows`, `bo_new`, `bo_hot`, `bo_image_width`, `bo_skin`, `bo_mobile_skin`, `bo_include_head`, `bo_include_tail`, `bo_content_head`, `bo_mobile_content_head`, `bo_content_tail`, `bo_mobile_content_tail`, `bo_insert_content`, `bo_gallery_cols`, `bo_gallery_width`, `bo_gallery_height`, `bo_mobile_gallery_width`, `bo_mobile_gallery_height`, `bo_upload_size`, `bo_reply_order`, `bo_use_search`, `bo_order`, `bo_count_write`, `bo_count_comment`, `bo_write_min`, `bo_write_max`, `bo_comment_min`, `bo_comment_max`, `bo_notice`, `bo_upload_count`, `bo_use_email`, `bo_use_cert`, `bo_use_sns`, `bo_use_captcha`, `bo_sort_field`, `bo_1_subj`, `bo_2_subj`, `bo_3_subj`, `bo_4_subj`, `bo_5_subj`, `bo_6_subj`, `bo_7_subj`, `bo_8_subj`, `bo_9_subj`, `bo_10_subj`, `bo_1`, `bo_2`, `bo_3`, `bo_4`, `bo_5`, `bo_6`, `bo_7`, `bo_8`, `bo_9`, `bo_10`, `as_title`, `as_desc`, `as_icon`, `as_mobile_icon`, `as_main`, `as_link`, `as_target`, `as_line`, `as_sp`, `as_show`, `as_order`, `as_menu`, `as_menu_show`, `as_grade`, `as_equal`, `as_wide`, `as_partner`, `as_autoplay`, `as_torrent`, `as_shingo`, `as_level`, `as_lucky`, `as_good`, `as_save`, `as_code`, `as_exif`, `as_loc`, `as_new`, `as_notice`, `as_search`, `as_lightbox`, `as_rev_cmt`, `as_best_cmt`, `as_rank_cmt`, `as_purifier`, `as_resize`, `as_resize_kb`, `as_min`, `as_max`, `as_comment_rows`, `as_comment_mobile_rows`, `as_editor`, `as_mobile_editor`, `as_set`, `as_mobile_set`) VALUES
-('notice', 'shop', '공지사항', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 5, 1, -20, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', ''),
-('qa', 'shop', '질문답변', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 5, 1, -20, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', ''),
-('free', 'shop', '자유게시판', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 5, 1, -20, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', ''),
-('gallery', 'shop', '갤러리', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 5, 1, -20, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'gallery', 'gallery', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 0, 0, 1, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '');
+('notice', 'community', 'notice', '', 'both', 'sellnus', 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 100, 60, 30, 6, 10, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 11, 4, 0, 0, 0, 0, '', 3, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 1, 10, 0, 0, '', '', 'a:11:{s:5:\"gap_r\";s:2:\"15\";s:5:\"gap_b\";s:2:\"30\";s:3:\"tab\";s:0:\"\";s:5:\"ctype\";s:0:\"\";s:6:\"bunhal\";s:1:\"2\";s:6:\"shadow\";s:0:\"\";s:4:\"sort\";s:1:\"1\";s:5:\"video\";s:0:\"\";s:9:\"cmt_photo\";s:0:\"\";s:6:\"cmt_re\";s:0:\"\";s:3:\"tag\";s:2:\"10\";}', ''),
+('qa', 'community', '질문답변', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 2, 10, 0, 0, '', '', '', ''),
+('free', 'community', 'general', '', 'both', '', 2, 10, 2, 2, 2, 2, 2, 10, 2, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 0, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 2, 10, 0, 0, '', '', '', ''),
+('gallery', 'community', '갤러리', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 835, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 3, 1, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 2, 10, 0, 0, '', '', '', ''),
+('issues', 'community', 'issues', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 600, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 3, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 10, 0, 0, '', '', '', ''),
+('clubs', 'community', 'clubs', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 600, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 2, 0, 0, 0, 0, 0, '', 3, 0, '', 0, 0, '', '', '', '', '', '', '', '이미지관련옵션', '파일용량관련옵션', 'PC버전 - 파일확장자', '모바일 - 파일확장자', '', '', '', '', '', '', '1440|1440|90|false|150|120', '100mb|100mb|true|lightbox', 'jpg,gif,png,cr2,jpeg,swf,asx,asf,wmv,wma,mp4,mpg,mpeg,mov,avi,mp3,doc,hwp,pdf,xls,xlsx,xml,txt,xlsm,xlt', 'jpg,gif,png,jpeg', '', '', '', '', '', '', '', '', 0, 1, 4, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 10, 0, 0, 'smarteditor2', 'smarteditor2', '', ''),
+('freshman', 'community', 'freshman', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 600, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 1, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 10, 0, 0, '', '', '', ''),
+('information', 'community', 'information', '', 'both', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 100, 60, 30, 15, 15, 24, 100, 600, 'basic', 'basic', '_head.php', '_tail.php', '', '', '', '', '', 4, 202, 150, 125, 100, 1048576, 1, 1, 0, 0, 0, 0, 0, 0, 0, '', 2, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 2, 0, 0, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 10, 0, 0, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1044,6 +1071,17 @@ CREATE TABLE `g5_board_file` (
   `bf_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 테이블의 덤프 데이터 `g5_board_file`
+--
+
+INSERT INTO `g5_board_file` (`bo_table`, `wr_id`, `bf_no`, `bf_source`, `bf_file`, `bf_download`, `bf_content`, `bf_filesize`, `bf_width`, `bf_height`, `bf_type`, `bf_datetime`) VALUES
+('gallery', 2, 0, 'newscj_천지일보_666674_682180_2415.jpg', '0_u0IFNQwf_ce2aaaa0c3e4af0e0675a432b6f7c77c524c1ccf.jpg', 0, '', 89540, 640, 431, 2, '2021-10-02 17:47:35'),
+('notice', 18, 0, '', '', 0, '', 0, 0, 0, 0, '2021-10-12 17:13:42'),
+('notice', 18, 1, '제5주차 제3차시_20161602_이한결.JPG', '0_CS73tumO_2804681f8dbd5c208b64ee4f553290df0ec49a88.JPG', 0, '', 148489, 2023, 1563, 2, '2021-10-12 17:13:42'),
+('notice', 18, 2, '제5주차 제2차시_20161602_이한결.JPG', '0_iNUcuIa7_d3189502db95da6a548936738217d068a2b5d662.JPG', 0, '', 123788, 2016, 1480, 2, '2021-10-12 17:13:42'),
+('notice', 18, 3, '제5주차 제1차시_20161602_이한결.JPG', '0_uPZTqEgf_8595819a7d5965aa17563bf40e91192876f7981e.JPG', 0, '', 182349, 2497, 1671, 2, '2021-10-12 17:13:42');
+
 -- --------------------------------------------------------
 
 --
@@ -1058,6 +1096,14 @@ CREATE TABLE `g5_board_good` (
   `bg_flag` varchar(255) NOT NULL DEFAULT '',
   `bg_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 테이블의 덤프 데이터 `g5_board_good`
+--
+
+INSERT INTO `g5_board_good` (`bg_id`, `bo_table`, `wr_id`, `mb_id`, `bg_flag`, `bg_datetime`) VALUES
+(1, 'notice', 12, 'test123', 'good', '2021-10-03 21:05:32'),
+(2, 'notice', 11, 'test123', 'good', '2021-10-03 21:05:38');
 
 -- --------------------------------------------------------
 
@@ -1097,7 +1143,26 @@ CREATE TABLE `g5_board_new` (
 --
 
 INSERT INTO `g5_board_new` (`bn_id`, `bo_table`, `wr_id`, `wr_parent`, `bn_datetime`, `mb_id`, `as_type`, `as_list`, `as_secret`, `as_publish`, `as_extra`, `as_comment`, `as_hit`, `as_good`, `as_nogood`, `as_download`, `as_link`, `as_poll`, `as_event`, `as_lucky`, `as_reply`, `as_re_mb`, `as_video`, `as_update`) VALUES
-(1, 'gallery', 1, 1, '2021-08-31 11:26:11', 'sellnus', 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00');
+(2, 'notice', 1, 1, '2021-10-02 04:06:12', 'sellnus', 0, 0, 0, 0, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(3, 'notice', 2, 1, '2021-10-02 17:43:53', 'sellnus', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(4, 'gallery', 2, 2, '2021-10-02 17:47:35', 'sellnus', 0, 1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(5, 'gallery', 3, 3, '2021-10-02 18:14:13', 'sellnus', 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(6, 'gallery', 4, 2, '2021-10-02 18:21:49', 'sellnus', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(7, 'notice', 3, 3, '2021-10-02 19:26:10', 'sellnus', 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(8, 'notice', 4, 4, '2021-10-02 19:26:28', 'sellnus', 0, 0, 0, 0, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(9, 'notice', 5, 4, '2021-10-03 01:33:59', 'test123', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(10, 'notice', 6, 6, '2021-10-03 15:53:39', 'test123', 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(11, 'notice', 7, 7, '2021-10-03 18:45:34', 'test123', 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(12, 'notice', 8, 8, '2021-10-03 18:57:03', 'test123', 0, 0, 0, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(13, 'notice', 9, 8, '2021-10-03 19:25:39', 'test123', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(14, 'notice', 10, 10, '2021-10-03 19:44:28', 'test123', 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(15, 'notice', 11, 11, '2021-10-03 20:34:16', 'sellnus', 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(16, 'notice', 12, 12, '2021-10-03 20:37:24', 'sellnus', 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(20, 'notice', 16, 15, '2021-10-03 20:56:55', 'sellnus', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(19, 'notice', 15, 15, '2021-10-03 20:41:55', 'test123', 0, 0, 0, 0, 0, 1, 7, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(21, 'clubs', 1, 1, '2021-10-12 16:30:26', 'sellnus', 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(23, 'notice', 18, 18, '2021-10-12 17:13:42', 'sellnus', 0, 1, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00'),
+(26, 'clubs', 2, 2, '2021-10-12 20:15:59', 'sellnus', 0, 1, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, '', '', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -1294,7 +1359,7 @@ CREATE TABLE `g5_config` (
 --
 
 INSERT INTO `g5_config` (`cf_title`, `cf_theme`, `cf_admin`, `cf_admin_email`, `cf_admin_email_name`, `cf_add_script`, `cf_use_point`, `cf_point_term`, `cf_use_copy_log`, `cf_use_email_certify`, `cf_login_point`, `cf_cut_name`, `cf_nick_modify`, `cf_new_skin`, `cf_new_rows`, `cf_search_skin`, `cf_connect_skin`, `cf_faq_skin`, `cf_read_point`, `cf_write_point`, `cf_comment_point`, `cf_download_point`, `cf_write_pages`, `cf_mobile_pages`, `cf_link_target`, `cf_delay_sec`, `cf_filter`, `cf_possible_ip`, `cf_intercept_ip`, `cf_analytics`, `cf_add_meta`, `cf_syndi_token`, `cf_syndi_except`, `cf_member_skin`, `cf_use_homepage`, `cf_req_homepage`, `cf_use_tel`, `cf_req_tel`, `cf_use_hp`, `cf_req_hp`, `cf_use_addr`, `cf_req_addr`, `cf_use_signature`, `cf_req_signature`, `cf_use_profile`, `cf_req_profile`, `cf_register_level`, `cf_register_point`, `cf_icon_level`, `cf_use_recommend`, `cf_recommend_point`, `cf_leave_day`, `cf_search_part`, `cf_email_use`, `cf_email_wr_super_admin`, `cf_email_wr_group_admin`, `cf_email_wr_board_admin`, `cf_email_wr_write`, `cf_email_wr_comment_all`, `cf_email_mb_super_admin`, `cf_email_mb_member`, `cf_email_po_super_admin`, `cf_prohibit_id`, `cf_prohibit_email`, `cf_new_del`, `cf_memo_del`, `cf_visit_del`, `cf_popular_del`, `cf_optimize_date`, `cf_use_member_icon`, `cf_member_icon_size`, `cf_member_icon_width`, `cf_member_icon_height`, `cf_member_img_size`, `cf_member_img_width`, `cf_member_img_height`, `cf_login_minutes`, `cf_image_extension`, `cf_flash_extension`, `cf_movie_extension`, `cf_formmail_is_member`, `cf_page_rows`, `cf_mobile_page_rows`, `cf_visit`, `cf_max_po_id`, `cf_stipulation`, `cf_privacy`, `cf_open_modify`, `cf_memo_send_point`, `cf_mobile_new_skin`, `cf_mobile_search_skin`, `cf_mobile_connect_skin`, `cf_mobile_faq_skin`, `cf_mobile_member_skin`, `cf_captcha_mp3`, `cf_editor`, `cf_cert_use`, `cf_cert_ipin`, `cf_cert_hp`, `cf_cert_kcb_cd`, `cf_cert_kcp_cd`, `cf_lg_mid`, `cf_lg_mert_key`, `cf_cert_limit`, `cf_cert_req`, `cf_sms_use`, `cf_sms_type`, `cf_icode_id`, `cf_icode_pw`, `cf_icode_server_ip`, `cf_icode_server_port`, `cf_googl_shorturl_apikey`, `cf_social_login_use`, `cf_social_servicelist`, `cf_payco_clientid`, `cf_payco_secret`, `cf_facebook_appid`, `cf_facebook_secret`, `cf_twitter_key`, `cf_twitter_secret`, `cf_google_clientid`, `cf_google_secret`, `cf_naver_clientid`, `cf_naver_secret`, `cf_kakao_rest_key`, `cf_kakao_client_secret`, `cf_kakao_js_apikey`, `cf_captcha`, `cf_recaptcha_site_key`, `cf_recaptcha_secret_key`, `cf_1_subj`, `cf_2_subj`, `cf_3_subj`, `cf_4_subj`, `cf_5_subj`, `cf_6_subj`, `cf_7_subj`, `cf_8_subj`, `cf_9_subj`, `cf_10_subj`, `cf_1`, `cf_2`, `cf_3`, `cf_4`, `cf_5`, `cf_6`, `cf_7`, `cf_8`, `cf_9`, `cf_10`, `as_thema`, `as_color`, `as_mobile_thema`, `as_mobile_color`, `as_admin`, `as_intro`, `as_intro_skin`, `as_mobile_intro_skin`, `as_tag_skin`, `as_mobile_tag_skin`, `as_misc_skin`, `as_lang`, `as_gnu`, `as_xp`, `as_mp`) VALUES
-('Sell&Us', '', 'sellnus', 'hgyeol.0107@gmail.com', 'Sell&Us', '', 0, 0, 1, 0, 100, 15, 60, 'basic', 15, 'basic', 'basic', 'basic', 0, 0, 0, 0, 10, 5, '_blank', 30, '18아,18놈,18새끼,18뇬,18노,18것,18넘,개년,개놈,개뇬,개새,개색끼,개세끼,개세이,개쉐이,개쉑,개쉽,개시키,개자식,개좆,게색기,게색끼,광뇬,뇬,눈깔,뉘미럴,니귀미,니기미,니미,도촬,되질래,뒈져라,뒈진다,디져라,디진다,디질래,병쉰,병신,뻐큐,뻑큐,뽁큐,삐리넷,새꺄,쉬발,쉬밸,쉬팔,쉽알,스패킹,스팽,시벌,시부랄,시부럴,시부리,시불,시브랄,시팍,시팔,시펄,실밸,십8,십쌔,십창,싶알,쌉년,썅놈,쌔끼,쌩쑈,썅,써벌,썩을년,쎄꺄,쎄엑,쓰바,쓰발,쓰벌,쓰팔,씨8,씨댕,씨바,씨발,씨뱅,씨봉알,씨부랄,씨부럴,씨부렁,씨부리,씨불,씨브랄,씨빠,씨빨,씨뽀랄,씨팍,씨팔,씨펄,씹,아가리,아갈이,엄창,접년,잡놈,재랄,저주글,조까,조빠,조쟁이,조지냐,조진다,조질래,존나,존니,좀물,좁년,좃,좆,좇,쥐랄,쥐롤,쥬디,지랄,지럴,지롤,지미랄,쫍빱,凸,퍽큐,뻑큐,빠큐,ㅅㅂㄹㅁ', '', '', '', '', '', '', 'basic', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1000, 2, 0, 0, 30, 10000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'admin,administrator,관리자,운영자,어드민,주인장,webmaster,웹마스터,sysop,시삽,시샵,manager,매니저,메니저,root,루트,su,guest,방문객', '', 30, 180, 180, 180, '2021-09-30', 2, 5000, 22, 22, 50000, 60, 60, 10, 'gif|jpg|jpeg|png', 'swf', 'asx|asf|wmv|wma|mpg|mpeg|mov|avi|mp3', 1, 15, 15, '오늘:1,어제:1,최대:2,전체:12', 0, '해당 홈페이지에 맞는 회원가입약관을 입력합니다.', '해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.', 0, 500, 'basic', 'basic', 'basic', 'basic', 'basic', 'basic', 'smarteditor2', 0, '', '', '', '', '', '', 2, 0, '', '', 'sellnus', 'lhg_14693647', '211.172.232.124', '7295', '', 1, 'kakao,facebook,google', '', '', '', '', '', '', '', '', '', '', '', '', '', 'kcaptcha', '', '', '', '', '', '', '', '', '', 'basic', '', '', '', '', '', '', '', '', '', 'basic', '', '', 'Basic', 'Basic', 'Basic', 'Basic', 'sellnus', '', '', '', 'basic', 'basic', 'basic', 'korean', 0, 'XP', 'MP');
+('Sell&Us', '', 'sellnus', 'hgyeol.0107@gmail.com', 'Sell&Us', '', 0, 0, 1, 0, 0, 15, 60, 'basic', 10, 'basic', 'basic', 'basic', 0, 0, 0, 0, 10, 5, '_blank', 30, '18아,18놈,18새끼,18뇬,18노,18것,18넘,개년,개놈,개뇬,개새,개색끼,개세끼,개세이,개쉐이,개쉑,개쉽,개시키,개자식,개좆,게색기,게색끼,광뇬,뇬,눈깔,뉘미럴,니귀미,니기미,니미,도촬,되질래,뒈져라,뒈진다,디져라,디진다,디질래,병쉰,병신,뻐큐,뻑큐,뽁큐,삐리넷,새꺄,쉬발,쉬밸,쉬팔,쉽알,스패킹,스팽,시벌,시부랄,시부럴,시부리,시불,시브랄,시팍,시팔,시펄,실밸,십8,십쌔,십창,싶알,쌉년,썅놈,쌔끼,쌩쑈,썅,써벌,썩을년,쎄꺄,쎄엑,쓰바,쓰발,쓰벌,쓰팔,씨8,씨댕,씨바,씨발,씨뱅,씨봉알,씨부랄,씨부럴,씨부렁,씨부리,씨불,씨브랄,씨빠,씨빨,씨뽀랄,씨팍,씨팔,씨펄,씹,아가리,아갈이,엄창,접년,잡놈,재랄,저주글,조까,조빠,조쟁이,조지냐,조진다,조질래,존나,존니,좀물,좁년,좃,좆,좇,쥐랄,쥐롤,쥬디,지랄,지럴,지롤,지미랄,쫍빱,凸,퍽큐,뻑큐,빠큐,ㅅㅂㄹㅁ', '', '', '', '', '', '', 'basic', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1000, 2, 0, 0, 30, 10000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'admin,administrator,관리자,운영자,어드민,주인장,webmaster,웹마스터,sysop,시삽,시샵,manager,매니저,메니저,root,루트,su,guest,방문객', '', 30, 180, 180, 180, '2021-10-12', 2, 5000, 22, 22, 50000, 60, 60, 10, 'gif|jpg|jpeg|png', 'swf', 'asx|asf|wmv|wma|mpg|mpeg|mov|avi|mp3', 1, 10, 10, '오늘:1,어제:,최대:2,전체:22', 0, '해당 홈페이지에 맞는 회원가입약관을 입력합니다.', '해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.', 0, 0, 'basic', 'basic', 'basic', 'basic', 'basic', 'basic', 'smarteditor2', 0, '', '', '', '', '', '', 2, 0, '', '', 'sellnus', 'lhg_14693647', '211.172.232.124', '7295', '', 1, 'kakao,facebook,google', '', '', '', '', '', '', '', '', '', '', '', '', '', 'kcaptcha', '', '', '', '', '', '', '', '', '', 'basic', '', '', '', '', '', '', '', '', '', 'basic', '', '', 'Basic', 'Basic', 'Basic', 'Basic', 'sellnus', '', '', '', 'basic', 'basic', 'basic', 'korean', 0, 'XP', 'MP');
 
 -- --------------------------------------------------------
 
@@ -1395,6 +1460,7 @@ CREATE TABLE `g5_group` (
   `gr_8` varchar(255) NOT NULL DEFAULT '',
   `gr_9` varchar(255) NOT NULL DEFAULT '',
   `gr_10` varchar(255) NOT NULL DEFAULT '',
+  `as_group_skin` varchar(255) NOT NULL DEFAULT '',
   `as_thema` varchar(255) NOT NULL DEFAULT '',
   `as_color` varchar(255) NOT NULL DEFAULT '',
   `as_mobile_thema` varchar(255) NOT NULL DEFAULT '',
@@ -1422,8 +1488,9 @@ CREATE TABLE `g5_group` (
 -- 테이블의 덤프 데이터 `g5_group`
 --
 
-INSERT INTO `g5_group` (`gr_id`, `gr_subject`, `gr_device`, `gr_admin`, `gr_use_access`, `gr_order`, `gr_1_subj`, `gr_2_subj`, `gr_3_subj`, `gr_4_subj`, `gr_5_subj`, `gr_6_subj`, `gr_7_subj`, `gr_8_subj`, `gr_9_subj`, `gr_10_subj`, `gr_1`, `gr_2`, `gr_3`, `gr_4`, `gr_5`, `gr_6`, `gr_7`, `gr_8`, `gr_9`, `gr_10`, `as_thema`, `as_color`, `as_mobile_thema`, `as_mobile_color`, `as_icon`, `as_mobile_icon`, `as_main`, `as_mobile_main`, `as_link`, `as_target`, `as_show`, `as_shop`, `as_menu`, `as_menu_show`, `as_grade`, `as_equal`, `as_wide`, `as_multi`, `as_partner`, `as_min`, `as_max`) VALUES
-('shop', '쇼핑몰', 'both', '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO `g5_group` (`gr_id`, `gr_subject`, `gr_device`, `gr_admin`, `gr_use_access`, `gr_order`, `gr_1_subj`, `gr_2_subj`, `gr_3_subj`, `gr_4_subj`, `gr_5_subj`, `gr_6_subj`, `gr_7_subj`, `gr_8_subj`, `gr_9_subj`, `gr_10_subj`, `gr_1`, `gr_2`, `gr_3`, `gr_4`, `gr_5`, `gr_6`, `gr_7`, `gr_8`, `gr_9`, `gr_10`, `as_group_skin`, `as_thema`, `as_color`, `as_mobile_thema`, `as_mobile_color`, `as_icon`, `as_mobile_icon`, `as_main`, `as_mobile_main`, `as_link`, `as_target`, `as_show`, `as_shop`, `as_menu`, `as_menu_show`, `as_grade`, `as_equal`, `as_wide`, `as_multi`, `as_partner`, `as_min`, `as_max`) VALUES
+('shop', '쇼핑몰', 'both', '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
+('community', '커뮤니티', 'both', '', 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 2, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1437,6 +1504,13 @@ CREATE TABLE `g5_group_member` (
   `mb_id` varchar(20) NOT NULL DEFAULT '',
   `gm_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 테이블의 덤프 데이터 `g5_group_member`
+--
+
+INSERT INTO `g5_group_member` (`gm_id`, `gr_id`, `mb_id`, `gm_datetime`) VALUES
+(1, 'community', 'qwe123', '2021-10-02 22:46:51');
 
 -- --------------------------------------------------------
 
@@ -1457,7 +1531,7 @@ CREATE TABLE `g5_login` (
 --
 
 INSERT INTO `g5_login` (`lo_ip`, `mb_id`, `lo_datetime`, `lo_location`, `lo_url`) VALUES
-('::1', 'asd123', '2021-09-30 02:17:14', 'Sell&Us', '/sellnus/shop/');
+('::1', 'test123', '2021-10-14 02:59:23', 'Sell&Us', '/sellnus/shop/');
 
 -- --------------------------------------------------------
 
@@ -1555,13 +1629,14 @@ CREATE TABLE `g5_member` (
 --
 
 INSERT INTO `g5_member` (`mb_no`, `mb_id`, `mb_sn`, `mb_password`, `mb_name`, `mb_nick`, `mb_nick_date`, `mb_email`, `mb_homepage`, `mb_level`, `mb_sex`, `mb_birth`, `mb_tel`, `mb_hp`, `mb_certify`, `mb_adult`, `mb_dupinfo`, `mb_zip1`, `mb_zip2`, `mb_addr1`, `mb_addr2`, `mb_addr3`, `mb_addr_jibeon`, `mb_signature`, `mb_recommend`, `mb_point`, `mb_today_login`, `mb_login_ip`, `mb_datetime`, `mb_ip`, `mb_leave_date`, `mb_intercept_date`, `mb_email_certify`, `mb_email_certify2`, `mb_memo`, `mb_lost_certify`, `mb_mailling`, `mb_sms`, `mb_open`, `mb_open_date`, `mb_profile`, `mb_memo_call`, `mb_1`, `mb_2`, `mb_3`, `mb_4`, `mb_5`, `mb_6`, `mb_7`, `mb_8`, `mb_9`, `mb_10`, `as_msg`, `as_photo`, `as_partner`, `as_marketer`, `as_exp`, `as_level`, `as_like`, `as_liked`, `as_follow`, `as_followed`, `as_response`, `as_memo`, `as_coupon`, `as_join`, `as_date`) VALUES
-(1, 'sellnus', '', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'sellnus', '0000-00-00', 'hgyeol.0107@gmail.com', '', 10, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 205, '2021-09-30 00:00:38', '1', '2021-08-30 22:51:33', '::1', '', '', '2021-08-30 22:51:33', '', '', '', 1, 0, 1, '0000-00-00', '', 'sellnus', '', '', '', '', '', '', '', '', '', '', 0, 0, 1, 0, 105, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0),
+(1, 'sellnus', '', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'sellnus', '0000-00-00', 'hgyeol.0107@gmail.com', '', 10, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 205, '2021-10-12 16:20:56', '1', '2021-08-30 22:51:33', '::1', '', '', '2021-08-30 22:51:33', '', '', '', 1, 0, 1, '0000-00-00', '', 'sellnus', '', '', '', '', '', '', '', '', '', '', 0, 1, 1, 0, 105, 1, 0, 0, 0, 0, 3, 1, 0, 0, 0),
 (4, 'lsm1469', '', '*7FD00B3EC3DED6582CBA8B744B3C12C62B60DFD8', '이한결', 'asdsadsa', '2021-08-31', 'hg14699@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-08-31 16:13:37', '::1', '2021-08-31 16:13:37', '::1', '', '', '2021-08-31 16:13:37', '', '', '', 1, 0, 1, '2021-08-31', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (2, 'lsm1217', '', '*7FD00B3EC3DED6582CBA8B744B3C12C62B60DFD8', 'asd', 'asda', '2021-08-31', 'gfsda@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 1000, '2021-08-31 00:12:42', '::1', '2021-08-31 00:12:42', '::1', '', '', '2021-08-31 00:12:42', '', '', '', 1, 0, 1, '2021-08-31', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (3, 'lsm96122', '', '*7FD00B3EC3DED6582CBA8B744B3C12C62B60DFD8', 'asd', 'aearer', '2021-08-31', 'asd@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 1000, '2021-08-31 10:38:26', '::1', '2021-08-31 10:38:26', '::1', '', '', '2021-08-31 10:38:26', '', '', '', 1, 0, 1, '2021-08-31', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(5, 'asd123', '', '*204C8A3B79DC1533866049F6819865291C5E6AD5', 'teste', 'teste', '2021-09-19', 'asd123@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-09-30 02:16:30', '1', '2021-09-19 15:23:13', '::1', '', '', '2021-09-19 15:23:13', '', '', '', 1, 0, 1, '2021-09-19', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(6, 'test123', '', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'test', 'ewts', '2021-09-19', 'test@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-09-27 22:24:35', '1', '2021-09-19 18:57:42', '::1', '', '', '2021-09-19 18:57:42', '', '', '', 1, 0, 1, '2021-09-19', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(7, 'test147', '', '*D40A35FC8AFFA26992500BB56DF64FE49E444634', 'testwqe', 'etstst', '2021-09-27', 'sadasds@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-09-27 22:24:13', '::1', '2021-09-27 22:24:13', '::1', '', '', '2021-09-27 22:24:13', '', '', '', 1, 0, 1, '2021-09-27', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+(5, 'asd123', '', '*204C8A3B79DC1533866049F6819865291C5E6AD5', 'teste', 'teste', '2021-09-19', 'asd123@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-10-02 00:00:06', '1', '2021-09-19 15:23:13', '::1', '', '', '2021-09-19 15:23:13', '', '', '', 1, 0, 1, '2021-09-19', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(6, 'test123', '', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'test', 'ewts', '2021-09-19', 'test@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-10-14 02:59:10', '1', '2021-09-19 18:57:42', '::1', '', '', '2021-09-19 18:57:42', '', '', '', 1, 0, 1, '2021-09-19', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0),
+(7, 'test147', '', '*D40A35FC8AFFA26992500BB56DF64FE49E444634', 'testwqe', 'etstst', '2021-09-27', 'sadasds@naver.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-09-27 22:24:13', '::1', '2021-09-27 22:24:13', '::1', '', '', '2021-09-27 22:24:13', '', '', '', 1, 0, 1, '2021-09-27', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(8, 'qwe123', '', '*2BDF26DD7EA26CD867757F66D4C880F48CFFDC81', 'Hangyeol', 'qwe123', '2021-10-02', 'qwe123@gmail.com', '', 2, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', 0, '2021-10-02 21:50:24', '::1', '2021-10-02 21:50:24', '::1', '', '', '2021-10-02 21:50:24', '', '', '', 1, 0, 1, '2021-10-02', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1759,16 +1834,11 @@ CREATE TABLE `g5_popular` (
 --
 
 INSERT INTO `g5_popular` (`pp_id`, `pp_word`, `pp_date`, `pp_ip`) VALUES
-(1, 'qw', '2021-08-31', '::1'),
-(2, '주니엘', '2021-08-31', '::1'),
-(3, 'testing', '2021-08-31', '::1'),
-(4, '그누보드', '2021-08-31', '::1'),
-(5, 'swe', '2021-08-31', '::1'),
-(6, 'swd', '2021-08-31', '::1'),
-(7, 'sw', '2021-08-31', '::1'),
-(8, 'sed', '2021-08-31', '::1'),
-(9, '스카프', '2021-08-31', '::1'),
-(10, 'qwe', '2021-09-19', '::1');
+(14, 'thanks', '2021-10-02', '::1'),
+(15, 'testing', '2021-10-03', '::1'),
+(16, 'asd', '2021-10-08', '::1'),
+(17, 'testing', '2021-10-12', '::1'),
+(18, 'welcome', '2021-10-12', '::1');
 
 -- --------------------------------------------------------
 
@@ -1953,15 +2023,6 @@ CREATE TABLE `g5_shop_cart` (
   `mk_profit_rate` int(11) NOT NULL DEFAULT 0,
   `mk_benefit_rate` int(11) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- 테이블의 덤프 데이터 `g5_shop_cart`
---
-
-INSERT INTO `g5_shop_cart` (`ct_id`, `od_id`, `mb_id`, `it_id`, `it_name`, `it_sc_type`, `it_sc_method`, `it_sc_price`, `it_sc_minimum`, `it_sc_qty`, `ct_status`, `ct_history`, `ct_price`, `ct_point`, `cp_price`, `ct_point_use`, `ct_stock_use`, `ct_option`, `ct_qty`, `ct_notax`, `io_id`, `io_type`, `io_price`, `ct_time`, `ct_ip`, `ct_send_cost`, `ct_direct`, `ct_select`, `ct_select_time`, `pt_sale`, `pt_commission`, `pt_point`, `pt_incentive`, `pt_net`, `pt_commission_rate`, `pt_incentive_rate`, `pt_it`, `pt_id`, `pt_send`, `pt_send_num`, `pt_datetime`, `pt_msg1`, `pt_msg2`, `pt_msg3`, `mk_id`, `mk_profit`, `mk_benefit`, `mk_profit_rate`, `mk_benefit_rate`) VALUES
-(2, 2021091915233589, 'asd123', '1630392069', 'soft seoul 소프트서울 랩가디건', 0, 0, 0, 0, 0, '쇼핑', '', 65000, 0, 0, 0, 0, 'soft seoul 소프트서울 랩가디건', 1, 0, '', 0, 0, '2021-09-19 15:23:35', '1', 0, 1, 0, '2021-09-19 15:23:35', 0, 0, 0, 0, 0, 0, 0, 1, '', '', '', '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0),
-(3, 2021093002163056, 'asd123', '1632038820', 'qwewqe', 0, 0, 0, 0, 0, '쇼핑', '', 11, 0, 0, 0, 0, 'qwewqe', 3, 0, '', 0, 0, '2021-09-19 17:12:00', '1', 0, 0, 0, '0000-00-00 00:00:00', 0, 0, 0, 0, 0, 0, 0, 1, '', '', '', '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0),
-(4, 2021092719074991, 'asd123', '1632735524', 'sdaasd123', 0, 0, 0, 0, 0, '쇼핑', '', 300000, 0, 0, 0, 0, 'sdaasd123', 1, 0, '', 0, 0, '2021-09-27 19:07:49', '1', 0, 1, 0, '2021-09-27 19:07:49', 0, 0, 0, 0, 0, 0, 0, 1, '', '', '', '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2560,15 +2621,18 @@ INSERT INTO `g5_shop_item` (`it_id`, `ca_id`, `ca_id2`, `ca_id3`, `it_skin`, `it
 ('1630392206', '10', '10', '10', '', '', '슈퍼 마리오 퓨리월드&3d 월드', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 45000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 0, '2021-08-31 15:43:50', '2021-08-31 15:43:50', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1630392206/162258264_1_1629434490_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/data/item/1630392206/162258264_1_1629434490_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1630392230, 0, 0, 0, 0, 0, '', '', '', '', ''),
 ('1630392240', '10', '10', '10', '', '', '유니클로 후리스 플리스 네이비xxl', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 10000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 4, '2021-08-31 15:44:17', '2021-08-31 15:44:17', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1630392240/160464847_1_1627627025_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/data/item/1630392240/160464847_1_1627627025_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1630392257, 0, 0, 0, 0, 0, '', '', '', '', ''),
 ('1630392264', '10', '10', '10', '', '', 'C체인 정사각 고급 실크 스카프', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 59000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 3, '2021-08-31 15:44:47', '2021-08-31 15:44:47', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1630392264/163233865_1_1630386286_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/data/item/1630392264/163233865_1_1630386286_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1630392287, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1630392295', '10', '10', '10', '', '', '슈프림 18fw 백팩 (사용감 및 헤짐 많음)', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 200000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 0, '2021-08-31 15:45:09', '2021-09-14 19:50:21', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1630392295/163136360_1_1630371458_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1630392295/163136360_1_1630371458_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1630392309, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1630392295', '10', '10', '10', '', '', '슈프림 18fw 백팩 (사용감 및 헤짐 많음)', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 200000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 1, '2021-08-31 15:45:09', '2021-10-12 16:45:44', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1630392295/163136360_1_1630371458_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1630392295/163136360_1_1630371458_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1630392309, 0, 0, 0, 0, 0, '', '', '', '', ''),
 ('1631616741', '10', '10', '10', '', '', '머리 집게핀 / 올림머리', '', '', '', '', '', '', 0, 0, 0, 0, 0, '머리 집게핀 / 올림머리', '', '', '', 0, 0, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 3, '2021-09-14 19:53:52', '2021-09-14 19:53:52', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1631616741/164453432_1_1631606562_w856.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1631616741/164453432_1_1631606562_w856.jpg', '', '', '', '', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1631616832, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1632034820', '10', '10', '10', '', '', 'asdsadasd', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'sadsadasd', '<p>asdasd</p>', 'asdasd', '', 0, 0, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 5, '2021-09-19 16:00:47', '2021-09-19 16:00:47', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632034820/82246_69421_24391.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'http://localhost/sellnus/data/item/1632034820/82246_69421_24391.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632034847, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1632038820', '10', '10', '10', '', '', 'qwewqe', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'qweqweq', '', '', '', 0, 11, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 14, '2021-09-19 17:07:27', '2021-09-19 17:07:54', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632038820/557d38dc2749c7aa8e0dba5b8f4415b0.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1632038820/557d38dc2749c7aa8e0dba5b8f4415b0.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632038847, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1632045642', '10', '10', '10', '', '', 'qwewqeqe', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'qqweqwewqewqe', '<p>{지도: geo=\"37.565834,126.967463,18\"}<br></p>', '{지도: geo=\"37.565834,126.967463,18\"}', '', 0, 132112, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 6, '2021-09-19 19:02:22', '2021-09-19 19:02:22', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632045642/books.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'qwewqeqwe', 'http://localhost/sellnus/data/item/1632045642/books.jpg', '', '', '', 'test123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632045742, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1632034820', '10', '10', '10', '', '', 'asdsadasd', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'sadsadasd', '<p>asdasd</p>', 'asdasd', '', 0, 0, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 6, '2021-09-19 16:00:47', '2021-09-19 16:00:47', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632034820/82246_69421_24391.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'http://localhost/sellnus/data/item/1632034820/82246_69421_24391.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632034847, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1632038820', '10', '10', '10', '', '', 'qwewqe', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'qweqweq', '', '', '', 0, 11, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 23, '2021-09-19 17:07:27', '2021-09-19 17:07:54', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632038820/557d38dc2749c7aa8e0dba5b8f4415b0.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1632038820/557d38dc2749c7aa8e0dba5b8f4415b0.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632038847, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1632045642', '10', '10', '10', '', '', 'qwewqeqe', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'qqweqwewqewqe', '<p>{지도: geo=\"37.565834,126.967463,18\"}<br></p>', '{지도: geo=\"37.565834,126.967463,18\"}', '', 0, 132112, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 8, '2021-09-19 19:02:22', '2021-09-19 19:02:22', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632045642/books.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'qwewqeqwe', 'http://localhost/sellnus/data/item/1632045642/books.jpg', '', '', '', 'test123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632045742, 0, 0, 0, 0, 0, '', '', '', '', ''),
 ('1632734617', '20', '', '', '', '', 'testing123', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 123123, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 1, '2021-09-27 18:26:46', '2021-09-27 18:26:46', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632734617/loginbg.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1632734617/loginbg.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632734806, 0, 0, 0, 0, 0, '', '', '', '', ''),
 ('1632735524', '20', '', '', '', '', 'sdaasd123', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'asdsadsadasdasdasd', '<p>sdaasd123<br></p><p><br></p><p>{지도: geo=\"37.578105,126.967073,16\"}<br></p>', 'sdaasd123{지도: geo=\"37.578105,126.967073,16\"}', '', 0, 300000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 2, '2021-09-27 18:40:45', '2021-09-27 18:41:42', '::1', 0, 0, 'image_appliances', 'a:13:{s:12:\"product_name\";s:28:\"상세설명페이지 참고\";s:10:\"model_name\";s:28:\"상세설명페이지 참고\";s:13:\"certification\";s:28:\"상세설명페이지 참고\";s:13:\"rated_voltage\";s:28:\"상세설명페이지 참고\";s:17:\"power_consumption\";s:28:\"상세설명페이지 참고\";s:17:\"energy_efficiency\";s:28:\"상세설명페이지 참고\";s:13:\"released_date\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:6:\"madein\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:21:\"display_specification\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632735524/universaleye72XYTAYvRicunsplash.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1632735524/universaleye72XYTAYvRicunsplash.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632735645, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1632741831', '20', '2010', '', '', '', 'test123', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'sadasdasd', '', '', '', 0, 54656, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 1, '2021-09-27 20:24:17', '2021-09-27 20:24:17', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632741831/daily.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asdasd', 'http://localhost/sellnus/data/item/1632741831/daily.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632741857, 0, 0, 0, 0, 0, '', '', '', '', ''),
-('1632743116', '20', '', '', '', '', 'sadasdasd1243', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'asdsadasdasd12312321321', '', '', '', 0, 123123, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 3, '2021-09-27 20:45:49', '2021-09-27 20:45:49', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632743116/alabastercoWUSp1l7_rQcunsplash.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asdasdasdsadsa', 'http://localhost/sellnus/data/item/1632743116/alabastercoWUSp1l7_rQcunsplash.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632743149, 0, 0, 0, 0, 0, '', '', '', '', '');
+('1632741831', '20', '2010', '', '', '', 'test123', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'sadasdasd', '', '', '', 0, 54656, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 3, '2021-09-27 20:24:17', '2021-09-27 20:24:17', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632741831/daily.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asdasd', 'http://localhost/sellnus/data/item/1632741831/daily.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632741857, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1632743116', '20', '', '', '', '', 'sadasdasd1243', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'asdsadasdasd12312321321', '', '', '', 0, 123123, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 5, '2021-09-27 20:45:49', '2021-09-27 20:45:49', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1632743116/alabastercoWUSp1l7_rQcunsplash.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asdasdasdsadsa', 'http://localhost/sellnus/data/item/1632743116/alabastercoWUSp1l7_rQcunsplash.jpg', '', '', '', 'asd123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1632743149, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1633330415', '20', '', '', '', '', 'asdsadas', '', '', '', '', '', '', 0, 0, 0, 0, 0, '', '', '', '', 0, 54656, 0, 0, 0, 0, '', 0, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 1, '2021-10-04 15:54:28', '2021-10-04 16:01:36', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1633330415/bf2da1c0245d11ecbbff0cdf41fb1e21.jpg', '1633330415/img.jpg', '1633330415/DSC04981.jpg', '1633330415/jh7253_niBiqMT6qfymS.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1633330415/bf2da1c0245d11ecbbff0cdf41fb1e21.jpg', '', '', '', 'test123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1633330468, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1633330914', '20', '', '', '', '', 'asdasd', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel augue id ex fermentum mattis. Fusce dapibus nec libero at sollicitudin. Mauris sed nulla sollicitudin, viverra mauris sed, commodo lectus. Nullam elit nisi, aliquam non scelerisque convallis, egestas non elit. Duis consequat rhoncus leo. Donec ac ipsum et enim faucibus tincidunt. Nulla a accumsan ante. Pellentesque vel imperdiet augue. Cras sed posuere lectus, vitae auctor mauris. Vivamus in libero elementum, varius lorem at, sodales mauris.', '', '', '', 0, 123, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 5, '2021-10-04 16:02:24', '2021-10-08 22:17:30', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1633330914/bf2da1c0245d11ecbbff0cdf41fb1e21.jpg', '1633330914/DSC04981.jpg', '1633330914/jh7253_niBiqMT6qfymS.jpg', '1633330914/img.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1633330914/bf2da1c0245d11ecbbff0cdf41fb1e21.jpg', '', '', '', 'test123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1633330944, 0, 0, 0, 0, 0, '', '', '', '', ''),
+('1633691795', '20', '', '', '', '', 'testing', '', '', '', '', '', '', 0, 0, 0, 0, 0, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel augue id ex fermentum mattis. Fusce dapibus nec libero at sollicitudin. Mauris sed nulla sollicitudin, viverra mauris sed, commodo lectus. Nullam elit nisi, aliquam non scelerisque convallis, egestas non elit. Duis consequat rhoncus leo. Donec ac ipsum et enim faucibus tincidunt. Nulla a accumsan ante. Pellentesque vel imperdiet augue. Cras sed posuere lectus, vitae auctor mauris. Vivamus in libero elementum, varius lorem at, sodales mauris.', '', '', '', 0, 900000, 0, 0, 0, 0, '', 1, 0, 0, 99999, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', 1, '2021-10-08 20:17:30', '2021-10-08 20:22:11', '::1', 0, 0, 'wear', 'a:8:{s:8:\"material\";s:28:\"상세설명페이지 참고\";s:5:\"color\";s:28:\"상세설명페이지 참고\";s:4:\"size\";s:28:\"상세설명페이지 참고\";s:5:\"maker\";s:28:\"상세설명페이지 참고\";s:7:\"caution\";s:28:\"상세설명페이지 참고\";s:16:\"manufacturing_ym\";s:28:\"상세설명페이지 참고\";s:8:\"warranty\";s:28:\"상세설명페이지 참고\";s:2:\"as\";s:28:\"상세설명페이지 참고\";}', 0, 0, '0.0', '', '', '1633691795/wallpaperflare.com_wallpaper.jpg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://localhost/sellnus/data/item/1633691795/wallpaperflare.com_wallpaper.jpg', '', '', '', 'test123', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1633691850, 0, 0, 0, 0, 0, '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -2786,6 +2850,22 @@ CREATE TABLE `g5_shop_order_delete` (
   `mb_id` varchar(20) NOT NULL DEFAULT '',
   `de_ip` varchar(255) NOT NULL DEFAULT '',
   `de_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `g5_shop_order_post_log`
+--
+
+CREATE TABLE `g5_shop_order_post_log` (
+  `oid` bigint(20) UNSIGNED NOT NULL,
+  `mb_id` varchar(255) NOT NULL DEFAULT '',
+  `post_data` text NOT NULL,
+  `ol_code` varchar(255) NOT NULL DEFAULT '',
+  `ol_msg` varchar(255) NOT NULL DEFAULT '',
+  `ol_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ol_ip` varchar(25) NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -3022,7 +3102,354 @@ INSERT INTO `g5_uniqid` (`uq_id`, `uq_ip`) VALUES
 (2021092922175326, '::1'),
 (2021093002085373, '::1'),
 (2021093002162493, '::1'),
-(2021093002163056, '::1');
+(2021093002163056, '::1'),
+(2021093016041474, '::1'),
+(2021100121513634, '::1'),
+(2021100203125227, '::1'),
+(2021100203400370, '::1'),
+(2021100204060483, '::1'),
+(2021100204393629, '::1'),
+(2021100204420875, '::1'),
+(2021100204472709, '::1'),
+(2021100215252601, '::1'),
+(2021100216055099, '::1'),
+(2021100216121568, '::1'),
+(2021100217423132, '::1'),
+(2021100217471448, '::1'),
+(2021100218094962, '::1'),
+(2021100218122766, '::1'),
+(2021100218140542, '::1'),
+(2021100218263723, '::1'),
+(2021100218271219, '::1'),
+(2021100218323495, '::1'),
+(2021100218335731, '::1'),
+(2021100219084363, '::1'),
+(2021100219255602, '::1'),
+(2021100219261190, '::1'),
+(2021100219273207, '::1'),
+(2021100219293128, '::1'),
+(2021100219410014, '::1'),
+(2021100219463202, '::1'),
+(2021100219495909, '::1'),
+(2021100219500998, '::1'),
+(2021100220532794, '::1'),
+(2021100220550540, '::1'),
+(2021100221002508, '::1'),
+(2021100221190465, '::1'),
+(2021100221502424, '::1'),
+(2021100221540248, '::1'),
+(2021100222023707, '::1'),
+(2021100222231072, '::1'),
+(2021100222241317, '::1'),
+(2021100222342354, '::1'),
+(2021100222343942, '::1'),
+(2021100222364934, '::1'),
+(2021100222365654, '::1'),
+(2021100222371736, '::1'),
+(2021100222374787, '::1'),
+(2021100222381124, '::1'),
+(2021100222412316, '::1'),
+(2021100222420184, '::1'),
+(2021100222440725, '::1'),
+(2021100222444595, '::1'),
+(2021100222451014, '::1'),
+(2021100222453730, '::1'),
+(2021100222455120, '::1'),
+(2021100222455654, '::1'),
+(2021100222461340, '::1'),
+(2021100222480036, '::1'),
+(2021100222480746, '::1'),
+(2021100222482265, '::1'),
+(2021100222564807, '::1'),
+(2021100222584140, '::1'),
+(2021100300475811, '::1'),
+(2021100300484923, '::1'),
+(2021100301334942, '::1'),
+(2021100301392090, '::1'),
+(2021100301454037, '::1'),
+(2021100301473515, '::1'),
+(2021100302504714, '::1'),
+(2021100303380639, '::1'),
+(2021100304063500, '::1'),
+(2021100305120545, '::1'),
+(2021100314375226, '::1'),
+(2021100314503999, '::1'),
+(2021100314593734, '::1'),
+(2021100315001061, '::1'),
+(2021100315532419, '::1'),
+(2021100315534685, '::1'),
+(2021100315535549, '::1'),
+(2021100316071874, '::1'),
+(2021100318211808, '::1'),
+(2021100318452253, '::1'),
+(2021100318565463, '::1'),
+(2021100319440195, '::1'),
+(2021100319443802, '::1'),
+(2021100319493441, '::1'),
+(2021100320162785, '::1'),
+(2021100320333810, '::1'),
+(2021100320335333, '::1'),
+(2021100320371216, '::1'),
+(2021100320372658, '::1'),
+(2021100320373841, '::1'),
+(2021100320413370, '::1'),
+(2021100320414442, '::1'),
+(2021100320433319, '::1'),
+(2021100321002027, '::1'),
+(2021100321005422, '::1'),
+(2021100321153461, '::1'),
+(2021100321154661, '::1'),
+(2021100322130112, '::1'),
+(2021100322183356, '::1'),
+(2021100322450923, '::1'),
+(2021100414175507, '::1'),
+(2021100414200027, '::1'),
+(2021100414200705, '::1'),
+(2021100414204567, '::1'),
+(2021100417091459, '::1'),
+(2021100515340386, '::1'),
+(2021100515393011, '::1'),
+(2021100516031970, '::1'),
+(2021100516110619, '::1'),
+(2021100519441519, '::1'),
+(2021100521314706, '::1'),
+(2021100522040714, '::1'),
+(2021100522163166, '::1'),
+(2021100522411148, '::1'),
+(2021100522411544, '::1'),
+(2021100522414445, '::1'),
+(2021100522420449, '::1'),
+(2021100522422662, '::1'),
+(2021100522523577, '::1'),
+(2021100815492437, '::1'),
+(2021100815493385, '::1'),
+(2021100817110846, '::1'),
+(2021100819524939, '::1'),
+(2021100819532768, '::1'),
+(2021100819574646, '::1'),
+(2021100820125406, '::1'),
+(2021100820162233, '::1'),
+(2021100821471515, '::1'),
+(2021100823072370, '::1'),
+(2021100823072774, '::1'),
+(2021101216205017, '::1'),
+(2021101216205688, '::1'),
+(2021101216243410, '::1'),
+(2021101216275773, '::1'),
+(2021101216280450, '::1'),
+(2021101216303780, '::1'),
+(2021101216380849, '::1'),
+(2021101216383974, '::1'),
+(2021101217094229, '::1'),
+(2021101217101500, '::1'),
+(2021101217102791, '::1'),
+(2021101217110157, '::1'),
+(2021101217110772, '::1'),
+(2021101217115023, '::1'),
+(2021101217142499, '::1'),
+(2021101217143648, '::1'),
+(2021101217145748, '::1'),
+(2021101217150450, '::1'),
+(2021101217151147, '::1'),
+(2021101217152336, '::1'),
+(2021101217153633, '::1'),
+(2021101217155812, '::1'),
+(2021101217174633, '::1'),
+(2021101217175848, '::1'),
+(2021101217322348, '::1'),
+(2021101217342508, '::1'),
+(2021101217343746, '::1'),
+(2021101217345444, '::1'),
+(2021101217350290, '::1'),
+(2021101217360408, '::1'),
+(2021101217360506, '::1'),
+(2021101217382939, '::1'),
+(2021101217385636, '::1'),
+(2021101217392549, '::1'),
+(2021101217395262, '::1'),
+(2021101217401725, '::1'),
+(2021101217414738, '::1'),
+(2021101217415708, '::1'),
+(2021101217423444, '::1'),
+(2021101217441189, '::1'),
+(2021101217443762, '::1'),
+(2021101217444916, '::1'),
+(2021101217445712, '::1'),
+(2021101217450398, '::1'),
+(2021101217450769, '::1'),
+(2021101217450999, '::1'),
+(2021101217453975, '::1'),
+(2021101217455032, '::1'),
+(2021101217460659, '::1'),
+(2021101217461350, '::1'),
+(2021101217462971, '::1'),
+(2021101217465564, '::1'),
+(2021101217470374, '::1'),
+(2021101217472012, '::1'),
+(2021101217474640, '::1'),
+(2021101217480184, '::1'),
+(2021101217481540, '::1'),
+(2021101217483394, '::1'),
+(2021101217484722, '::1'),
+(2021101217490152, '::1'),
+(2021101217490854, '::1'),
+(2021101217491431, '::1'),
+(2021101217504911, '::1'),
+(2021101217505573, '::1'),
+(2021101217512476, '::1'),
+(2021101217514064, '::1'),
+(2021101217521645, '::1'),
+(2021101217522649, '::1'),
+(2021101217523993, '::1'),
+(2021101217525564, '::1'),
+(2021101217532633, '::1'),
+(2021101217533734, '::1'),
+(2021101217535397, '::1'),
+(2021101217540085, '::1'),
+(2021101217540475, '::1'),
+(2021101217541290, '::1'),
+(2021101217541620, '::1'),
+(2021101217542101, '::1'),
+(2021101217542656, '::1'),
+(2021101217543639, '::1'),
+(2021101217544921, '::1'),
+(2021101217551182, '::1'),
+(2021101217563160, '::1'),
+(2021101218034545, '::1'),
+(2021101218035479, '::1'),
+(2021101218050562, '::1'),
+(2021101218052094, '::1'),
+(2021101218052478, '::1'),
+(2021101218060717, '::1'),
+(2021101218061906, '::1'),
+(2021101218062976, '::1'),
+(2021101218065385, '::1'),
+(2021101218065929, '::1'),
+(2021101218071289, '::1'),
+(2021101218080360, '::1'),
+(2021101218091290, '::1'),
+(2021101218101095, '::1'),
+(2021101218114282, '::1'),
+(2021101218120138, '::1'),
+(2021101218120975, '::1'),
+(2021101218121834, '::1'),
+(2021101218122706, '::1'),
+(2021101218123153, '::1'),
+(2021101218123708, '::1'),
+(2021101218124119, '::1'),
+(2021101218125045, '::1'),
+(2021101218133657, '::1'),
+(2021101218135553, '::1'),
+(2021101218143956, '::1'),
+(2021101218180883, '::1'),
+(2021101218221479, '::1'),
+(2021101218234934, '::1'),
+(2021101218245452, '::1'),
+(2021101218270587, '::1'),
+(2021101218324601, '::1'),
+(2021101218325071, '::1'),
+(2021101218330660, '::1'),
+(2021101218331270, '::1'),
+(2021101218332457, '::1'),
+(2021101218353319, '::1'),
+(2021101218354562, '::1'),
+(2021101218355081, '::1'),
+(2021101218360427, '::1'),
+(2021101218360919, '::1'),
+(2021101218362094, '::1'),
+(2021101218364119, '::1'),
+(2021101218372176, '::1'),
+(2021101218373305, '::1'),
+(2021101218381304, '::1'),
+(2021101218382481, '::1'),
+(2021101218382730, '::1'),
+(2021101218383588, '::1'),
+(2021101218391663, '::1'),
+(2021101218392285, '::1'),
+(2021101218392861, '::1'),
+(2021101218395699, '::1'),
+(2021101218402463, '::1'),
+(2021101218433814, '::1'),
+(2021101218440428, '::1'),
+(2021101218441722, '::1'),
+(2021101218442534, '::1'),
+(2021101218443390, '::1'),
+(2021101218444245, '::1'),
+(2021101218472075, '::1'),
+(2021101218475339, '::1'),
+(2021101218544881, '::1'),
+(2021101218550867, '::1'),
+(2021101218552513, '::1'),
+(2021101218553537, '::1'),
+(2021101218571116, '::1'),
+(2021101218571711, '::1'),
+(2021101218580322, '::1'),
+(2021101220153836, '::1'),
+(2021101220180273, '::1'),
+(2021101220405756, '::1'),
+(2021101220410445, '::1'),
+(2021101220410771, '::1'),
+(2021101220411102, '::1'),
+(2021101220411499, '::1'),
+(2021101220411898, '::1'),
+(2021101220450392, '::1'),
+(2021101220453620, '::1'),
+(2021101220454163, '::1'),
+(2021101221174116, '::1'),
+(2021101221184775, '::1'),
+(2021101221190750, '::1'),
+(2021101221191328, '::1'),
+(2021101221204295, '::1'),
+(2021101221213094, '::1'),
+(2021101221213958, '::1'),
+(2021101221233442, '::1'),
+(2021101221234469, '::1'),
+(2021101221235980, '::1'),
+(2021101221241852, '::1'),
+(2021101221270474, '::1'),
+(2021101221282668, '::1'),
+(2021101221283163, '::1'),
+(2021101221284182, '::1'),
+(2021101221284844, '::1'),
+(2021101221291845, '::1'),
+(2021101221293740, '::1'),
+(2021101221294734, '::1'),
+(2021101221295593, '::1'),
+(2021101221302946, '::1'),
+(2021101221304212, '::1'),
+(2021101221310200, '::1'),
+(2021101221312672, '::1'),
+(2021101221313849, '::1'),
+(2021101221333100, '::1'),
+(2021101221341362, '::1'),
+(2021101221365722, '::1'),
+(2021101221370171, '::1'),
+(2021101221371118, '::1'),
+(2021101221371922, '::1'),
+(2021101221373249, '::1'),
+(2021101221375964, '::1'),
+(2021101221381787, '::1'),
+(2021101221391217, '::1'),
+(2021101221392032, '::1'),
+(2021101221392771, '::1'),
+(2021101221395306, '::1'),
+(2021101221404281, '::1'),
+(2021101221405000, '::1'),
+(2021101221411626, '::1'),
+(2021101221415709, '::1'),
+(2021101221421417, '::1'),
+(2021101221431918, '::1'),
+(2021101221432936, '::1'),
+(2021101221434056, '::1'),
+(2021101221451817, '::1'),
+(2021101221452852, '::1'),
+(2021101221455087, '::1'),
+(2021101221455735, '::1'),
+(2021101221461047, '::1'),
+(2021101221463774, '::1'),
+(2021101221465689, '::1'),
+(2021101221465967, '::1'),
+(2021101222194706, '::1');
 
 -- --------------------------------------------------------
 
@@ -3058,7 +3485,17 @@ INSERT INTO `g5_visit` (`vi_id`, `vi_ip`, `vi_date`, `vi_time`, `vi_referer`, `v
 (9, '::1', '2021-09-22', '00:47:03', 'http://localhost/sellnus/shop/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36', '', '', ''),
 (10, '::1', '2021-09-27', '02:43:45', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
 (11, '::1', '2021-09-28', '20:40:26', 'http://localhost/sellnus/shop/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
-(12, '::1', '2021-09-29', '20:50:14', 'http://localhost/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', '');
+(12, '::1', '2021-09-29', '20:50:14', 'http://localhost/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(13, '::1', '2021-09-30', '22:17:40', 'http://localhost/sellnus/bbs/board.php?bo_table=gallery&wr_id=1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(14, '::1', '2021-10-01', '22:18:06', 'http://localhost/sellnus/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(15, '::1', '2021-10-02', '03:39:32', 'http://localhost/sellnus/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(16, '127.0.0.1', '2021-10-02', '19:29:18', 'http://localhost/sellnus/bbs/board.php?bo_table=qa', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(17, '::1', '2021-10-03', '00:44:09', 'http://localhost/sellnus/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(18, '::1', '2021-10-04', '14:20:36', 'http://localhost/sellnus/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', '', '', ''),
+(19, '::1', '2021-10-05', '15:33:54', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36', '', '', ''),
+(20, '::1', '2021-10-08', '15:46:27', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36', '', '', ''),
+(21, '::1', '2021-10-12', '16:20:45', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36', '', '', ''),
+(22, '::1', '2021-10-14', '02:59:10', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -3086,7 +3523,97 @@ INSERT INTO `g5_visit_sum` (`vs_date`, `vs_count`) VALUES
 ('2021-09-22', 1),
 ('2021-09-27', 1),
 ('2021-09-28', 1),
-('2021-09-29', 1);
+('2021-09-29', 1),
+('2021-09-30', 1),
+('2021-10-01', 1),
+('2021-10-02', 2),
+('2021-10-03', 1),
+('2021-10-04', 1),
+('2021-10-05', 1),
+('2021-10-08', 1),
+('2021-10-12', 1),
+('2021-10-14', 1);
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `g5_write_clubs`
+--
+
+CREATE TABLE `g5_write_clubs` (
+  `wr_id` int(11) NOT NULL,
+  `wr_num` int(11) NOT NULL DEFAULT 0,
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int(11) NOT NULL DEFAULT 0,
+  `wr_is_comment` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_comment` int(11) NOT NULL DEFAULT 0,
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_link2_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_good` int(11) NOT NULL DEFAULT 0,
+  `wr_nogood` int(11) NOT NULL DEFAULT 0,
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  `as_type` tinyint(4) NOT NULL DEFAULT 0,
+  `as_shingo` tinyint(4) NOT NULL DEFAULT 0,
+  `as_img` tinyint(4) NOT NULL DEFAULT 0,
+  `as_list` tinyint(4) NOT NULL DEFAULT 0,
+  `as_publish` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extra` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extend` tinyint(4) NOT NULL DEFAULT 0,
+  `as_level` int(11) NOT NULL DEFAULT 1,
+  `as_download` int(11) NOT NULL DEFAULT 0,
+  `as_down` int(11) NOT NULL DEFAULT 0,
+  `as_view` int(11) NOT NULL DEFAULT 0,
+  `as_lucky` int(11) NOT NULL DEFAULT 0,
+  `as_poll` int(11) NOT NULL DEFAULT 0,
+  `as_star_score` int(11) NOT NULL DEFAULT 0,
+  `as_choice` int(11) NOT NULL DEFAULT 0,
+  `as_choice_cnt` int(11) NOT NULL DEFAULT 0,
+  `as_re_mb` varchar(255) NOT NULL,
+  `as_re_name` varchar(255) NOT NULL,
+  `as_tag` varchar(255) NOT NULL,
+  `as_map` varchar(255) NOT NULL,
+  `as_icon` varchar(255) NOT NULL,
+  `as_thumb` varchar(255) NOT NULL,
+  `as_video` varchar(255) NOT NULL,
+  `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `as_star_cnt` int(11) NOT NULL DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 테이블의 덤프 데이터 `g5_write_clubs`
+--
+
+INSERT INTO `g5_write_clubs` (`wr_id`, `wr_num`, `wr_reply`, `wr_parent`, `wr_is_comment`, `wr_comment`, `wr_comment_reply`, `ca_name`, `wr_option`, `wr_subject`, `wr_content`, `wr_link1`, `wr_link2`, `wr_link1_hit`, `wr_link2_hit`, `wr_hit`, `wr_good`, `wr_nogood`, `mb_id`, `wr_password`, `wr_name`, `wr_email`, `wr_homepage`, `wr_datetime`, `wr_file`, `wr_last`, `wr_ip`, `wr_facebook_user`, `wr_twitter_user`, `wr_1`, `wr_2`, `wr_3`, `wr_4`, `wr_5`, `wr_6`, `wr_7`, `wr_8`, `wr_9`, `wr_10`, `as_type`, `as_shingo`, `as_img`, `as_list`, `as_publish`, `as_extra`, `as_extend`, `as_level`, `as_download`, `as_down`, `as_view`, `as_lucky`, `as_poll`, `as_star_score`, `as_choice`, `as_choice_cnt`, `as_re_mb`, `as_re_name`, `as_tag`, `as_map`, `as_icon`, `as_thumb`, `as_video`, `as_update`, `as_star_cnt`) VALUES
+(1, -1, '', 1, 0, 0, '', '', '', 'ㅁㄴㅇㅁㄴㅇㄴㅁㅇ', 'ㅇㄴㅁㅇㄴㅁㅇㄴ', '', '', 0, 0, 3, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-12 16:30:26', 0, '2021-10-12 16:30:26', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00', 0),
+(2, -2, '', 2, 0, 0, '', '', 'html1', 'testing', '<p><img src=\"http://localhost/sellnus/data/editor/2110/97c53b2a31d5a1d206007ff56f036bcb_1634037354_2248.JPG\" title=\"97c53b2a31d5a1d206007ff56f036bcb_1634037354_2248.JPG\"><br style=\"clear:both;\"><img src=\"http://localhost/sellnus/data/editor/2110/97c53b2a31d5a1d206007ff56f036bcb_1634037354_3201.JPG\" title=\"97c53b2a31d5a1d206007ff56f036bcb_1634037354_3201.JPG\"><br style=\"clear:both;\"><img src=\"http://localhost/sellnus/data/editor/2110/97c53b2a31d5a1d206007ff56f036bcb_1634037354_4203.JPG\" title=\"97c53b2a31d5a1d206007ff56f036bcb_1634037354_4203.JPG\"><br style=\"clear:both;\">&nbsp;</p>', '', '', 0, 0, 4, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-12 20:15:59', 0, '2021-10-12 20:15:59', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', 'http://localhost/sellnus/data/editor/2110/97c53b2a31d5a1d206007ff56f036bcb_1634037354_2248.JPG', '', '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -3159,6 +3686,79 @@ CREATE TABLE `g5_write_free` (
   `as_thumb` varchar(255) NOT NULL,
   `as_video` varchar(255) NOT NULL,
   `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `g5_write_freshman`
+--
+
+CREATE TABLE `g5_write_freshman` (
+  `wr_id` int(11) NOT NULL,
+  `wr_num` int(11) NOT NULL DEFAULT 0,
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int(11) NOT NULL DEFAULT 0,
+  `wr_is_comment` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_comment` int(11) NOT NULL DEFAULT 0,
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_link2_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_good` int(11) NOT NULL DEFAULT 0,
+  `wr_nogood` int(11) NOT NULL DEFAULT 0,
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  `as_type` tinyint(4) NOT NULL DEFAULT 0,
+  `as_shingo` tinyint(4) NOT NULL DEFAULT 0,
+  `as_img` tinyint(4) NOT NULL DEFAULT 0,
+  `as_list` tinyint(4) NOT NULL DEFAULT 0,
+  `as_publish` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extra` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extend` tinyint(4) NOT NULL DEFAULT 0,
+  `as_level` int(11) NOT NULL DEFAULT 1,
+  `as_download` int(11) NOT NULL DEFAULT 0,
+  `as_down` int(11) NOT NULL DEFAULT 0,
+  `as_view` int(11) NOT NULL DEFAULT 0,
+  `as_lucky` int(11) NOT NULL DEFAULT 0,
+  `as_poll` int(11) NOT NULL DEFAULT 0,
+  `as_star_score` int(11) NOT NULL DEFAULT 0,
+  `as_choice` int(11) NOT NULL DEFAULT 0,
+  `as_choice_cnt` int(11) NOT NULL DEFAULT 0,
+  `as_re_mb` varchar(255) NOT NULL DEFAULT '',
+  `as_re_name` varchar(255) NOT NULL,
+  `as_tag` varchar(255) NOT NULL,
+  `as_map` varchar(255) NOT NULL,
+  `as_icon` varchar(255) NOT NULL,
+  `as_thumb` varchar(255) NOT NULL,
+  `as_video` varchar(255) NOT NULL,
+  `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `as_star_cnt` int(11) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -3239,7 +3839,156 @@ CREATE TABLE `g5_write_gallery` (
 --
 
 INSERT INTO `g5_write_gallery` (`wr_id`, `wr_num`, `wr_reply`, `wr_parent`, `wr_is_comment`, `wr_comment`, `wr_comment_reply`, `ca_name`, `wr_option`, `wr_subject`, `wr_content`, `wr_link1`, `wr_link2`, `wr_link1_hit`, `wr_link2_hit`, `wr_hit`, `wr_good`, `wr_nogood`, `mb_id`, `wr_password`, `wr_name`, `wr_email`, `wr_homepage`, `wr_datetime`, `wr_file`, `wr_last`, `wr_ip`, `wr_facebook_user`, `wr_twitter_user`, `wr_1`, `wr_2`, `wr_3`, `wr_4`, `wr_5`, `wr_6`, `wr_7`, `wr_8`, `wr_9`, `wr_10`, `as_type`, `as_shingo`, `as_img`, `as_list`, `as_publish`, `as_extra`, `as_extend`, `as_level`, `as_download`, `as_down`, `as_view`, `as_lucky`, `as_poll`, `as_star_score`, `as_star_cnt`, `as_choice`, `as_choice_cnt`, `as_re_mb`, `as_re_name`, `as_tag`, `as_map`, `as_icon`, `as_thumb`, `as_video`, `as_update`) VALUES
-(1, -1, '', 1, 0, 0, '', '', '', 'wwqeqew', 'qwqewqewqewewqqew', '', '', 0, 0, 3, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-08-31 11:26:11', 0, '2021-08-31 11:26:11', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00');
+(1, -1, '', 1, 0, 0, '', '', '', 'wwqeqew', 'qwqewqewqewewqqew', '', '', 0, 0, 5, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-08-31 11:26:11', 0, '2021-08-31 11:26:11', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(2, -2, '', 2, 0, 1, '', '', '', 'ㄷㅂㅈㄷㅂㄷㅂㅈㄷ', 'ㅂㅈㄷㅂㅈㄷㅈㅂㄷㅂ', '', '', 0, 0, 2, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 17:47:35', 1, '2021-10-02 18:21:49', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', 'http://localhost/sellnus/data/file/gallery/0_u0IFNQwf_ce2aaaa0c3e4af0e0675a432b6f7c77c524c1ccf.jpg', '', '0000-00-00 00:00:00'),
+(3, -3, '', 3, 0, 0, '', '', '', 'test1231231232133', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', '', '', 0, 0, 3, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 18:14:13', 0, '2021-10-02 18:14:13', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(4, -2, '', 2, 1, 1, '', '', '', '', '좋네', '', '', 0, 0, 0, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 18:21:49', 0, '', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `g5_write_information`
+--
+
+CREATE TABLE `g5_write_information` (
+  `wr_id` int(11) NOT NULL,
+  `wr_num` int(11) NOT NULL DEFAULT 0,
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int(11) NOT NULL DEFAULT 0,
+  `wr_is_comment` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_comment` int(11) NOT NULL DEFAULT 0,
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_link2_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_good` int(11) NOT NULL DEFAULT 0,
+  `wr_nogood` int(11) NOT NULL DEFAULT 0,
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  `as_type` tinyint(4) NOT NULL DEFAULT 0,
+  `as_shingo` tinyint(4) NOT NULL DEFAULT 0,
+  `as_img` tinyint(4) NOT NULL DEFAULT 0,
+  `as_list` tinyint(4) NOT NULL DEFAULT 0,
+  `as_publish` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extra` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extend` tinyint(4) NOT NULL DEFAULT 0,
+  `as_level` int(11) NOT NULL DEFAULT 1,
+  `as_download` int(11) NOT NULL DEFAULT 0,
+  `as_down` int(11) NOT NULL DEFAULT 0,
+  `as_view` int(11) NOT NULL DEFAULT 0,
+  `as_lucky` int(11) NOT NULL DEFAULT 0,
+  `as_poll` int(11) NOT NULL DEFAULT 0,
+  `as_star_score` int(11) NOT NULL DEFAULT 0,
+  `as_choice` int(11) NOT NULL DEFAULT 0,
+  `as_choice_cnt` int(11) NOT NULL DEFAULT 0,
+  `as_re_mb` varchar(255) NOT NULL,
+  `as_re_name` varchar(255) NOT NULL,
+  `as_tag` varchar(255) NOT NULL,
+  `as_map` varchar(255) NOT NULL,
+  `as_icon` varchar(255) NOT NULL,
+  `as_thumb` varchar(255) NOT NULL,
+  `as_video` varchar(255) NOT NULL,
+  `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `as_star_cnt` int(11) NOT NULL DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `g5_write_issues`
+--
+
+CREATE TABLE `g5_write_issues` (
+  `wr_id` int(11) NOT NULL,
+  `wr_num` int(11) NOT NULL DEFAULT 0,
+  `wr_reply` varchar(10) NOT NULL,
+  `wr_parent` int(11) NOT NULL DEFAULT 0,
+  `wr_is_comment` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_comment` int(11) NOT NULL DEFAULT 0,
+  `wr_comment_reply` varchar(5) NOT NULL,
+  `ca_name` varchar(255) NOT NULL,
+  `wr_option` set('html1','html2','secret','mail') NOT NULL,
+  `wr_subject` varchar(255) NOT NULL,
+  `wr_content` text NOT NULL,
+  `wr_link1` text NOT NULL,
+  `wr_link2` text NOT NULL,
+  `wr_link1_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_link2_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_hit` int(11) NOT NULL DEFAULT 0,
+  `wr_good` int(11) NOT NULL DEFAULT 0,
+  `wr_nogood` int(11) NOT NULL DEFAULT 0,
+  `mb_id` varchar(20) NOT NULL,
+  `wr_password` varchar(255) NOT NULL,
+  `wr_name` varchar(255) NOT NULL,
+  `wr_email` varchar(255) NOT NULL,
+  `wr_homepage` varchar(255) NOT NULL,
+  `wr_datetime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `wr_file` tinyint(4) NOT NULL DEFAULT 0,
+  `wr_last` varchar(19) NOT NULL,
+  `wr_ip` varchar(255) NOT NULL,
+  `wr_facebook_user` varchar(255) NOT NULL,
+  `wr_twitter_user` varchar(255) NOT NULL,
+  `wr_1` varchar(255) NOT NULL,
+  `wr_2` varchar(255) NOT NULL,
+  `wr_3` varchar(255) NOT NULL,
+  `wr_4` varchar(255) NOT NULL,
+  `wr_5` varchar(255) NOT NULL,
+  `wr_6` varchar(255) NOT NULL,
+  `wr_7` varchar(255) NOT NULL,
+  `wr_8` varchar(255) NOT NULL,
+  `wr_9` varchar(255) NOT NULL,
+  `wr_10` varchar(255) NOT NULL,
+  `as_type` tinyint(4) NOT NULL DEFAULT 0,
+  `as_shingo` tinyint(4) NOT NULL DEFAULT 0,
+  `as_img` tinyint(4) NOT NULL DEFAULT 0,
+  `as_list` tinyint(4) NOT NULL DEFAULT 0,
+  `as_publish` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extra` tinyint(4) NOT NULL DEFAULT 0,
+  `as_extend` tinyint(4) NOT NULL DEFAULT 0,
+  `as_level` int(11) NOT NULL DEFAULT 1,
+  `as_download` int(11) NOT NULL DEFAULT 0,
+  `as_down` int(11) NOT NULL DEFAULT 0,
+  `as_view` int(11) NOT NULL DEFAULT 0,
+  `as_lucky` int(11) NOT NULL DEFAULT 0,
+  `as_poll` int(11) NOT NULL DEFAULT 0,
+  `as_star_score` int(11) NOT NULL DEFAULT 0,
+  `as_choice` int(11) NOT NULL DEFAULT 0,
+  `as_choice_cnt` int(11) NOT NULL DEFAULT 0,
+  `as_re_mb` varchar(255) NOT NULL,
+  `as_re_name` varchar(255) NOT NULL,
+  `as_tag` varchar(255) NOT NULL,
+  `as_map` varchar(255) NOT NULL,
+  `as_icon` varchar(255) NOT NULL,
+  `as_thumb` varchar(255) NOT NULL,
+  `as_video` varchar(255) NOT NULL,
+  `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `as_star_cnt` int(11) NOT NULL DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -3313,6 +4062,27 @@ CREATE TABLE `g5_write_notice` (
   `as_video` varchar(255) NOT NULL,
   `as_update` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 테이블의 덤프 데이터 `g5_write_notice`
+--
+
+INSERT INTO `g5_write_notice` (`wr_id`, `wr_num`, `wr_reply`, `wr_parent`, `wr_is_comment`, `wr_comment`, `wr_comment_reply`, `ca_name`, `wr_option`, `wr_subject`, `wr_content`, `wr_link1`, `wr_link2`, `wr_link1_hit`, `wr_link2_hit`, `wr_hit`, `wr_good`, `wr_nogood`, `mb_id`, `wr_password`, `wr_name`, `wr_email`, `wr_homepage`, `wr_datetime`, `wr_file`, `wr_last`, `wr_ip`, `wr_facebook_user`, `wr_twitter_user`, `wr_1`, `wr_2`, `wr_3`, `wr_4`, `wr_5`, `wr_6`, `wr_7`, `wr_8`, `wr_9`, `wr_10`, `as_type`, `as_shingo`, `as_img`, `as_list`, `as_publish`, `as_extra`, `as_extend`, `as_level`, `as_download`, `as_down`, `as_view`, `as_lucky`, `as_poll`, `as_star_score`, `as_star_cnt`, `as_choice`, `as_choice_cnt`, `as_re_mb`, `as_re_name`, `as_tag`, `as_map`, `as_icon`, `as_thumb`, `as_video`, `as_update`) VALUES
+(1, -1, '', 1, 0, 1, '', '', '', 'testing', 'testing', 'testing', 'testing', 0, 0, 5, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 04:06:12', 0, '2021-10-02 17:43:53', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 'testing', '', '', '1', '', '0000-00-00 00:00:00'),
+(2, -1, '', 1, 1, 1, '', '', '', '', '굿', '', '', 0, 0, 0, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 17:43:53', 0, '', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '0000-00-00 00:00:00'),
+(3, -2, '', 3, 0, 0, '', '', '', 'hot6', 'hot6 amazing', '', '', 0, 0, 4, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 19:26:10', 0, '2021-10-02 19:26:10', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(4, -3, '', 4, 0, 1, '', '', '', 'thanks', 'you are welcome', '', '', 0, 0, 18, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-02 19:26:28', 0, '2021-10-03 01:33:59', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(5, -3, '', 4, 1, 1, '', '', '', '', 'thanks!', '', '', 0, 0, 0, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 01:33:59', 0, '', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '0000-00-00 00:00:00'),
+(6, -4, '', 6, 0, 0, '', '', '', 'hi', 'hi guys', '', '', 0, 0, 3, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 15:53:39', 0, '2021-10-03 15:53:39', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(7, -5, '', 7, 0, 0, '', '', '', 'bose', 'bose', '', '', 0, 0, 1, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 18:45:34', 0, '2021-10-03 18:45:34', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(8, -6, '', 8, 0, 1, '', '', '', 'thanks', 'you are welcome', '', '', 0, 0, 4, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 18:57:03', 0, '2021-10-03 19:25:39', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(9, -6, '', 8, 1, 1, '', '', '', '', 'good', '', '', 0, 0, 0, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 19:25:39', 0, '', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '0000-00-00 00:00:00'),
+(10, -7, '', 10, 0, 0, '', '', '', 'explore the community', 'college admissions', '', '', 0, 0, 3, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 19:44:28', 0, '2021-10-03 19:44:28', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(11, -8, '', 11, 0, 0, '', '', '', 'Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', '', '', 0, 0, 3, 1, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-03 20:34:16', 0, '2021-10-03 20:34:16', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(12, -9, '', 12, 0, 0, '', '', '', 'sellnus', 'sellnus', '', '', 0, 0, 3, 1, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-03 20:37:24', 0, '2021-10-03 20:37:24', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(16, -12, '', 15, 1, 1, '', '', '', '', 'nice', '', '', 0, 0, 0, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-03 20:56:55', 0, '', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '0000-00-00 00:00:00'),
+(15, -12, '', 15, 0, 1, '', '', '', 'nice', 'nice', '', '', 0, 0, 7, 0, 0, 'test123', '*676243218923905CF94CB52A3C9D3EB30CE8E20D', 'ewts', 'test@naver.com', '', '2021-10-03 20:41:55', 0, '2021-10-03 20:56:55', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', '1', '', '0000-00-00 00:00:00'),
+(18, -14, '', 18, 0, 0, '', '', '', 'testing', 'testing', '', '', 0, 0, 8, 0, 0, 'sellnus', '*447DD079BBB01251CFBA2E0DFDCA5AF4D55720CB', 'sellnus', 'hgyeol.0107@gmail.com', '', '2021-10-12 17:13:42', 4, '2021-10-12 17:13:42', '::1', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', '', '', '', 'http://localhost/sellnus/data/file/notice/0_CS73tumO_2804681f8dbd5c208b64ee4f553290df0ec49a88.JPG', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -3937,6 +4707,12 @@ ALTER TABLE `g5_shop_order_delete`
   ADD PRIMARY KEY (`de_id`);
 
 --
+-- 테이블의 인덱스 `g5_shop_order_post_log`
+--
+ALTER TABLE `g5_shop_order_post_log`
+  ADD PRIMARY KEY (`oid`);
+
+--
 -- 테이블의 인덱스 `g5_shop_personalpay`
 --
 ALTER TABLE `g5_shop_personalpay`
@@ -3980,6 +4756,14 @@ ALTER TABLE `g5_visit_sum`
   ADD KEY `index1` (`vs_count`);
 
 --
+-- 테이블의 인덱스 `g5_write_clubs`
+--
+ALTER TABLE `g5_write_clubs`
+  ADD PRIMARY KEY (`wr_id`),
+  ADD KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
+
+--
 -- 테이블의 인덱스 `g5_write_free`
 --
 ALTER TABLE `g5_write_free`
@@ -3988,9 +4772,33 @@ ALTER TABLE `g5_write_free`
   ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
 
 --
+-- 테이블의 인덱스 `g5_write_freshman`
+--
+ALTER TABLE `g5_write_freshman`
+  ADD PRIMARY KEY (`wr_id`),
+  ADD KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
+
+--
 -- 테이블의 인덱스 `g5_write_gallery`
 --
 ALTER TABLE `g5_write_gallery`
+  ADD PRIMARY KEY (`wr_id`),
+  ADD KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
+
+--
+-- 테이블의 인덱스 `g5_write_information`
+--
+ALTER TABLE `g5_write_information`
+  ADD PRIMARY KEY (`wr_id`),
+  ADD KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
+  ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
+
+--
+-- 테이블의 인덱스 `g5_write_issues`
+--
+ALTER TABLE `g5_write_issues`
   ADD PRIMARY KEY (`wr_id`),
   ADD KEY `wr_num_reply_parent` (`wr_num`,`wr_reply`,`wr_parent`),
   ADD KEY `wr_is_comment` (`wr_is_comment`,`wr_id`);
@@ -4082,7 +4890,7 @@ ALTER TABLE `g5_apms_comment`
 -- 테이블의 AUTO_INCREMENT `g5_apms_data`
 --
 ALTER TABLE `g5_apms_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_apms_event`
@@ -4112,7 +4920,7 @@ ALTER TABLE `g5_apms_like`
 -- 테이블의 AUTO_INCREMENT `g5_apms_page`
 --
 ALTER TABLE `g5_apms_page`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_apms_partner`
@@ -4142,7 +4950,7 @@ ALTER TABLE `g5_apms_poll`
 -- 테이블의 AUTO_INCREMENT `g5_apms_response`
 --
 ALTER TABLE `g5_apms_response`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_apms_sendcost`
@@ -4160,13 +4968,13 @@ ALTER TABLE `g5_apms_shingo`
 -- 테이블의 AUTO_INCREMENT `g5_apms_tag`
 --
 ALTER TABLE `g5_apms_tag`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_apms_tag_log`
 --
 ALTER TABLE `g5_apms_tag_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_apms_use_log`
@@ -4178,19 +4986,19 @@ ALTER TABLE `g5_apms_use_log`
 -- 테이블의 AUTO_INCREMENT `g5_autosave`
 --
 ALTER TABLE `g5_autosave`
-  MODIFY `as_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `as_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_board_good`
 --
 ALTER TABLE `g5_board_good`
-  MODIFY `bg_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `bg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_board_new`
 --
 ALTER TABLE `g5_board_new`
-  MODIFY `bn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `bn_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_cert_history`
@@ -4214,7 +5022,7 @@ ALTER TABLE `g5_faq_master`
 -- 테이블의 AUTO_INCREMENT `g5_group_member`
 --
 ALTER TABLE `g5_group_member`
-  MODIFY `gm_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `gm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_mail`
@@ -4226,7 +5034,7 @@ ALTER TABLE `g5_mail`
 -- 테이블의 AUTO_INCREMENT `g5_member`
 --
 ALTER TABLE `g5_member`
-  MODIFY `mb_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `mb_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_member_social_profiles`
@@ -4262,7 +5070,7 @@ ALTER TABLE `g5_poll`
 -- 테이블의 AUTO_INCREMENT `g5_popular`
 --
 ALTER TABLE `g5_popular`
-  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `pp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_qa_content`
@@ -4361,22 +5169,46 @@ ALTER TABLE `g5_shop_wish`
   MODIFY `wi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- 테이블의 AUTO_INCREMENT `g5_write_clubs`
+--
+ALTER TABLE `g5_write_clubs`
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- 테이블의 AUTO_INCREMENT `g5_write_free`
 --
 ALTER TABLE `g5_write_free`
   MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- 테이블의 AUTO_INCREMENT `g5_write_freshman`
+--
+ALTER TABLE `g5_write_freshman`
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- 테이블의 AUTO_INCREMENT `g5_write_gallery`
 --
 ALTER TABLE `g5_write_gallery`
-  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- 테이블의 AUTO_INCREMENT `g5_write_information`
+--
+ALTER TABLE `g5_write_information`
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- 테이블의 AUTO_INCREMENT `g5_write_issues`
+--
+ALTER TABLE `g5_write_issues`
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_write_notice`
 --
 ALTER TABLE `g5_write_notice`
-  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `wr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- 테이블의 AUTO_INCREMENT `g5_write_qa`
