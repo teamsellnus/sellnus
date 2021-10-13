@@ -107,6 +107,7 @@ if(!$seometa['img']['src']) {
 <?php } ?>
 <meta property="og:description" content="<?php echo $seometa['description'];?>" />
 <meta property="og:url" content="<?php echo $seometa['url'];?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <?php if($seometa['img']['src']) { ?>
 <link rel="image_src" href="<?php echo $seometa['img']['src'];?>" />
 <?php } ?>
