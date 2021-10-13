@@ -1356,6 +1356,7 @@ instagram api
 
 .main_commu_body {
 	background-color: #f9f9f9;
+	min-height: 100%;
 }
 
 /********************************************************
@@ -1742,7 +1743,62 @@ instagram api
 	justify-content: space-between;
 	align-items: center;
 }
-
+/********************************************************
+■ Write : 글쓰기 페이지
+********************************************************/
+.write_main_wrap{
+	min-height: 100%;
+}
+.write-wrap{
+	display: flex;
+	flex-direction: column;
+}
+.write_title_wrap{
+	display: flex;
+	align-items: center;
+}
+.write_title{
+	text-align: left !important;
+	font-size: 2.3em;
+	font-weight: 700;
+}
+.write_title_inputBx{
+	flex:1;
+	padding:0;
+	border-radius: 2em;
+	margin-bottom: 40px;
+}
+.write_title_inputBx input{
+	padding:10px 20px;
+	height:3em;
+	font-size:1.5em;
+	border-radius: 0.45em !important;
+}
+.write_tagsBx{
+	display: flex;
+}
+.write_tags_title{
+	text-align: left !important;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.write_camera_wrap{
+	padding:0 15px;
+}
+.write_camera_title{
+	background:rgb(120 62 148 / 20%);
+	font-size: 2em;
+	padding:10px;
+	border-radius: 2em 2em;
+}
+.write_submit_btn{
+	color: #fff !important;
+    border-image: none !important;
+    background-image: none !important;
+    border: 1px solid rgb(213, 7, 15);
+	background-color: rgb(120 62 148);
+	margin-right: 20px;
+}
 /********************************************************
 ■ Footer : 하단 푸터
 ********************************************************/
@@ -2110,6 +2166,7 @@ instagram api
 
 .btn {
 	font-family: 'Noto Sans', sans-serif;
+	text-transform: uppercase;
 }
 
 .btn-lg {
