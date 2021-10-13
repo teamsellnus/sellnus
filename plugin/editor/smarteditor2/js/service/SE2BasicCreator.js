@@ -69,9 +69,9 @@ function createSEditor2(elIRField, htParams, elSeAppContainer){
 	
 	oEditor.registerPlugin(new nhn.husky.SE_EditingAreaManager("WYSIWYG", oIRTextarea, htDimension,  htParams.fOnBeforeUnload, elAppContainer));
 	oEditor.registerPlugin(new nhn.husky.SE_EditingArea_WYSIWYG(oWYSIWYGIFrame));			// Tab Editor 모드
-	oEditor.registerPlugin(new nhn.husky.SE_EditingArea_HTMLSrc(oHTMLSrc));					// Tab HTML 모드
-	oEditor.registerPlugin(new nhn.husky.SE_EditingArea_TEXT(oTextArea));					// Tab Text 모드
-	oEditor.registerPlugin(new nhn.husky.SE2M_EditingModeChanger(elAppContainer, htConversionMode));	// 모드간 변경(Editor, HTML, Text)
+	// oEditor.registerPlugin(new nhn.husky.SE_EditingArea_HTMLSrc(oHTMLSrc));					// Tab HTML 모드
+	// oEditor.registerPlugin(new nhn.husky.SE_EditingArea_TEXT(oTextArea));					// Tab Text 모드
+	// oEditor.registerPlugin(new nhn.husky.SE2M_EditingModeChanger(elAppContainer, htConversionMode));	// 모드간 변경(Editor, HTML, Text)
 	oEditor.registerPlugin(new nhn.husky.SE_PasteHandler()); 								// WYSIWYG Paste Handler
 	
 	oEditor.registerPlugin(new nhn.husky.HuskyRangeManager(oWYSIWYGIFrame));
@@ -80,7 +80,7 @@ function createSEditor2(elIRField, htParams, elSeAppContainer){
 	oEditor.registerPlugin(new nhn.husky.SE_WYSIWYGStyler());
 	oEditor.registerPlugin(new nhn.husky.SE2M_Toolbar(elAppContainer));
 	
-	oEditor.registerPlugin(new nhn.husky.Hotkey());											// 단축키
+	// oEditor.registerPlugin(new nhn.husky.Hotkey());											// 단축키
 	oEditor.registerPlugin(new nhn.husky.SE_EditingAreaVerticalResizer(elAppContainer, htConversionMode));	// 편집영역 리사이즈
 	oEditor.registerPlugin(new nhn.husky.DialogLayerManager());
 	oEditor.registerPlugin(new nhn.husky.ActiveLayerManager());
@@ -88,23 +88,23 @@ function createSEditor2(elIRField, htParams, elSeAppContainer){
 
 	oEditor.registerPlugin(new nhn.husky.SE_WYSIWYGEnterKey("P"));							// 엔터 시 처리, 현재는 P로 처리
 	
-	oEditor.registerPlugin(new nhn.husky.SE2M_ColorPalette(elAppContainer));				// 색상 팔레트
-	oEditor.registerPlugin(new nhn.husky.SE2M_FontColor(elAppContainer));					// 글자색
-	oEditor.registerPlugin(new nhn.husky.SE2M_BGColor(elAppContainer));						// 글자배경색
-	oEditor.registerPlugin(new nhn.husky.SE2M_FontNameWithLayerUI(elAppContainer, aAdditionalFontList));	// 글꼴종류
-	oEditor.registerPlugin(new nhn.husky.SE2M_FontSizeWithLayerUI(elAppContainer));			// 글꼴크기
+	// oEditor.registerPlugin(new nhn.husky.SE2M_ColorPalette(elAppContainer));				// 색상 팔레트
+	// oEditor.registerPlugin(new nhn.husky.SE2M_FontColor(elAppContainer));					// 글자색
+	// oEditor.registerPlugin(new nhn.husky.SE2M_BGColor(elAppContainer));						// 글자배경색
+	// // oEditor.registerPlugin(new nhn.husky.SE2M_FontNameWithLayerUI(elAppContainer, aAdditionalFontList));	// 글꼴종류
+	// // oEditor.registerPlugin(new nhn.husky.SE2M_FontSizeWithLayerUI(elAppContainer));			// 글꼴크기
 	
-	oEditor.registerPlugin(new nhn.husky.SE2M_LineStyler());								 
-	oEditor.registerPlugin(new nhn.husky.SE2M_ExecCommand(oWYSIWYGIFrame));
-	oEditor.registerPlugin(new nhn.husky.SE2M_LineHeightWithLayerUI(elAppContainer));		// 줄간격	
+	// oEditor.registerPlugin(new nhn.husky.SE2M_LineStyler());								 
+	// oEditor.registerPlugin(new nhn.husky.SE2M_ExecCommand(oWYSIWYGIFrame));
+	// oEditor.registerPlugin(new nhn.husky.SE2M_LineHeightWithLayerUI(elAppContainer));		// 줄간격	
 
-	oEditor.registerPlugin(new nhn.husky.SE2M_Quote(elAppContainer));						// 인용구
-	oEditor.registerPlugin(new nhn.husky.SE2M_Hyperlink(elAppContainer));					// 링크
-	oEditor.registerPlugin(new nhn.husky.SE2M_SCharacter(elAppContainer));					// 특수문자
-	oEditor.registerPlugin(new nhn.husky.SE2M_FindReplacePlugin(elAppContainer));			// 찾기/바꾸기
-	oEditor.registerPlugin(new nhn.husky.SE2M_TableCreator(elAppContainer));				// 테이블 생성
-	oEditor.registerPlugin(new nhn.husky.SE2M_TableEditor(elAppContainer));					// 테이블 편집
-	oEditor.registerPlugin(new nhn.husky.SE2M_TableBlockStyler(elAppContainer));			// 테이블 스타일
+	// oEditor.registerPlugin(new nhn.husky.SE2M_Quote(elAppContainer));						// 인용구
+	// oEditor.registerPlugin(new nhn.husky.SE2M_Hyperlink(elAppContainer));					// 링크
+	// oEditor.registerPlugin(new nhn.husky.SE2M_SCharacter(elAppContainer));					// 특수문자
+	// oEditor.registerPlugin(new nhn.husky.SE2M_FindReplacePlugin(elAppContainer));			// 찾기/바꾸기
+	// oEditor.registerPlugin(new nhn.husky.SE2M_TableCreator(elAppContainer));				// 테이블 생성
+	// oEditor.registerPlugin(new nhn.husky.SE2M_TableEditor(elAppContainer));					// 테이블 편집
+	// oEditor.registerPlugin(new nhn.husky.SE2M_TableBlockStyler(elAppContainer));			// 테이블 스타일
 	if(nhn.husky.SE2M_AttachQuickPhoto){
 		oEditor.registerPlugin(new nhn.husky.SE2M_AttachQuickPhoto(elAppContainer));			// 사진			
 	}
@@ -120,7 +120,7 @@ function createSEditor2(elIRField, htParams, elSeAppContainer){
 	oEditor.registerPlugin(new nhn.husky.SE_ToolbarToggler(elAppContainer, htParams.bUseToolbar));
 	oEditor.registerPlugin(new nhn.husky.SE2M_Accessibility(elAppContainer, htParams.I18N_LOCALE));	// 에디터내의 웹접근성 관련 기능모음 플러그인 
 	
-    oEditor.registerPlugin(new nhn.husky.SE2B_Customize_ToolBar(elAppContainer));       // 2.3 버젼에 있는 툴바 이용
+    // oEditor.registerPlugin(new nhn.husky.SE2B_Customize_ToolBar(elAppContainer));       // 2.3 버젼에 있는 툴바 이용
 
 	return oEditor;
 }

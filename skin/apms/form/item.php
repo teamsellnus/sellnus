@@ -20,6 +20,8 @@ if($is_auth) { // 관리자일 때
 $pg_anchor .='</ul>';
 $it['pt_it'] = 1;
 
+$$it['it_use'] = "checked";
+
 ?>
 <style>
 	.sl { width:100% }
@@ -220,7 +222,7 @@ $it['pt_it'] = 1;
             <th scope="row"><label for="it_use">판매가능</label></th>
             <td>
                 <?php echo help("잠시 판매를 중단하거나 재고가 없을 경우에 체크를 해제해 놓으면 출력되지 않으며, 주문도 받지 않습니다."); ?>
-                <label><input type="checkbox" name="it_use" value="1" id="it_use" checked<?php echo ($it['it_use']) ? "checked" : ""; ?>> 예</label>
+				<label><input type="checkbox" name="it_use" value="1" id="it_use" <?php echo ($it['it_use']); ?> checked> 예</label>
             </td>
         </tr>
 		<tr>
@@ -1044,7 +1046,7 @@ $it['pt_it'] = 1;
             <col>
         </colgroup>
         <tbody>
-        <?php for($i=1; $i<=10; $i++) { ?>
+        <?php for($i=1; $i<=7; $i++) { ?>
         <tr>
             <th scope="row"><label for="it_img1">Image <?php echo $i; ?></label></th>
             <td>
