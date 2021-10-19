@@ -174,7 +174,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<a href="">View Details</a>
 				</div>
 				<div class="main_introduce_img_sec">
-					<img class="main_introduce_img" src="../thema/basic/assets/img/university1.jpg" alt="">
+					<img class="main_introduce_img" data-src="../thema/basic/assets/img/university1.jpg" alt="">
 				</div>
 			</article>
 
@@ -185,7 +185,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<a href="">View Details</a>
 				</div>
 				<div class="main_introduce_img_sec">
-					<img class="main_introduce_img" src="../thema/basic/assets/img/university2.jpg" alt="">
+					<img class="main_introduce_img" data-src="../thema/basic/assets/img/university2.jpg" alt="">
 				</div>
 			</article>
 
@@ -208,6 +208,28 @@ $side = ($at_set['side']) ? 'left' : 'right';
 		<p>sellnus</p>
 	</section>
 	<section class="main_instagram_image_sec">
-		<img class="main_instagram_img" src="../thema/basic/assets/img/instagram.png" alt="">
+		<img class="main_instagram_img" data-src="../thema/basic/assets/img/instagram.png" alt="">
 	</section>
 </article>
+<script>
+	const INTRO_IMAGE_CLASSNAME = 'main_introduce_img';
+	const INSTA_IMAGE_CLASSNAME = 'main_instagram_img';
+	const classnames = [INTRO_IMAGE_CLASSNAME, INSTA_IMAGE_CLASSNAME];
+	
+	const introIO = new IntersectionObserver((entries, observer) => {
+		entries.forEach(entry => {
+			if (entry.intersectionRatio > 0) {
+				const src = entry.target.getAttribute('data-src');
+				entry.target.setAttribute('src', src);
+            	observer.unobserve(entry.target);
+			}
+		});
+	});
+
+	classnames.map(classname => {
+		const introImageList = document.querySelectorAll(`.${classname}`);
+		introImageList.forEach((el) => {
+			introIO.observe(el);
+		})
+	})
+</script>
