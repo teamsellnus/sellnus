@@ -1668,6 +1668,32 @@ instagram api
 	cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+	.col-md-2.at-col.at-side .col-md-12.col-sm-6 {
+		width: 100% !important;
+	}
+	.col-md-2.at-col.at-side .main_right_side_tagsBx {
+		width: 100% !important;
+		display: flex !important;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+	.main_right_side_tagsBx li {
+		flex: 1;
+		display:inline-flex !important;
+		margin: 0 4px 4px 4px !important;
+		align-items: stretch;
+		min-width: 96px;
+	}
+	.main_right_side_tagsBx li a {
+		display:flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		height: 100% !important;
+		word-break: keep-all;
+	}
+}
+
 /********************************************************
 ■ community-main : 커뮤니티 메인
 ********************************************************/
