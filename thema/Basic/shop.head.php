@@ -21,7 +21,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
             			<li style="float:left"><a href="javascript:void(0)" class="korean" data-lang="ko">Ko</a></li>
 						<li  style="float:left">&nbsp / &nbsp</li>
             			<li style="float:left"><a href="javascript:void(0)" class="japanese" data-lang="ja">JA</a></li>
-            
          			</ul>
 					<?php
 					$tweek = array("일", "월", "화", "수", "목", "금", "토");
