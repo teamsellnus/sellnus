@@ -14,6 +14,15 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 				<ul>
 					<li><a href="javascript:;" id="favorite">Favorites</a></li>
 					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">App Downloads</a></li>
+					<li><div id="google_translate_element"></div></li>
+					<ul class="translation-links" style="list-style:none;">
+            			<li style="float:left"><a href="javascript:void(0)" class="english" data-lang="en">En</a></li>
+            			<li  style="float:left">&nbsp / &nbsp</li>
+            			<li style="float:left"><a href="javascript:void(0)" class="korean" data-lang="ko">Ko</a></li>
+						<li  style="float:left">&nbsp / &nbsp</li>
+            			<li style="float:left"><a href="javascript:void(0)" class="japanese" data-lang="ja">JA</a></li>
+            
+         			</ul>
 					<?php
 					$tweek = array("일", "월", "화", "수", "목", "금", "토");
 					?>
@@ -69,7 +78,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-					Sell&Us
+				<img class="main_commu_left_shop_img" src="<?php echo G5_URL; ?>/shop/img/p2.jpg" alt="">
 				</a>
 			</div>
 			<!-- PC Search -->
