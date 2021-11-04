@@ -287,12 +287,13 @@ $side = ($at_set['side']) ? 'left' : 'right';
 						</ul>
 						<div class="main_right_tags_wrap">
 							<p>popular tags</p>
-							<ul class="main_right_side_tagsBx">
+							<!-- <ul class="main_right_side_tagsBx">
 								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">college</a></li>
 								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">scholarship</a></li>
 								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">essays</a></li>
 								<li><a href="<?php echo G5_BBS_URL ?>/mypost.php">campus life</a></li>
-							</ul>
+							</ul> -->
+							<?php echo apms_widget('basic-popular-list', 'popular-1');?>
 						</div>
 					</div>
 				</div>

@@ -2,6 +2,11 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 ?>
 
+<style>
+	.pc-menu, .pc-menu .nav-full-back, .pc-menu .nav-full-height {
+		height: 70px;
+	}
+</style>
 <?php if($is_top_nav == "float"){ // 좌측형 ?>
 
 	<div class="nav-visible">
@@ -99,7 +104,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<div class="nav-visible">
 		<div class="at-container">
 			<div class="nav-top nav-both nav-slide">
-				<ul class="menu-ul">
+				<ul class="menu-ul items">
 				<!-- <li class="menu-li nav-home <?php echo ($is_index) ? 'on' : 'off';?>">
 					<a class="menu-a nav-height" href="<?php echo $at_href['main'];?>">
 						<i class="fa fa-home"></i>
@@ -107,11 +112,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 				</li> -->
 				<?php 
 					for ($i=1; $i < $menu_cnt; $i++) {
-
 						if(!$menu[$i]['gr_id']) continue;
-
 				?>
-					<li class="menu-li <?php echo $menu[$i]['on'];?>">
+					<li class="menu-li item<?php echo $menu[$i]['on'];?>">
 						<a class="menu-a nav-height" href="<?php echo $menu[$i]['href'];?>"<?php echo $menu[$i]['target'];?>>
 							<?php echo $menu[$i]['name'];?>
 							<?php if($menu[$i]['new'] == "new") { ?>

@@ -3,7 +3,14 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 include_once(THEMA_PATH . '/assets/thema.php');
 add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">', 0);
 ?>
+
+<style>
+	.nav-right{
+		display: none;
+	}
+</style>
 
 <div id="thema_wrapper" class="wrapper <?php echo $is_thema_layout; ?> <?php echo $is_thema_font; ?>">
 	<header id="globalHeader">
@@ -29,9 +36,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 						<?php if ($member['admin']) { ?>
 							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
 						<?php } ?>
-						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
-						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
 								Message <b class="orangered sidebarCount"><?php echo $member['response'] + $member['memo']; ?></b>
@@ -52,8 +56,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li>
 						<?php } ?>
-						<!-- <li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li> -->
-						<li><span style="color:#000; font-size: 2em;"><i class="fa fa-globe"></i></span></li>
+						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
@@ -99,6 +102,9 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 						<?php if ($member['partner']) { ?>
 							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell IT</a></li>
 							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
+							<li><a href="<?php echo G5_URL;?>/chat/chat.php"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;Chat</a></li>
+						<?php } else  {?>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/register.php">Partner Sign UP!</a></li>
 						<?php } ?>
 						
 					<?php } else { // 로그아웃 상태 
@@ -116,7 +122,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li> -->
 						<?php } ?>
-						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
@@ -294,7 +299,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 	<?php } ?>
 
 	<div class="at-body">
-		
 		<?php if ($col_name) { ?>
 			<div class="at-container">
 				<?php if ($col_name == "two") { ?>

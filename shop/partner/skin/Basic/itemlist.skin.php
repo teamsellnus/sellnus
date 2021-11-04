@@ -2,7 +2,7 @@
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 ?>
 
-<h1><i class="fa fa-cube"></i> My Items</h1>
+<h1><i class="fa fa-cube"></i>상품 관리</h1>
 
 <div class="well" style="padding-bottom:3px;">
 	<form class="form" role="form" name="flist">

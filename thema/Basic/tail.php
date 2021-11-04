@@ -60,9 +60,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 					</div>
 					<div class="footer_linksBx">
 						<a class="tit" href="#!">privacy</a>
-						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=intro">Terms of Use</a>
-						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=provision">Privacy Policies</a>
-						<a href="<?php echo G5_BBS_URL; ?>/page.php?hid=privacy">Safety Centre</a>
+						<a href="<?php echo G5_URL; ?>/privacy/privacy-policy.php">Privacy Policies</a>
+						<a href="<?php echo G5_URL; ?>/privacy/terms-condition.php">Terms and Condition</a>
+						<a href="<?php echo G5_URL; ?>/privacy/social-cookies.php">Cookies</a>
 					</div>
 					<!-- press 추후 생기면 추가
 					<div class="footer_linksBx">
@@ -108,6 +108,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <script type="text/javascript" src="<?php echo THEMA_URL; ?>/assets/js/respond.js"></script>
 <![endif]-->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <!-- JavaScript -->
 <script type="text/javascript">
 	var swiper = new Swiper('.main-slider', {
@@ -151,6 +152,44 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 		// scrollbar: {
 		// 	el: '.swiper-scrollbar',
 		// },
+	});
+</script>
+<script>
+	$(function() {
+		$("#menu-scroll-content").mCustomScrollbar({
+			theme: "dark-thin"
+		});
+	});
+</script>
+<!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+<script>
+	const slider = document.querySelector('.items');
+	let isDown = false;
+	let startX;
+	let scrollLeft;
+
+	slider.addEventListener('mousedown', (e) => {
+		isDown = true;
+		slider.classList.add('active');
+		startX = e.pageX - slider.offsetLeft;
+		scrollLeft = slider.scrollLeft;
+	});
+	slider.addEventListener('mouseleave', () => {
+		isDown = false;
+		slider.classList.remove('active');
+	});
+	slider.addEventListener('mouseup', () => {
+		isDown = false;
+		slider.classList.remove('active');
+	});
+	slider.addEventListener('mousemove', (e) => {
+		if (!isDown) return;
+		e.preventDefault();
+		const x = e.pageX - slider.offsetLeft;
+		const walk = (x - startX) * 3; //scroll-fast
+		slider.scrollLeft = scrollLeft - walk;
+		console.log(walk);
 	});
 </script>
 <script>

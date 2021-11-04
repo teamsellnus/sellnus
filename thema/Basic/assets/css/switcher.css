@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#style-switcher { display:none ;position:fixed; left: -206px; top: 0px; width: 205px; z-index: 3333; box-shadow: 3px 3px 6px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); }
+#style-switcher { display:block; ;position:fixed; left: -206px; top: 0px; width: 205px; z-index: 3333; box-shadow: 3px 3px 6px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); }
 #style-switcher label { cursor:pointer; }
 #style-switcher .switcher-title { color: rgb(255, 255, 255); background-color: rgb(55, 55, 55); margin: 0px; margin-left:-1px; padding: 0px 0px 0px 15px; line-height: 45px; font-family: "Roboto",Helvetica,Arial,sans-serif; font-size: 16px; font-weight: bold; }
 #style-switcher .switcher-wrap { background:#fff; }

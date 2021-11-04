@@ -217,9 +217,9 @@ $(document).ready(function(){
 </script>
 <div class="list-btn">
 	<div class="list-page pull-left">
-		<ul class="pagination pagination-sm en">
+		<!-- <ul class="pagination pagination-sm en">
 			<?php echo apms_paging($write_pages, $page, $total_page, $list_page); ?>
-		</ul>
+		</ul> -->
 		<div class="clearfix"></div>
 	</div>
 	<div class="pull-right">
@@ -228,10 +228,10 @@ $(document).ready(function(){
 				<a class="btn btn-<?php echo $btn2;?> btn-sm" href="./event.php"><i class="fa fa-gift"></i> 이벤트</a>
 			<?php } ?>
 			<?php if ($write_href) { ?>
-				<a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo $write_href;?>"><i class="fa fa-upload"></i><span class="hidden-xs"> 등록</span></a>
+				<!-- <a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo $write_href;?>"><i class="fa fa-upload"></i><span class="hidden-xs">등록</span></a> -->
 			<?php } ?>
 			<?php if ($admin_href) { ?>
-				<a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo $admin_href;?>"><i class="fa fa-th-large"></i><span class="hidden-xs"> 관리</span></a>
+				<!-- <a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo $admin_href;?>"><i class="fa fa-th-large"></i><span class="hidden-xs"> 관리</span></a> -->
 			<?php } ?>
 			<?php if ($config_href) { ?>
 				<a class="btn btn-<?php echo $btn1;?> btn-sm" href="<?php echo $config_href;?>"><i class="fa fa-cog"></i><span class="hidden-xs"> 설정</span></a>
@@ -240,8 +240,9 @@ $(document).ready(function(){
 				<a class="btn btn-<?php echo $btn1;?> btn-sm win_memo" href="<?php echo $setup_href;?>"><i class="fa fa-cogs"></i><span class="hidden-xs"> 스킨설정</span></a>
 			<?php } ?>
 			<?php if ($rss_href) { ?>
-				<a class="btn btn-<?php echo $btn2;?> btn-sm" title="카테고리 RSS 구독하기" href="<?php echo $rss_href;?>" target="_blank"><i class="fa fa-rss fa-lg"></i></a>
+				<!-- <a class="btn btn-<?php echo $btn2;?> btn-sm" title="카테고리 RSS 구독하기" href="<?php echo $rss_href;?>" target="_blank"><i class="fa fa-rss fa-lg"></i></a> -->
 			<?php } ?>
+			<a class="btn shop-info-list-btn" href="<?php echo $list_href; ?>"><i class="fa fa-bars"></i>&nbsp;list</a>
 		</div>
 	</div>
 	<div class="clearfix"></div>
