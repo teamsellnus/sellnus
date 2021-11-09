@@ -1453,6 +1453,14 @@ instagram api
 .main_instagram_image_sec {
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main_instagram_image_sec img {
+	width: 20%;
 }
 
 .main_instagram_intro_sec .main_instagram_icon {

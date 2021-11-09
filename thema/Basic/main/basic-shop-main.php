@@ -156,6 +156,28 @@ $side = ($at_set['side']) ? 'left' : 'right';
 		<p>sellnus</p>
 	</section>
 	<section class="main_instagram_image_sec">
-		<img class="main_instagram_img" src="../thema/basic/assets/img/instagram.png" alt="">
 	</section>
 </article>
+<script>
+	(() => {
+		const token = 'IGQVJYQmQxZA2I1Q1dwemF4TEpHOHZANRzd1amE1UUtSbTVaaGtaY0VqNVdyWHBQdWlUSTFGMm9qUTVuTnFRSmMyckxzTTBYbkRmUUVVcEdsZA1dEUzNiTUNKVlJZARHFEUWdWSUNVTWJwMFNoNXZArSVdSagZDZD';
+		const INSTA_API = 'https://graph.instagram.com/me/media';
+		const FETCH_INSTA_URL = `${INSTA_API}?fields=media_url&access_token=${token}`;
+
+		(async() => {
+			const { data } = await (await fetch(FETCH_INSTA_URL)).json();
+
+			let imgs = data.map(({ media_url }) => {
+				const img = IEWIN ? new Image() : document.createElement('img');
+
+				img.src = media_url;
+				if ( alt !== null ) img.alt = media_url;
+
+				return img
+			})
+
+			const container = document.querySelector('.main_instagram_image_sec');
+			container.innerHTML = imgs.join('')
+		})();
+	})()
+</script>
