@@ -64,105 +64,102 @@ $side = ($at_set['side']) ? 'left' : 'right';
 	<div class="row at-row">
 		<!-- 사이드 영역 -->
 		<div class="col-md-3<?php echo ($side == "left") ? ' pull-left' : ''; ?> at-col at-side main_commu_left_side">
-			<?php if (!G5_IS_MOBILE) { //PC일 때만 출력 
-			?>
-				<div class="hidden-sm hidden-xs">
-					<div class="main_left_side_searchbx">
-						<form autocomplete="off" name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
-							<input type="hidden" name="url" value="<?php echo $at_href['search']; ?>">
-							<input type="text" name="stx" aria-label="Search for items, brands, or styles…" placeholder="Search for topics" class="input-sm" value="<?php echo $stx; ?>">
-							<span class="search_icon">
-								<button type="submit" class="btn btn-sm"><i class="fa fa-search fa-lg"></i></button>
-							</span>
-						</form>
+			<div id="community_side" class="hidden-sm hidden-xs">
+				<div class="main_left_side_searchbx">
+					<form autocomplete="off" name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
+						<input type="hidden" name="url" value="<?php echo $at_href['search']; ?>">
+						<input type="text" name="stx" aria-label="Search for items, brands, or styles…" placeholder="Search for topics" class="input-sm" value="<?php echo $stx; ?>">
+						<span class="search_icon">
+							<button type="submit" class="btn btn-sm"><i class="fa fa-search fa-lg"></i></button>
+						</span>
+					</form>
+				</div>
+				<div class="main_left_side_board_wrap">
+					<p class="title">Categories</p>
+					<div class="categoryBx">
+						<?php
+						$az = 0;
+						for ($i = 1; $i < $menu_cnt; $i++) {
+							if (!$menu[$i]['gr_id']) continue;
+						?>
+							<div class="<?php echo $menu[$i]['on']; ?>">
+								<?php if ($menu[$i]['is_sub']) {
+								?>
+									<div class="sub-1div">
+										<ul class="sub-1dul">
+											<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
+												<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>"><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;
+													<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
+														<?php echo $menu[$i]['sub'][$j]['name']; ?>
+														<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
+															<i class="fa fa-bolt sub-1new"></i>
+														<?php } ?>
+													</a>
+												</li>
+											<?php } //for 
+											?>
+										</ul>
+									</div>
+								<?php } ?>
+							</div>
+						<?php $az++;
+						} //for 
+						?>
 					</div>
-					<div class="main_left_side_board_wrap">
-						<p class="title">Categories</p>
-						<div class="categoryBx">
-							<?php
-							$az = 0;
-							for ($i = 1; $i < $menu_cnt; $i++) {
-								if (!$menu[$i]['gr_id']) continue;
-							?>
-								<div class="<?php echo $menu[$i]['on']; ?>">
-									<?php if ($menu[$i]['is_sub']) {
-									?>
-										<div class="sub-1div">
-											<ul class="sub-1dul">
-												<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
-													<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>"><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;
-														<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
-															<?php echo $menu[$i]['sub'][$j]['name']; ?>
-															<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
-																<i class="fa fa-bolt sub-1new"></i>
-															<?php } ?>
-														</a>
-													</li>
-												<?php } //for 
-												?>
-											</ul>
-										</div>
-									<?php } ?>
-								</div>
-							<?php $az++;
-							} //for 
-							?>
-						</div>
-						<p class="title">Topics</p>
-						<div class="categoryBx">
-							<ul>
-								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">events</a></li>
-								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">scholarship</a></li>
-								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">issues</a></li>
-								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">information</a></li>
-								<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">jobs</a></li>
-							</ul>
-						</div>
-						<div class="row">
-							<div class="col-md-12 col-sm-6">
-								<div class="main_commu_left_img_wrap">
-									<img class="main_commu_left_shop_img" src="<?php echo G5_URL; ?>/thema/basic/assets/img/online-shopping.png" alt="">
-									<p>Now Market Available</p>
-									<a class="main_commu_left_btn" href="<?php echo G5_SHOP_URL; ?>"><span><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;</span>Go to Shop</a>
-								</div>
+					<p class="title">Topics</p>
+					<div id="topic_categoryBx" class="categoryBx">
+						<ul>
+							<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">events</a></li>
+							<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">scholarship</a></li>
+							<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">issues</a></li>
+							<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">information</a></li>
+							<li><span><i class="fa fa-circle"></i></span>&nbsp;&nbsp;<a href="#!">jobs</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-6">
+							<div class="main_commu_left_img_wrap">
+								<img class="main_commu_left_shop_img" src="<?php echo G5_URL; ?>/thema/basic/assets/img/online-shopping.png" alt="">
+								<p>Now Market Available</p>
+								<a class="main_commu_left_btn" href="<?php echo G5_SHOP_URL; ?>"><span><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;</span>Go to Shop</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12 col-sm-6">
-								<!-- 알림 시작 -->
-								<div class="div-title-underbar">
-									<a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=basic">
-										<span class="pull-right lightgray <?php echo $font; ?>">+</span>
-										<span class="div-title-underbar-bold border-<?php echo $line; ?> <?php echo $font; ?>">
-											<b>Notice</b>
-										</span>
-									</a>
-								</div>
-								<div class="widget-box">
-									<?php echo apms_widget('basic-post-list', $wid . '-ws1', 'icon={아이콘:bell} date=1 strong=1,3'); ?>
-								</div>
-								<!-- 알림 끝 -->
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-6">
+							<!-- 알림 시작 -->
+							<div class="div-title-underbar">
+								<a href="<?php echo G5_BBS_URL; ?>/board.php?bo_table=basic">
+									<span class="pull-right lightgray <?php echo $font; ?>">+</span>
+									<span class="div-title-underbar-bold border-<?php echo $line; ?> <?php echo $font; ?>">
+										<b>Notice</b>
+									</span>
+								</a>
+							</div>
+							<div class="widget-box">
+								<?php echo apms_widget('basic-post-list', $wid . '-ws1', 'icon={아이콘:bell} date=1 strong=1,3'); ?>
+							</div>
+							<!-- 알림 끝 -->
 
+						</div>
+						<div class="col-md-12 col-sm-6">
+							<!-- 댓글 시작 -->
+							<div class="div-title-underbar">
+								<a href="<?php echo $at_href['new']; ?>?view=c">
+									<span class="pull-right lightgray <?php echo $font; ?>">+</span>
+									<span class="div-title-underbar-bold border-<?php echo $line; ?> <?php echo $font; ?>">
+										<b>Comments</b>
+									</span>
+								</a>
 							</div>
-							<div class="col-md-12 col-sm-6">
-								<!-- 댓글 시작 -->
-								<div class="div-title-underbar">
-									<a href="<?php echo $at_href['new']; ?>?view=c">
-										<span class="pull-right lightgray <?php echo $font; ?>">+</span>
-										<span class="div-title-underbar-bold border-<?php echo $line; ?> <?php echo $font; ?>">
-											<b>Comments</b>
-										</span>
-									</a>
-								</div>
-								<div class="widget-box">
-									<?php echo apms_widget('basic-post-list', $wid . '-ws2', 'icon={아이콘:comment} comment=1 date=1 strong=1,2'); ?>
-								</div>
-								<!-- 댓글 끝 -->
+							<div class="widget-box">
+								<?php echo apms_widget('basic-post-list', $wid . '-ws2', 'icon={아이콘:comment} comment=1 date=1 strong=1,2'); ?>
 							</div>
+							<!-- 댓글 끝 -->
 						</div>
 					</div>
 				</div>
-			<?php } ?>
+			</div>
 		</div>
 
 		<!-- 메인 영역 -->
