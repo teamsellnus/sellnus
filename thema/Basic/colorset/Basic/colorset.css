@@ -1463,6 +1463,10 @@ instagram api
 	width: 20%;
 }
 
+.main_instagram_image_sec img:hover {
+	cursor: pointer;
+}
+
 .main_instagram_intro_sec .main_instagram_icon {
 	color: #fff;
 	font-size: 6em;

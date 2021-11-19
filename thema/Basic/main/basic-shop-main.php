@@ -155,29 +155,39 @@ $side = ($at_set['side']) ? 'left' : 'right';
 		<span class="main_instagram_icon"><i class="fa fa-instagram"></i></span>
 		<p>sellnus</p>
 	</section>
-	<section class="main_instagram_image_sec">
+	<section class="main_instagram_image_sec" style="height: 100px;">
 	</section>
 </article>
 <script>
 	(() => {
 		const token = 'IGQVJYQmQxZA2I1Q1dwemF4TEpHOHZANRzd1amE1UUtSbTVaaGtaY0VqNVdyWHBQdWlUSTFGMm9qUTVuTnFRSmMyckxzTTBYbkRmUUVVcEdsZA1dEUzNiTUNKVlJZARHFEUWdWSUNVTWJwMFNoNXZArSVdSagZDZD';
 		const INSTA_API = 'https://graph.instagram.com/me/media';
-		const FETCH_INSTA_URL = `${INSTA_API}?fields=media_url&access_token=${token}`;
+		const INSTA_URL = 'https://www.instagram.com/sellnus_official';
+		const FETCH_INSTA_URL = `${INSTA_API}?fields=media_url,permalink&access_token=${token}`;
+
+		const isIE = () => {
+			const agent = navigator.userAgent.toLowerCase();
+
+			return (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1);
+		}
 
 		(async() => {
+			const fragment = document.createDocumentFragment();
 			const { data } = await (await fetch(FETCH_INSTA_URL)).json();
 
-			let imgs = data.map(({ media_url }) => {
-				const img = IEWIN ? new Image() : document.createElement('img');
+			data.forEach(({ media_url, permalink }) => {
+				const img = isIE() ? new Image() : document.createElement('img');
 
 				img.src = media_url;
-				if ( alt !== null ) img.alt = media_url;
+				img.addEventListener('click', () => {
+					window.location.href = permalink;
+				});
 
-				return img
+				fragment.appendChild(img);
 			})
-
+			
 			const container = document.querySelector('.main_instagram_image_sec');
-			container.innerHTML = imgs.join('')
+			container.appendChild(fragment);
 		})();
 	})()
 </script>
