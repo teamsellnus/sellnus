@@ -110,6 +110,10 @@ blockquote {
 
 .header-wrap {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -182,6 +186,10 @@ blockquote {
 
 .at-lnb {
 	border-bottom: 1px solid rgb(238, 238, 238);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -205,6 +213,10 @@ blockquote {
 	list-style: none;
 	margin: 0px;
 	padding: 10px 0px 5px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -214,6 +226,10 @@ blockquote {
 	list-style: none;
 	margin: 0px;
 	padding: 10px 0px 5px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -253,6 +269,10 @@ blockquote {
 ********************************************************/
 
 .pc-header {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -272,6 +292,10 @@ blockquote {
 	list-style: none;
 	margin: auto;
 	padding: 10px 0px 5px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -323,6 +347,10 @@ blockquote {
 }
 
 .pc-header .header-search {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -334,12 +362,20 @@ blockquote {
 	width: 44rem;
 	position: relative;
 	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	background-color: rgb(255, 255, 255);
 }
 
 .input-group {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	position: relative;
 }
@@ -445,6 +481,10 @@ blockquote {
 .pc-menu .at-container {
 	position: relative;
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-items: flex-start;
 }
@@ -495,6 +535,10 @@ blockquote {
 	width: 100%;
 	overflow: auto;
 	white-space: nowrap; */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	overflow-x: auto;
 	margin-top: 5px;
@@ -550,6 +594,10 @@ blockquote {
 .pc-menu .nav-top.nav-both .menu-a {
 	/* padding: 0px;
 	text-align: center; */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1046,6 +1094,10 @@ blockquote {
 	margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
 	z-index: 10;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1077,6 +1129,10 @@ blockquote {
 .main-slide-content-wrap {
 	position: relative;
 	z-index: 9999;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -1091,6 +1147,10 @@ blockquote {
 	margin: 0px auto;
 	padding: 0px 1rem;
 	color: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -1166,6 +1226,10 @@ blockquote {
 	height: 50vw;
 	max-height: 500px;
 	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
@@ -1180,6 +1244,10 @@ blockquote {
 	margin: 0 10px 0 0;
 	background: url('../../assets/img/daily.jpg') no-repeat;
 	background-size: cover;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1190,11 +1258,19 @@ blockquote {
 	width: 50%;
 	height: 100%;
 	margin: 0 0 0 10px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 }
 
 .main_category_sec2 .main_category_things {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1205,6 +1281,10 @@ blockquote {
 .main_category_sec2 .main_category_electronics {
 	width: 50%;
 	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1217,6 +1297,10 @@ blockquote {
 .main_category_sec2 .main_category_books {
 	width: 50%;
 	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1229,6 +1313,10 @@ blockquote {
 .main_category_sec2 .main_category_accesories {
 	height: 50%;
 	margin: 10px 0 0 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1287,6 +1375,10 @@ blockquote {
 
 .main_introduce_wrap {
 	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	-webkit-box-pack: justify;
@@ -1359,6 +1451,10 @@ blockquote {
 
 .main_introduce_reverse_wrap {
 	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row-reverse;
 	-webkit-box-pack: justify;
@@ -1379,6 +1475,10 @@ blockquote {
 
 .widget-box-content-wrap {
 	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1402,6 +1502,10 @@ formspree
 ********************************************************/
 
 .main_form_wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	position: absolute;
 	bottom: 0;
@@ -1413,6 +1517,10 @@ formspree
 }
 
 .main_form_sec {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	-webkit-box-pack: justify;
@@ -1431,6 +1539,10 @@ instagram api
 ********************************************************/
 
 .main_instagram_wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1439,6 +1551,10 @@ instagram api
 }
 
 .main_instagram_intro_sec {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	-webkit-box-pack: justify;
@@ -1477,6 +1593,10 @@ instagram api
 ********************************************************/
 
 .myshop-panel {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1504,6 +1624,10 @@ instagram api
 }
 
 .main_left_side_searchbx {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	border-radius: 2em;
@@ -1514,6 +1638,10 @@ instagram api
 	width: 95%;
 	position: relative;
 	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 }
 
@@ -1562,6 +1690,10 @@ instagram api
 	line-height: 2.3em;
 	list-style: none;
 	text-transform: uppercase;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 }
@@ -1571,6 +1703,10 @@ instagram api
 }
 
 .main_left_side_board_wrap .categoryBx ul li a {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	transition: 0.3s ease;
 	text-decoration: none;
@@ -1602,6 +1738,10 @@ instagram api
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1624,6 +1764,10 @@ instagram api
 }
 
 .main_left_side_board_wrap .main_commu_left_img_wrap .main_commu_left_btn {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	padding: 10px 20px;
 	background-color: #783e94;
@@ -1640,6 +1784,10 @@ instagram api
 
 .main_center_header_wrap {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1651,6 +1799,10 @@ instagram api
 }
 
 .main_right_side_mywrite_wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1674,6 +1826,10 @@ instagram api
 }
 
 .main_right_side_mywrite_wrap .main_right_side_myInfoBx li a {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	padding: 10px 10px 10px 15px;
@@ -1691,6 +1847,10 @@ instagram api
 }
 
 .main_right_side_mywrite_wrap .main_right_tags_wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1722,6 +1882,10 @@ instagram api
 }
 
 .main_right_side_mywrite_wrap .main_right_side_tagsBx li a {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	padding: 10px 10px 10px 15px;
@@ -1751,6 +1915,10 @@ instagram api
 	background-color: #fff;
 	width: 100%;
 	height: 70px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 }
@@ -1785,6 +1953,10 @@ instagram api
 }
 
 .spec_commu_board_wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1805,6 +1977,10 @@ instagram api
 
 .spec_commu_board_wrap .spec_commu_user_sec {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1819,6 +1995,10 @@ instagram api
 }
 
 .spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_box {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 }
@@ -1834,6 +2014,10 @@ instagram api
 
 .spec_commu_board_wrap .spec_commu_subject_sec {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -1859,6 +2043,10 @@ instagram api
 	margin-bottom: 30px;
 	box-shadow: 5px 10px 15px 4px rgb(0 0 0 / 20%);
 	padding: 20px 30px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1872,6 +2060,10 @@ instagram api
 
 .spec_commu_sub_info_sec {
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1883,10 +2075,18 @@ instagram api
 	min-height: 100%;
 }
 .write-wrap{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 }
 .write_title_wrap{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 }
@@ -1908,6 +2108,10 @@ instagram api
 	border-radius: 0.45em !important;
 }
 .write_tagsBx{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 }
 .write_tags_title{
@@ -1958,6 +2162,10 @@ instagram api
 }
 .shop-details-wrap .row{
 	/* 모바일 수정해야함 */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -1971,6 +2179,10 @@ instagram api
 	height: auto;
 }
 .details-slider .swiper-wrapper .swiper-slide{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1991,12 +2203,20 @@ instagram api
 	background-color: #777;
 }
 .shop-details-wrap .col-sm-7{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 .shop-details-wrap .item-buy-btn{
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 }
@@ -2005,6 +2225,10 @@ instagram api
 }
 .shop-details-wrap .item-buy-btn li a{
 	width: 50px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2015,6 +2239,10 @@ instagram api
 }
 .item-head ul.item-buy-btn li:last-child{
 	width: 50px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2028,6 +2256,10 @@ instagram api
     font-weight: 600;
     background: rgb(204, 204, 204);
     color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -2048,6 +2280,10 @@ instagram api
 .shop-info-wrap #item-review{
 	width: 100%;
 	height: 200px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -2073,6 +2309,10 @@ instagram api
 .shop-info-wrap #item-review .item-seller{
 	width: 30%;
 	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -2081,6 +2321,10 @@ instagram api
 #item-review .item-seller .auth-photo{
 	width: 100% !important;
 	padding:0 !important;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -2173,6 +2417,10 @@ instagram api
     width: 100%;
 }
 .privacy_right_side_wrap{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -2256,6 +2504,10 @@ instagram api
 		display: none !important;
 	}
 	.at-footer .wrapper.footer_container .container_inner {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -2281,6 +2533,10 @@ instagram api
 	margin: 0 auto;
 }
 .at-footer .footer_menu_links_sec{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
     display: flex;
     background-color: #783e94;
     float: left;
@@ -2289,6 +2545,10 @@ instagram api
     width: 50%;
 }
 .at-footer .footer_menu_links_sec .footer_linksBx{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
     display: flex;
     align-items: flex-start;
     flex-flow: column wrap;
@@ -2333,10 +2593,18 @@ instagram api
     width: 100%;
 }
 .footer_menu_social_sec .footer_icon_linksBx {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
     justify-content: flex-end;
 }
 .footer_menu_social_sec .footer_icon_linksBx .icon_link{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2466,6 +2734,10 @@ instagram api
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

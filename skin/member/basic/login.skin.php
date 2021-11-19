@@ -35,6 +35,10 @@ if ($header_skin)
 		position: relative;
 		width: 100%;
 		height: 100vh;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 	}
 
@@ -54,6 +58,10 @@ if ($header_skin)
 		position: relative;
 		width: 100%;
 		height: 100vh;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 	}
 
@@ -85,6 +93,10 @@ if ($header_skin)
 	}
 
 	section .content-box {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		width: 50%;
 		height: 100%;
@@ -151,6 +163,10 @@ if ($header_skin)
 
 	section .content-box .login-form-box .remember .col-xs-6 {
 		width: 100%;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -160,6 +176,10 @@ if ($header_skin)
 
 	section .content-box .login-form-box .remember .col-xs-6 button {
 		width: 100%;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -183,6 +203,10 @@ if ($header_skin)
         height: 100%;
     }
     section .content-box{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
         display: flex;
         justify-content: center;
         align-items: center;

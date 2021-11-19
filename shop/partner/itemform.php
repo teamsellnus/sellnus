@@ -233,6 +233,10 @@ if ($w == "" && !$fn) {
 		.new_win h2 {
 			height: 100px;
 			font-size: 26px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
 			display: flex;
 			-webkit-box-align: center;
 			align-items: center;
@@ -262,10 +266,18 @@ if ($w == "" && !$fn) {
 		}
 		.new_win .tbl_wrap table tbody tr{
 			line-height: 70px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
 			display: flex;
 			width: 100%;
 		}
 		.new_win .tbl_wrap th {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -280,12 +292,20 @@ if ($w == "" && !$fn) {
 			
 		}
 		.new_win .tbl_wrap td.justi-center{
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
 			flex: 1 1 0%;
 		}
 		.new_win .tbl_wrap td.justi-center-column{
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;

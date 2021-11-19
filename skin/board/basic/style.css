@@ -632,6 +632,10 @@ table.list-pc .list-none {
 	margin: 35px 0 50px 0;
 	text-align: center;
 	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;

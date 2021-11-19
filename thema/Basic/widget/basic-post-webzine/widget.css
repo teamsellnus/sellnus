@@ -42,6 +42,10 @@
     margin-bottom: 30px;
     box-shadow: 5px 10px 15px 4px rgba(0, 0, 0, 0.2);
     padding:20px 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +77,10 @@
     letter-spacing: -1px;
     padding-right: 1px;
     font-size:20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,11 +102,19 @@
     padding:20px 0;
 }
 .basic-post-webzine .post-text.post-title-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .basic-post-webzine .post-text.post-title-wrap .post-icon-sec{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
@@ -126,6 +142,10 @@
     font-size: 11px;
 }
 .basic-post-webzine .post-sub-info{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
