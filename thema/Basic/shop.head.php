@@ -72,7 +72,7 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-					<img src="<?php echo G5_IMG_URL ?>/sell&us_logo.jpg" alt="">
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<!-- PC Search -->
