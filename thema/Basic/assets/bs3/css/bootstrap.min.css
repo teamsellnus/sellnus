@@ -5736,10 +5736,10 @@ button.close {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background-color: #000;
+    background-color: #783e94 !important;
     border-radius: 4px
 }
-
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #67b168;}
 .tooltip-arrow {
     position: absolute;
     width: 0;
