@@ -277,6 +277,31 @@ if ($w == "" && !$fn) {
 		}
 		.new_win .tbl_wrap td{
 			flex: 1 1 0%;
+			
+		}
+		.new_win .tbl_wrap td.justi-center{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex: 1 1 0%;
+		}
+		.new_win .tbl_wrap td.justi-center-column{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex: 1 1 0%;
+		}
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		.new_win .tbl_wrap td.center{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex: 1 1 0%;
 		}
 
 		.new_win .tbl_wrap th label {

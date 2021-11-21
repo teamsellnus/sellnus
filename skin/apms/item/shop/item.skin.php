@@ -67,13 +67,8 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 
 ?>
 <style>
-	.thumb_item_image{
+	.thumb_item_image {
 		display: none;
-	}
-	.itemuse_info_tit{
-		font-size: 18px;
-		padding: 48px 0px 16px;
-		border-bottom: 1px solid rgb(238, 238, 238);
 	}
 </style>
 <?php if ($nav_title) { ?>
@@ -114,7 +109,7 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 		display: none;
 	}
 </style>
-<div class="item-head">
+<div class="item-head shop-details-wrap">
 	<div class="row">
 		<div class="col-sm-5">
 			<!-- <div class="item-image">
@@ -126,17 +121,17 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 			</div> -->
 			<!-- <div class="item-thumb text-center">
 				<?php
-					for ($i = 0; $i < count($thumbnails); $i++) {
-						echo $thumbnails[$i];
-					}
+				for ($i = 0; $i < count($thumbnails); $i++) {
+					echo $thumbnails[$i];
+				}
 				?>
 			</div> -->
 			<div id="item_image" class="swiper details-slider">
 				<div class="swiper-wrapper">
 					<?php
-						for ($i = 0; $i < count($thumbnails); $i++) {
-							echo '<div class="swiper-slide"><img src="'.$thumbnails[$i].'</div>';
-						}
+					for ($i = 0; $i < count($thumbnails); $i++) {
+						echo '<div class="swiper-slide"><img style="object-fit: fill;" src="' . $thumbnails[$i] . '</div>';
+					}
 					?>
 				</div>
 				<div class="swiper-button-prev"></div>
@@ -169,8 +164,10 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 		</div>
 
 		<div class="col-sm-7">
-			<h1><?php echo stripslashes($it['it_name']); // 상품명 
-				?></h1>
+			<!-- 상품명 -->
+			<h1><?php echo stripslashes($it['it_name']); ?></h1>
+			<h2><?php echo display_price(get_price($it)); ?></h2>
+			<div class="shop-details-table-line"></div>
 			<form name="fitem" method="post" action="<?php echo $action_url; ?>" class="form item-form" role="form" onsubmit="return fitem_submit(this);">
 				<input type="hidden" name="it_id[]" value="<?php echo $it_id; ?>">
 				<input type="hidden" name="it_msg1[]" value="<?php echo $it['pt_msg1']; ?>">
@@ -178,7 +175,6 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 				<input type="hidden" name="it_msg3[]" value="<?php echo $it['pt_msg3']; ?>">
 				<input type="hidden" name="sw_direct">
 				<input type="hidden" name="url">
-
 				<table class="div-table table">
 					<col width="120">
 					<tbody>
@@ -234,11 +230,18 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 								</tr>
 							<?php } // 시중가격 끝 
 							?>
-							<tr>
+							<!-- 기존 테이블 판매가격란 -->
+							<!-- <tr>
 								<th scope="row">판매가격</th>
 								<td>
 									<?php echo display_price(get_price($it)); ?>
 									<input type="hidden" id="it_price" value="<?php echo get_price($it); ?>">
+								</td>
+							</tr> -->
+							<tr>
+								<th class="detail-table-tit" scope="row">Status</th>
+								<td class="detail-table-con">
+									<?php echo $it['it_1']; ?>
 								</td>
 							</tr>
 						<?php } ?>
@@ -276,27 +279,38 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 							</tr>
 						<?php } ?>
 						<?php
-						$ct_send_cost_label = '배송비결제';
+						$ct_send_cost_label = 'Shipping';
 
 						if ($it['it_sc_type'] == 1)
-							$sc_method = '무료배송';
+							$sc_method = 'Direct transaction';
 						else {
 							if ($it['it_sc_method'] == 1)
 								$sc_method = '수령후 지불';
 							else if ($it['it_sc_method'] == 2) {
 								$ct_send_cost_label = '<label for="ct_send_cost">배송비결제</label>';
 								$sc_method = '<select name="ct_send_cost" id="ct_send_cost" class="form-control input-sm">
-										  <option value="0">주문시 결제</option>
-										  <option value="1">수령후 지불</option>
+										  <option value="0">Direct transaction</option>
+										  <option value="1">Delivery transaction</option>
 									  </select>';
 							} else
-								$sc_method = '주문시 결제';
+								$sc_method = 'Delivery transaction';
 						}
 						?>
 						<tr>
-							<th><?php echo $ct_send_cost_label; ?></th>
-							<td><?php echo $sc_method; ?></td>
+							<th class="detail-table-tit" scope="row">Location</th>
+							<td class="detail-table-con">
+								<?php echo $it['it_2']; ?>
+							</td>
 						</tr>
+						<tr>
+							<th><?php echo $ct_send_cost_label; ?></th>
+							<td style="color:#783e94;"><?php echo $sc_method; ?></td>
+						</tr>
+						<tr>
+							<th>Share this products</th>
+							<td><?php include_once(G5_SNS_PATH . "/item.sns.skin.php"); ?></td>
+						</tr>
+						<div class="clearfix"></div>
 					</tbody>
 				</table>
 
@@ -324,7 +338,7 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 					<?php }	?>
 
 					<?php if ($is_orderable) { ?>
-						<div id="it_sel_option">
+						<!-- <div id="it_sel_option">
 							<?php
 							if (!$option_item) {
 								if (!$it['it_buy_min_qty'])
@@ -379,10 +393,9 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 								</script>
 							<?php } ?>
 						</div>
-						<!-- 총 구매액 -->
 						<h4 style="text-align:center; margin-bottom:15px;">
 							총 금액 : <span id="it_tot_price">0원</span>
-						</h4>
+						</h4> -->
 					<?php } ?>
 				</div>
 
@@ -393,10 +406,10 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 				<?php if ($is_orderable) { ?>
 					<div style="text-align:center; padding:12px 0;">
 						<ul class="item-buy-btn">
-							<li><input type="submit" onclick="document.pressed=this.value;" value="테스트" class="btn btn-<?php echo $btn2; ?> btn-block"></li>
-							<li><input type="submit" onclick="document.pressed=this.value;" value="장바구니" class="btn btn-<?php echo $btn1; ?> btn-block"></li>
-							<li><a href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_wishlist('<?php echo $it['it_id']; ?>'); return false;">위시리스트</a></li>
-							<li><a href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_recommend('<?php echo $it['it_id']; ?>', '<?php echo $ca_id; ?>'); return false;">추천하기</a></li>
+							<li><input class="item-buynow" type="submit" onclick="document.pressed=this.value;" value="Buy NOW" class="btn btn-<?php echo $btn2; ?> btn-block"></li>
+							<li><input class="item-atc" type="submit" onclick="document.pressed=this.value;" value="ADD TO CART" class="btn btn-<?php echo $btn1; ?> btn-block"></li>
+							<li><a class="item-wishlist" href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_wishlist('<?php echo $it['it_id']; ?>'); return false;"><span><i class="fa fa-heart"></i></span></a></li>
+							<!-- <li><a href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_recommend('<?php echo $it['it_id']; ?>', '<?php echo $ca_id; ?>'); return false;">추천하기</a></li> -->
 						</ul>
 					</div>
 					<?php if ($naverpay_button_js) { ?>
@@ -545,10 +558,6 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 				}
 			</script>
 
-			<!-- <div class="pull-right">
-				<?php include_once(G5_SNS_PATH . "/item.sns.skin.php"); ?>
-			</div> -->
-			<div class="clearfix"></div>
 
 			<?php if ($is_tag) { // 태그 
 			?>
@@ -681,8 +690,7 @@ if ($item_video) {
 	<?php } ?>
 <?php } ?>
 
-<?php echo apms_line('fa'); // 라인 
-?>
+
 
 <div class="item-explan">
 	<?php if ($it['pt_explan']) { // 구매회원에게만 추가로 보이는 상세설명 
@@ -694,7 +702,7 @@ if ($item_video) {
 
 <?php if ($is_good) { // 추천 
 ?>
-	<div class="item-good-box">
+	<!-- <div class="item-good-box">
 		<span class="item-good">
 			<a href="#" onclick="apms_good('<?php echo $it_id; ?>', '', 'good', 'it_good'); return false;">
 				<b id="it_good"><?php echo number_format($it['pt_good']) ?></b>
@@ -709,7 +717,7 @@ if ($item_video) {
 				<i class="fa fa-thumbs-down"></i>
 			</a>
 		</span>
-	</div>
+	</div> -->
 <?php } ?>
 
 <?php if ($is_ccl) { // CCL 
@@ -734,77 +742,24 @@ if ($item_video) {
 
 <?php // 위젯에서 해당글 클릭시 이동위치 : icv - 댓글, iuv - 후기, iqv - 문의 
 ?>
-<div id="item-tab" class="div-tab tabs<?php echo ($wset['tabline']) ? '' : ' trans-top'; ?>">
+<div id="item-tab" class="div-tab tabs<?php echo ($wset['tabline']) ? '' : ' trans-top';?>">
 	<ul class="nav nav-tabs nav-justified">
-		<li class="active"><a href="#item-review" data-toggle="tab"><b>상품정보<?php echo $it_use_cnt; ?></b></a></li>
-		<li><a href="#item-qa" data-toggle="tab"><b>문의글<?php echo $it_qa_cnt; ?></b></a></li>
-		<?php if ($is_comment) { // 댓글 
-		?>
-			<li><a href="#item-cmt" data-toggle="tab"><b>댓글<?php echo $it_comment_cnt; ?></b></a></li>
+		<li class="active"><a href="#item-review" data-toggle="tab"><b>Product Description<?php echo $it_use_cnt;?></b></a></li>
+		<li><a href="#item-qa" data-toggle="tab"><b>Q&A<?php echo $it_qa_cnt;?></b></a></li>
+		<!-- <?php if($is_comment) { // 댓글 ?>
+			<li><a href="#item-cmt" data-toggle="tab"><b>댓글<?php echo $it_comment_cnt;?></b></a></li>
 		<?php } ?>
-
-		<?php if ($is_ii) { // 상품정보고시 
-		?>
-			<!-- <li><a href="#item-info" data-toggle="tab"><b>필수표기정보</b></a></li> -->
+		<?php if($is_ii) { // 상품정보고시 ?>
+			<li><a href="#item-info" data-toggle="tab"><b>필수표기정보</b></a></li>
 		<?php } ?>
-		<!-- <li><a href="#item-delivery" data-toggle="tab"><b>배송/교환/반품</b></a></li> -->
+		<li><a href="#item-delivery" data-toggle="tab"><b>배송/교환/반품</b></a></li> -->
 	</ul>
 	<div class="tab-content" style="border:0px; padding:20px 0px;">
 		<div class="tab-pane active" id="item-review">
 			<div id="iuv"></div>
 			<div id="itemuse">
-				<!-- <?php include_once('./itemuse.php'); ?> -->
-				<h1 class="itemuse_info_tit">상품정보</h1>
-				<?php if ($it['it_basic']) { // 기본설명 
-				?>
-					<p class="help-block"><?php echo $it['it_basic']; ?></p>
-				<?php } ?>
+				<?php include_once('./itemuse.php'); ?>
 			</div>
-			<?php if ($is_seller && $wset['seller']) { // 판매자 
-			?>
-				<div class="panel panel-default item-seller">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							<?php if ($author['partner']) { ?>
-								<a href="<?php echo $at_href['myshop']; ?>?id=<?php echo $author['mb_id']; ?>" class="pull-right">
-									<span class="label label-primary"><span class="font-11 en">My Shop</span></span>
-								</a>
-							<?php } ?>
-							Seller
-						</h3>
-					</div>
-					<div class="panel-body">
-						<div class="pull-left text-center auth-photo">
-							<div class="img-photo">
-								<?php echo ($author['photo']) ? '<img src="' . $author['photo'] . '" alt="">' : '<i class="fa fa-user"></i>'; ?>
-							</div>
-							<div class="btn-group" style="margin-top:-30px;white-space:nowrap;">
-								<button type="button" class="btn btn-color btn-sm" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'like', 'it_like'); return false;" title="Like">
-									<i class="fa fa-thumbs-up"></i> <span id="it_like"><?php echo number_format($author['liked']) ?></span>
-								</button>
-								<button type="button" class="btn btn-color btn-sm" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'follow', 'it_follow'); return false;" title="Follow">
-									<i class="fa fa-users"></i> <span id="it_follow"><?php echo $author['followed']; ?></span>
-								</button>
-							</div>
-						</div>
-						<div class="auth-info">
-							<div style="margin-bottom:4px;">
-								<span class="pull-right">Lv.<?php echo $author['level']; ?></span>
-								<b><?php echo $author['name']; ?></b> &nbsp;<span class="text-muted font-11"><?php echo $author['grade']; ?></span>
-							</div>
-							<div class="div-progress progress progress-striped no-margin">
-								<div class="progress-bar progress-bar-exp" role="progressbar" aria-valuenow="<?php echo round($author['exp_per']); ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo round($author['exp_per']); ?>%;">
-									<span class="sr-only"><?php echo number_format($author['exp']); ?> (<?php echo $author['exp_per']; ?>%)</span>
-								</div>
-							</div>
-							<p style="margin-top:10px;">
-								<?php echo ($author['signature']) ? $author['signature'] : '등록된 서명이 없습니다.'; ?>
-							</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			<?php } ?>
 		</div>
 		<div class="tab-pane" id="item-qa">
 			<div id="iqv"></div>
@@ -812,15 +767,13 @@ if ($item_video) {
 				<?php include_once('./itemqa.php'); ?>
 			</div>
 		</div>
-		<?php if ($is_comment) { // 댓글 
-		?>
+		<?php if($is_comment) { // 댓글 ?>
 			<div class="tab-pane" id="item-cmt">
 				<div id="icv"></div>
 				<?php include_once('./itemcomment.php'); ?>
 			</div>
 		<?php } ?>
-		<?php if ($is_ii) { // 상품정보고시 
-		?>
+		<?php if($is_ii) { // 상품정보고시 ?>
 			<div class="tab-pane" id="item-info">
 
 				<div class="tbox-head no-line">
@@ -829,15 +782,15 @@ if ($item_video) {
 				<div class="tbox-body">
 					<div class="table-responsive">
 						<table class="div-table table top-border">
-							<caption>상품정보고시</caption>
-							<tbody>
-								<?php for ($i = 0; $i < count($ii); $i++) { ?>
-									<tr>
-										<th><?php echo $ii[$i]['title']; ?></th>
-										<td><?php echo $ii[$i]['value']; ?></td>
-									</tr>
-								<?php } ?>
-							</tbody>
+						<caption>상품정보고시</caption>
+						<tbody>
+							<?php for($i=0; $i < count($ii); $i++) { ?>
+								<tr>
+									<th><?php echo $ii[$i]['title']; ?></th>
+									<td><?php echo $ii[$i]['value']; ?></td>
+								</tr>
+							<?php } ?>
+						</tbody>
 						</table>
 					</div>
 				</div>
@@ -848,60 +801,60 @@ if ($item_video) {
 				<div class="tbox-body">
 					<div class="table-responsive">
 						<table class="div-table table top-border">
-							<caption>거래조건</caption>
-							<tbody>
-								<tr>
-									<th>재화 등의 배송방법에 관한 정보</th>
-									<td>상품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>주문 이후 예상되는 배송기간</th>
-									<td>상품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>제품하자가 아닌 소비자의 단순변심, 착오구매에 따른 청약철회 시 소비자가 부담하는 반품비용 등에 관한 정보</th>
-									<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>제품하자가 아닌 소비자의 단순변심, 착오구매에 따른 청약철회가 불가능한 경우 그 구체적 사유와 근거</th>
-									<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>재화등의 교환ㆍ반품ㆍ보증 조건 및 품질보증 기준</th>
-									<td>소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</td>
-								</tr>
-								<tr>
-									<th>재화등의 A/S 관련 전화번호</th>
-									<td>상품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>대금을 환불받기 위한 방법과 환불이 지연될 경우 지연에 따른 배상금을 지급받을 수 있다는 사실 및 배상금 지급의 구체적 조건 및 절차</th>
-									<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
-								</tr>
-								<tr>
-									<th>소비자피해보상의 처리, 재화등에 대한 불만처리 및 소비자와 사업자 사이의 분쟁처리에 관한 사항</th>
-									<td>소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</td>
-								</tr>
-								<tr>
-									<th>거래에 관한 약관의 내용 또는 확인할 수 있는 방법</th>
-									<td>상품 상세설명페이지 및 페이지 하단의 이용약관 링크를 통해 확인할 수 있습니다.</td>
-								</tr>
-							</tbody>
+						<caption>거래조건</caption>
+						<tbody>
+							<tr>
+								<th>재화 등의 배송방법에 관한 정보</th>
+								<td>상품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>주문 이후 예상되는 배송기간</th>
+								<td>상품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>제품하자가 아닌 소비자의 단순변심, 착오구매에 따른 청약철회 시 소비자가 부담하는 반품비용 등에 관한 정보</th>
+								<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>제품하자가 아닌 소비자의 단순변심, 착오구매에 따른 청약철회가 불가능한 경우 그 구체적 사유와 근거</th>
+								<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>재화등의 교환ㆍ반품ㆍ보증 조건 및 품질보증 기준</th>
+								<td>소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</td>
+							</tr>
+							<tr>
+								<th>재화등의 A/S 관련 전화번호</th>
+								<td>상품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>대금을 환불받기 위한 방법과 환불이 지연될 경우 지연에 따른 배상금을 지급받을 수 있다는 사실 및 배상금 지급의 구체적 조건 및 절차</th>
+								<td>배송ㆍ교환ㆍ반품 상세설명페이지 참고</td>
+							</tr>
+							<tr>
+								<th>소비자피해보상의 처리, 재화등에 대한 불만처리 및 소비자와 사업자 사이의 분쟁처리에 관한 사항</th>
+								<td>소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</td>
+							</tr>
+							<tr>
+								<th>거래에 관한 약관의 내용 또는 확인할 수 있는 방법</th>
+								<td>상품 상세설명페이지 및 페이지 하단의 이용약관 링크를 통해 확인할 수 있습니다.</td>
+							</tr>
+						</tbody>
 						</table>
 					</div>
 				</div>
 			</div>
 		<?php } ?>
 		<div class="tab-pane" id="item-delivery">
-			<?php include_once($item_skin_path . '/item.delivery.php'); ?>
+			<?php include_once($item_skin_path.'/item.delivery.php'); ?>
 		</div>
-	</div>
+	</div>							
 </div>
 
 <?php echo $it_tail_html; // 하단 HTML 
 ?>
 
-<div class="btn-group btn-group-justified">
+<!-- <div class="btn-group btn-group-justified">
 	<?php if ($prev_href) { ?>
 		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $prev_href; ?>" title="<?php echo $prev_item; ?>"><i class="fa fa-chevron-circle-left"></i> 이전</a>
 	<?php } ?>
@@ -921,7 +874,7 @@ if ($item_video) {
 		<a class="btn btn-<?php echo $btn1; ?> win_memo" href="<?php echo $setup_href; ?>"><i class="fa fa-cogs"></i><span class="hidden-xs"> 스킨설정</span></a>
 	<?php } ?>
 	<a class="btn btn-<?php echo $btn2; ?>" href="<?php echo $list_href; ?>"><i class="fa fa-bars"></i> 목록</a>
-</div>
+</div> -->
 
 <div class="h30"></div>
 
@@ -934,5 +887,7 @@ if ($item_video) {
 	});
 </script>
 
-<?php include_once('./itemlist.php'); // 분류목록 
+<!-- 분류목록 -->
+<h1 class="shop-info-latest-tit">Latest Products</h1>
+<?php include_once('./itemlist.php'); 
 ?>

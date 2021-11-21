@@ -21,7 +21,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-				<img class="main_commu_left_shop_img" src="<?php echo G5_URL; ?>/shop/img/p2.jpg" alt="">
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<div class="lnb-right">
@@ -77,7 +77,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 		<div class="pc-menu">
 			<!-- Menu Button & Right Icon Menu -->
 			<div class="at-container">
-				<div class="nav-right nav-height">
+				<!-- <div class="nav-right nav-height">
 					<ul>
 						<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
 							<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
@@ -85,10 +85,10 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
-			<?php include_once(THEMA_PATH . '/menu.php');    // 메뉴 불러오기 
-			?>
+			<!-- 메뉴 불러오기 -->
+			
 			<div class="nav-back"></div>
 		</div><!-- .pc-menu -->
 		<!-- PC All Menu -->

@@ -3,7 +3,62 @@
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 include_once(THEMA_PATH . '/assets/thema.php');
 add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">', 0);
 ?>
+
+<style>
+	.nav-right{
+		display: none;
+	}
+	.dropbtn {
+	background-color: #2c2c61; 
+    color: white;
+	float:left;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	width: 100px;
+    height: 35px;
+    font-size: small;
+	text-align: center;
+	padding: 0 0 0 0;
+	border-radius: 3px;
+	}
+
+	.dropdown:hover .dropbtn {
+    background-color: #2c2c61; 
+}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 100;
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {
+		background-color: #2c2c61; 
+		color: white;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+
+</style>
 
 <div id="thema_wrapper" class="wrapper <?php echo $is_thema_layout; ?> <?php echo $is_thema_font; ?>">
 	<header id="globalHeader">
@@ -14,14 +69,22 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 				<ul>
 					<li><a href="javascript:;" id="favorite">Favorites</a></li>
 					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">App Downloads</a></li>
-					<li><div id="google_translate_element"></div></li>
+					<li><div id="google_translate_element" style="display:none"></div></li>
 					<ul class="translation-links" style="list-style:none;">
-            			<li style="float:left"><a href="javascript:void(0)" class="english" data-lang="en">En</a></li>
-            			<li  style="float:left">&nbsp / &nbsp</li>
-            			<li style="float:left"><a href="javascript:void(0)" class="korean" data-lang="ko">Ko</a></li>
-						<li  style="float:left">&nbsp / &nbsp</li>
-            			<li style="float:left"><a href="javascript:void(0)" class="japanese" data-lang="ja">JA</a></li>
-         			</ul>
+						<div class="dropdown">
+      						<button class="dropbtn">번역</button>
+      						<div class="dropdown-content">
+        					<a data-lang="ko">한국어</a>
+        					<a data-lang="en">영어</a>
+        					<a data-lang="ja">일본어</a>
+							<a data-lang="vi">베트남어</a>
+							<a data-lang="ja">스페인어</a>
+							<a data-lang="de">독일어</a>
+							<a data-lang="fr">불어</a>
+							<a data-lang="mn">몽골어</a>
+      						</div>
+    					</div>
+
 					<?php
 					$tweek = array("일", "월", "화", "수", "목", "금", "토");
 					?>
@@ -36,9 +99,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 						<li><a href="javascript:;" onclick="sidebar_open('sidebar-user');"><b><?php echo $member['mb_nick']; ?></b></a></li>
 						<?php if ($member['admin']) { ?>
 							<li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li>
-						<?php } ?>
-						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
 						<?php } ?>
 						<li class="sidebarLabel" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
@@ -60,8 +120,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li>
 						<?php } ?>
-						<!-- <li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li> -->
-						<li><span style="color:#000; font-size: 2em;"><i class="fa fa-globe"></i></span></li>
+						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
@@ -77,7 +136,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-				<img class="main_commu_left_shop_img" src="<?php echo G5_URL; ?>/shop/img/p2.jpg" alt="">
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<!-- PC Search -->
@@ -105,8 +164,11 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell IT</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell It</a></li>
 							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
+							<li><a href="<?php echo G5_URL;?>/chat/chat.php"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;Chat</a></li>
+						<?php } else  {?>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/register.php">Partner Sign UP!</a></li>
 						<?php } ?>
 						
 					<?php } else { // 로그아웃 상태 
@@ -124,7 +186,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 								</a>
 							</li> -->
 						<?php } ?>
-						<li><a href="<?php echo $at_href['change']; ?>"><?php echo (IS_SHOP) ? 'Community' : 'Shop'; ?></a></li>
 					<?php } ?>
 					<!-- <li><a href="<?php echo $at_href['connect']; ?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">' . number_format($stats['now_mb']) . '</b>)' : ''; ?></a></li> -->
 					<?php if ($is_member) { ?>
@@ -140,8 +201,22 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 				<div class="header-wrap">
 					<div class="header-icon">
 						<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
-							<i class="fa fa-user"></i>
+							<i class="fa fa-user" style="float:left; margin: 12px"></i>
 						</a>
+						<ul class="translation-links" style="list-style:none; ">
+						<div class="dropdown">
+      						<button class="dropbtn" style="margin: 10px">번역</button>
+      						<div class="dropdown-content">
+        					<a data-lang="ko">한국어</a>
+        					<a data-lang="en">영어</a>
+        					<a data-lang="ja">일본어</a>
+							<a data-lang="vi">베트남어</a>
+							<a data-lang="ja">스페인어</a>
+							<a data-lang="de">독일어</a>
+							<a data-lang="fr">불어</a>
+							<a data-lang="mn">몽골어</a>
+      						</div>
+    					</div>
 					</div>
 					<div class="header-logo en">
 						<!-- Mobile Logo -->
@@ -302,7 +377,6 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 	<?php } ?>
 
 	<div class="at-body">
-		
 		<?php if ($col_name) { ?>
 			<div class="at-container">
 				<?php if ($col_name == "two") { ?>
