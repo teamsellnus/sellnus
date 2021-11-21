@@ -62,7 +62,7 @@ for ($i=0; $i < $list_cnt; $i++) {
 						<?php echo $item_label;?>
 						<?php echo $item_icon;?>
 						<div class="img-item">
-							<img src="<?php echo $list[$i]['img']['src'];?>" alt="<?php echo $list[$i]['img']['alt'];?>">
+							<img class="shop-image" data-src="<?php echo $list[$i]['img']['src'];?>" alt="<?php echo $list[$i]['img']['alt'];?>">
 						</div>
 					</div>
 				</a>
@@ -144,3 +144,20 @@ for ($i=0; $i < $list_cnt; $i++) {
 <?php if(!$list_cnt) { ?>
 	<div class="item-none">등록된 상품이 없습니다.</div>
 <?php } ?>
+<script>
+	const GALLERY_IMAGE_CLASSNAME = 'shop-image';
+	const galleryIO = new IntersectionObserver((entries, observer) => {
+		entries.forEach(entry => {
+			if (entry.intersectionRatio > 0) {
+				const src = entry.target.getAttribute('data-src');
+				entry.target.setAttribute('src', src);
+            	observer.unobserve(entry.target);
+			}
+		});
+	});
+
+	const shopImageList = document.querySelectorAll(`.${GALLERY_IMAGE_CLASSNAME}`);
+	shopImageList.forEach((el) => {
+		galleryIO.observe(el);
+	})
+</script>

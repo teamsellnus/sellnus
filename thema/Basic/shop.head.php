@@ -72,7 +72,7 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-					Sell&Us
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<!-- PC Search -->
@@ -100,7 +100,7 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell IT</a></li>
+							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell It</a></li>
 							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
 							<li><a href="<?php echo G5_URL;?>/chat/chat.php"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;Chat</a></li>
 						<?php } else  {?>

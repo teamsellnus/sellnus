@@ -20,7 +20,9 @@ $pg_anchor .= '</ul>';
 $it['pt_it'] = 1;
 
 $$it['it_use'] = "checked";
+$bf_file = [];
 
+add_stylesheet('<link rel="stylesheet" href="' . G5_CSS_URL . '/addrlink.css" type="text/css">', 0);
 ?>
 <style>
 	.sl {
@@ -62,6 +64,59 @@ $$it['it_use'] = "checked";
 	.btn_confirm {
 		margin-bottom: 50px;
 	}
+
+	.tooltip-inner {
+		background-color: #783e94 !important;
+	}
+	.item-image-wrap{
+		display: flex;
+		width: 856px;
+		height: 100%;
+		flex-wrap: wrap;
+		overflow-x: hidden;
+		position: relative;
+	}
+	.item-imageBx{
+		width: 202px;
+		height: 202px;
+		position: relative;
+		border-radius: 20px;
+		background: #f8f3fa;
+		display: flex;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		justify-content: center;
+		flex-direction: column;
+		color: rgb(155, 153, 169);
+		font-size: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+	.item-imageBx::before{
+		content: "";
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/upload-icon.png');
+		width: 50px;
+		height: 50px;
+		margin-bottom: 1rem;
+	}
+	.item-imageBx input{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 0;
+		cursor: pointer;
+		font-size: 0px;
+	}
+	.item-imageBx p{
+		font-size: 1.8em;
+		color:rgb(183, 167, 238);
+	}
 </style>
 <section id="anc_sitfrm_ini" class="anc-section">
 	<h2 class="h2_frm">Basic Information</h2>
@@ -78,6 +133,17 @@ $$it['it_use'] = "checked";
 					<td>
 						<!-- <?php echo help("상품종류에 따라 주문 및 결제후 이용방법이 달라집니다."); ?> -->
 						<input type="hidden" name="pt_it" value="1">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">Image</th>
+					<td>
+						<div class="item-image-wrap">
+							<div class="item-imageBx">
+								<input type="file" name="images[]" multiple>
+								<p>Upload Your files</p>
+							</div>
+						</div>
 					</td>
 				</tr>
 				<tr>
@@ -142,11 +208,19 @@ $$it['it_use'] = "checked";
 				</tr>
 
 				<tr>
-					<th scope="row"><label for="it_basic">Description</label></th>
+					<th scope="row">
+						<label for="it_basic">Description</label>
+						<a href="#" data-toggle="tooltip" title="Please enter the product description." data-placement="top">&nbsp;<i class="fa fa-question-circle"></i></a>
+					</th>
 					<td>
 						<textarea placeholder="상품 설명을 입력해주세요." rows="6" name="it_basic" value="<?php echo get_text(html_purifier($it['it_basic'])); ?>" id="it_basic" class="frm_input sl"></textarea>
 					</td>
 				</tr>
+				<script>
+					$(document).ready(function() {
+						$('[data-toggle="tooltip"]').tooltip();
+					});
+				</script>
 				<tr style="display:none;">
 					<th scope="row"><label for="pt_show">마이샵순서</label></th>
 					<td>
@@ -262,10 +336,24 @@ $$it['it_use'] = "checked";
 						<label><input type="checkbox" name="it_soldout" value="1" id="it_soldout" <?php echo ($it['it_soldout']) ? "checked" : ""; ?>> 예</label>
 					</td>
 				</tr> -->
+				<script language="javascript">
+					function jusoCallBack(roadFullAddr, roadAddr) {
+						document.getElementById('roadFullAddr').value = roadFullAddr;
+					}
+
+					function goPopup() {
+						var pop = window.open("../../skin/apms/form/jusoPopup_utf8.php", "pop", "width=570,height=420, scrollbars=yes, resizable=yes");
+					}
+				</script>
 				<tr>
 					<th scope="row">Transaction Area</th>
 					<td class="justi-center">
-						<a href="<?php echo G5_BBS_URL; ?>/helper.php?act=map" target="_blank" class="btn_frmline win_scrap">구글지도</a>
+						<!-- <a href="<?php echo G5_BBS_URL; ?>/helper.php?act=map" target="_blank" class="btn_frmline win_scrap">구글지도</a> -->
+						<!-- <input type="text" name="it_name" maxlength='40' value="<?php echo get_text(cut_str($it['it_name'], 40, "")); ?>" id="it_name" required class="frm_input required sl"> -->
+						<input class="jusoBtn" type="button" value="주소검색" onclick="goPopup();">
+						<form name="rdnAddr">
+							<input name="it_2" id="roadFullAddr" value="<?php echo $it['it_2']; ?>">
+						</form>
 					</td>
 				</tr>
 
@@ -298,37 +386,6 @@ $$it['it_use'] = "checked";
 							<option value="0" <?php echo get_selected('0', $it['it_sc_type']); ?>>Direct transaction</option>
 							<option value="1" <?php echo get_selected('1', $it['it_sc_type']); ?>>Delivery transaction</option>
 						</select>
-					</td>
-				</tr>
-				<?php for ($i = 1; $i <= 7; $i++) { ?>
-					<tr>
-						<th scope="row"><label for="it_img1">Image <?php echo $i; ?></label></th>
-						<td class="justi-center">
-							<input multiple="multiple" type="file" name="it_img<?php echo $i; ?>" id="it_img<?php echo $i; ?>">
-							<?php
-							$it_img = G5_DATA_PATH . '/item/' . $it['it_img' . $i];
-							if (is_file($it_img) && $it['it_img' . $i]) {
-								$size = @getimagesize($it_img);
-								$thumb = get_it_thumbnail($it['it_img' . $i], 25, 25);
-							?>
-								<label for="it_img<?php echo $i; ?>_del"><span class="sound_only">이미지 <?php echo $i; ?> </span>파일삭제</label>
-								<input type="checkbox" name="it_img<?php echo $i; ?>_del" id="it_img<?php echo $i; ?>_del" value="1">
-								<span class="sit_wimg_limg<?php echo $i; ?>"><?php echo $thumb; ?></span>
-								<div id="limg<?php echo $i; ?>" class="banner_or_img">
-									<img src="<?php echo G5_DATA_URL; ?>/item/<?php echo $it['it_img' . $i]; ?>" alt="" width="<?php echo $size[0]; ?>" height="<?php echo $size[1]; ?>">
-									<button type="button" class="sit_wimg_close">닫기</button>
-								</div>
-								<script>
-									$('<button type="button" id="it_limg<?php echo $i; ?>_view" class="btn_frmline sit_wimg_view">이미지<?php echo $i; ?> 확인</button>').appendTo('.sit_wimg_limg<?php echo $i; ?>');
-								</script>
-							<?php } ?>
-						</td>
-					</tr>
-				<?php } ?>
-				<tr>
-					<th scope="row">설명</th>
-					<td colspan="2" class="iframe">
-						<?php echo editor_html('it_explan', get_text(html_purifier($it['it_explan']), 0)); ?>
 					</td>
 				</tr>
 				<?php if ($is_auth) { // 관리자일 때만 출력 
