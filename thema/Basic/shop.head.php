@@ -56,8 +56,6 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
-
-
 </style>
 
 <div id="thema_wrapper" class="wrapper <?php echo $is_thema_layout; ?> <?php echo $is_thema_font; ?>">
