@@ -1185,7 +1185,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_CSS_URL . '/addrlink.css" ty
 				<col>
 			</colgroup>
 			<tbody>
-				<!-- <?php for ($i = 1; $i <= 7; $i++) { ?>
+				<?php for ($i = 1; $i <= 7; $i++) { ?>
 					<tr>
 						<th scope="row"><label for="it_img1">Image <?php echo $i; ?></label></th>
 						<td>
@@ -1209,7 +1209,7 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_CSS_URL . '/addrlink.css" ty
 							<?php } ?>
 						</td>
 					</tr>
-				<?php } ?> -->
+				<?php } ?>
 			</tbody>
 		</table>
 	</div>

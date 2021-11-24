@@ -70,6 +70,9 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 	.thumb_item_image {
 		display: none;
 	}
+	.latest-btn-group{
+		display: none;
+	}
 </style>
 <?php if ($nav_title) { ?>
 	<aside class="item-nav">
@@ -744,21 +747,42 @@ if ($item_video) {
 ?>
 <div id="item-tab" class="div-tab tabs<?php echo ($wset['tabline']) ? '' : ' trans-top';?>">
 	<ul class="nav nav-tabs nav-justified">
-		<li class="active"><a href="#item-review" data-toggle="tab"><b>Product Description<?php echo $it_use_cnt;?></b></a></li>
+		<li class="active"><a href="#item-description" data-toggle="tab"><b>Product Description<?php echo $it_use_cnt;?></b></a></li>
 		<li><a href="#item-qa" data-toggle="tab"><b>Q&A<?php echo $it_qa_cnt;?></b></a></li>
-		<!-- <?php if($is_comment) { // 댓글 ?>
-			<li><a href="#item-cmt" data-toggle="tab"><b>댓글<?php echo $it_comment_cnt;?></b></a></li>
-		<?php } ?>
-		<?php if($is_ii) { // 상품정보고시 ?>
-			<li><a href="#item-info" data-toggle="tab"><b>필수표기정보</b></a></li>
-		<?php } ?>
-		<li><a href="#item-delivery" data-toggle="tab"><b>배송/교환/반품</b></a></li> -->
 	</ul>
 	<div class="tab-content" style="border:0px; padding:20px 0px;">
-		<div class="tab-pane active" id="item-review">
+		<div class="tab-pane active" id="item-description">
 			<div id="iuv"></div>
 			<div id="itemuse">
-				<?php include_once('./itemuse.php'); ?>
+			<?php if ($it['it_basic']) { // 기본설명 
+				?>
+					<div class="item-description-sec">
+						<p class="help-block"><?php echo $it['it_basic']; ?></p>
+					</div>
+				<?php } ?>
+			<?php if ($is_seller && $wset['seller']) { // 판매자 
+			?>
+				<div class="panel item-seller item-store-sec">
+					<div class="panel-body">
+						<p class="seller-title">Shop Info</p>
+						<div class="auth-photo">
+							<div class="img-photo">
+								<?php echo ($author['photo']) ? '<img src="' . $author['photo'] . '" alt="">' : '<i class="fa fa-user"></i>'; ?>
+								<p><?php echo $author['mb_id']; ?></p>
+							</div>
+							<!-- <div class="btn-group" style="margin-top:-30px;white-space:nowrap;">
+								<button type="button" class="btn btn-color btn-sm" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'like', 'it_like'); return false;" title="Like">
+									<i class="fa fa-thumbs-up"></i> <span id="it_like"><?php echo number_format($author['liked']) ?></span>
+								</button>
+								<button type="button" class="btn btn-color btn-sm" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'follow', 'it_follow'); return false;" title="Follow">
+									<i class="fa fa-users"></i> <span id="it_follow"><?php echo $author['followed']; ?></span>
+								</button>
+							</div> -->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			<?php } ?>
 			</div>
 		</div>
 		<div class="tab-pane" id="item-qa">
@@ -854,27 +878,6 @@ if ($item_video) {
 <?php echo $it_tail_html; // 하단 HTML 
 ?>
 
-<!-- <div class="btn-group btn-group-justified">
-	<?php if ($prev_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $prev_href; ?>" title="<?php echo $prev_item; ?>"><i class="fa fa-chevron-circle-left"></i> 이전</a>
-	<?php } ?>
-	<?php if ($next_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $next_href; ?>" title="<?php echo $next_item; ?>"><i class="fa fa-chevron-circle-right"></i> 다음</a>
-	<?php } ?>
-	<?php if ($edit_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $edit_href; ?>"><i class="fa fa-plus"></i><span class="hidden-xs"> 수정</span></a>
-	<?php } ?>
-	<?php if ($write_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $write_href; ?>"><i class="fa fa-upload"></i><span class="hidden-xs"> 등록</span></a>
-	<?php } ?>
-	<?php if ($item_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $item_href; ?>"><i class="fa fa-th-large"></i><span class="hidden-xs"> 관리</span></a>
-	<?php } ?>
-	<?php if ($setup_href) { ?>
-		<a class="btn btn-<?php echo $btn1; ?> win_memo" href="<?php echo $setup_href; ?>"><i class="fa fa-cogs"></i><span class="hidden-xs"> 스킨설정</span></a>
-	<?php } ?>
-	<a class="btn btn-<?php echo $btn2; ?>" href="<?php echo $list_href; ?>"><i class="fa fa-bars"></i> 목록</a>
-</div> -->
 
 <div class="h30"></div>
 
@@ -891,3 +894,25 @@ if ($item_video) {
 <h1 class="shop-info-latest-tit">Latest Products</h1>
 <?php include_once('./itemlist.php'); 
 ?>
+
+<div class="btn-group btn-group-justified">
+	<?php if ($prev_href) { ?>
+		<!-- <a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $prev_href; ?>" title="<?php echo $prev_item; ?>"><i class="fa fa-chevron-circle-left"></i> 이전</a> -->
+	<?php } ?>
+	<?php if ($next_href) { ?>
+		<!-- <a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $next_href; ?>" title="<?php echo $next_item; ?>"><i class="fa fa-chevron-circle-right"></i> 다음</a> -->
+	<?php } ?>
+	<?php if ($edit_href) { ?>
+		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $edit_href; ?>"><i class="fa fa-plus"></i><span class="hidden-xs"> 수정</span></a>
+	<?php } ?>
+	<?php if ($item_href) { ?>
+		<!-- <a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $item_href; ?>"><i class="fa fa-th-large"></i><span class="hidden-xs"> 관리</span></a> -->
+	<?php } ?>
+	<?php if ($write_href) { ?>
+		<a class="btn btn-<?php echo $btn1; ?>" href="<?php echo $write_href; ?>"><i class="fa fa-upload"></i><span class="hidden-xs"> 등록</span></a>
+	<?php } ?>
+	<?php if ($setup_href) { ?>
+		<a class="btn btn-<?php echo $btn1; ?> win_memo" href="<?php echo $setup_href; ?>"><i class="fa fa-cogs"></i><span class="hidden-xs"> 스킨설정</span></a>
+	<?php } ?>
+	<a class="btn btn-<?php echo $btn2; ?>" href="<?php echo $list_href; ?>"><i class="fa fa-bars"></i> 목록</a>
+</div>

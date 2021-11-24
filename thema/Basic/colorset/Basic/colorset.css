@@ -2180,65 +2180,35 @@ instagram api
 	position: relative;
 	margin-bottom: 30px !important;
 }
-.shop-info-wrap #item-review{
-	width: 100%;
-	height: 200px;
+#item-description #itemuse{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.shop-info-wrap #item-review #itemuse{
-	flex: 1 1 0%;
+#item-description #itemuse .item-description-sec{
+	width: 60%;
 	height: 100%;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	padding-right: 15px;
-}
-.shop-info-wrap #item-review #itemuse .help-block{
-	color:#000;
-	font-size:1.2em;
-	line-height:2em;
-}
-
-#item-review #itemuse .itemuse_info_tit{
-	font-size: 18px !important;
-    border-bottom: 1px solid rgb(238, 238, 238);
-}
-.shop-info-wrap #item-review .item-seller{
-	width: 30%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	border-left: 1px solid rgb(238, 238, 238);
-}
-#item-review .item-seller .auth-photo{
-	width: 100% !important;
-	padding:0 !important;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 }
-#item-review .item-seller .img-photo img{
-	border-radius: 50%;
-    width: 60px !important;
-    height: 60px !important;
-    display: inline-block;
-	margin-right: 20px;
+#item-description #itemuse .item-description-sec p{
+	font-size: 1.3em;
+
 }
-#item-review .item-seller .seller-title{
-	width: 100% !important;
-	font-size:1.4em;
+#item-description #itemuse .item-store-sec{
+	width: 30%;
+	height: 100%;
+	border-left:1px solid rgb(201, 196, 196);
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#item-description #itemuse .item-store-sec .seller-title{
+	font-size: 1.7em;
 	font-weight: 700;
 	margin-bottom: 20px;
-	padding-bottom: 9px;
-	border-bottom:1px solid rgb(238, 238, 238);
 }
-.shop-info-wrap #item-review .panel{
-	padding:0 !important;
-	margin:0 !important;
-}
+
 #item-tab ul.nav-tabs li{
 	background: #fff;
 	font-weight: 700;

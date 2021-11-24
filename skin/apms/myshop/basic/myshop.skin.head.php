@@ -1,13 +1,15 @@
 <?php
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 $mb = apms_partner($it['pt_id']);
+add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="' . G5_URL . './css/addrlink.css">', 0);
 ?>
 <style>
-.at-title{
-	display: none;
-}
+	.at-title {
+		display: none;
+	}
 </style>
-<div class="panel panel-default view-author">
+<div class="panel panel-default view-author myshop-wrap">
 	<!-- modify 09.18 by LHG -->
 	<!-- <div class="panel-heading">
 		<div class="pull-right en">
@@ -16,8 +18,8 @@ $mb = apms_partner($it['pt_id']);
 		<h3 class="panel-title">Author</h3>
 	</div> -->
 	<div class="panel-body myshop-panel">
-		<div class="pull-left text-center auth-photo">
-			<div class="img-photo">
+		<div class="myshop-inner">
+			<!-- <div class="img-photo">
 				<?php echo ($author['photo']) ? '<img src="' . $author['photo'] . '" alt="">' : '<i class="fa fa-user"></i>'; ?>
 			</div>
 			<div class="btn-group panel-btn" style="margin-top:-30px;white-space:nowrap;">
@@ -29,58 +31,59 @@ $mb = apms_partner($it['pt_id']);
 				</button>
 			</div>
 			<p class="panel_nick"><?php echo $member['mb_nick']; ?></p>
-			<a href="http://localhost/sellnus/bbs/member_confirm.php?url=register_form.php">
+			<a href="<?php echo G5_URL ?>/bbs/member_confirm.php?url=register_form.php">
 				<span class="text-muted">프로필수정</span>
-			</a>
-		</div>
-		<!-- <div class="auth-info">
-			<div style="margin-bottom:4px;">
-				<span class="pull-right">Lv.<?php echo $author['level']; ?></span>
-				<b><?php echo $author['name']; ?></b> &nbsp;<span class="text-muted font-11"><?php echo $author['grade']; ?></span>
-			</div>
-			<div class="div-progress progress progress-striped no-margin">
-				<div class="progress-bar progress-bar-exp" role="progressbar" aria-valuenow="<?php echo round($author['exp_per']); ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo round($author['exp_per']); ?>%;">
-					<span class="sr-only"><?php echo number_format($author['exp']); ?> (<?php echo $author['exp_per']; ?>%)</span>
+			</a> -->
+			<div class="myshop-left-sec">
+				<div class="img-photo">
+					<?php echo ($author['photo']) ? '<img src="' . $author['photo'] . '" alt="">' : '<i class="fa fa-user"></i>'; ?>
+					<p class="panel_nick">
+						<?php echo $member['mb_nick']; ?>
+					</p>
+					<a href="<?php echo G5_URL ?>/bbs/member_confirm.php?url=register_form.php">
+						<span class="text-muted">Edit Profile</span>
+					</a>
 				</div>
 			</div>
-			<p style="margin-top:10px;">
-				<?php echo ($author_signature) ? $author_signature : '등록된 서명이 없습니다.'; ?>
-			</p>
-		</div> -->
+			<div class="myshop-right-sec">
+				<div class="myshop-author-info">
+					<div class="myshop-author-specific">
+						<p class="panel_nick">
+							<?php echo $member['mb_nick']; ?>
+						</p>
+						<a href="<?php echo G5_URL ?>/shop/partner/?ap=list&&sca=&page=0">Store management</a>
+					</div>
+					<p>
+						<?php if ($member['partner']) { ?>
+							<span class="myshop-authentication-icon"><i class="fa fa-check-circle"></i>&nbsp;Authentication Done</span>
+						<?php } else { ?>
+							<span><i class="fa fa-check-circle"></i><a href="<?php echo G5_SHOP_URL; ?>/partner/register.php">&nbsp;Partner registration required</a></span>
+						<?php } ?>
+					</p>
+
+				</div>
+				<div class="myshop-author-likes">
+					<button type="button" class="myshop-author-follower" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'like', 'it_like'); return false;" title="Like">
+						<span id="it_like"><?php echo number_format($author['liked']) ?>&nbsp;Liked</span>
+					</button>
+					<button type="button" class="myshop-author-follower" onclick="apms_like('<?php echo $author['mb_id']; ?>', 'follow', 'it_follow'); return false;" title="Like">
+						<span id="it_like"><?php echo $author['followed']; ?>&nbsp;Followers</span>
+					</button>
+				</div>
+				<div class="myshop-author-introduce">
+					<p>
+						<?php 
+							if (!$member['mb_profile']) { ?>
+							<p>There is no registered introduction.</p>
+						<?php } else { ?>
+						<?php echo $member['mb_profile']; ?>	
+						<?php } ?>
+
+					</p>
+				</div>
+			</div>
+		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
 
-<aside>
-	<div class="row">
-		<div class="col-sm-3">
-			<div class="input-group">
-				<span class="input-group-addon"><i class="fa fa-tags"></i></span>
-				<select name="ca_id" onchange="location='./myshop.php?id=<?php echo $id;?>&ca_id=' + this.value;" class="form-control input-sm">
-					<option value="">카테고리</option>
-					<?php echo $category_options;?>
-				</select>
-			</div>
-			<div class="h15"></div>
-		</div>
-		<div class="col-sm-6">
-
-		</div>
-		<div class="col-sm-3">
-			<div class="input-group pull-right">
-				<span class="input-group-addon"><i class="fa fa-sort-amount-desc"></i></span>
-				<select name="sortodr" onchange="location='<?php echo $list_sort_href; ?>' + this.value;" class="form-control input-sm">
-					<option value="">정렬하기</option>
-					<option value="it_sum_qty&amp;sortodr=desc"<?php echo ($sort == 'it_sum_qty') ? ' selected' : '';?>>판매많은순</option>
-					<option value="it_price&amp;sortodr=asc"<?php echo ($sort == 'it_price' && $sortodr == 'asc') ? ' selected' : '';?>>낮은가격순</option>
-					<option value="it_price&amp;sortodr=desc"<?php echo ($sort == 'it_price' && $sortodr == 'desc') ? ' selected' : '';?>>높은가격순</option>
-					<option value="it_use_avg&amp;sortodr=desc"<?php echo ($sort == 'it_use_avg') ? ' selected' : '';?>>평점높은순</option>
-					<option value="it_use_cnt&amp;sortodr=desc"<?php echo ($sort == 'it_use_cnt') ? ' selected' : '';?>>후기많은순</option>
-					<option value="pt_good&amp;sortodr=desc"<?php echo ($sort == 'pt_good') ? ' selected' : '';?>>추천많은순</option>
-					<option value="pt_comment&amp;sortodr=desc"<?php echo ($sort == 'pt_comment') ? ' selected' : '';?>>댓글많은순</option>
-					<option value="it_update_time&amp;sortodr=desc"<?php echo ($sort == 'it_update_time') ? ' selected' : '';?>>최근등록순</option>
-				</select>
-			</div>
-		</div>
-	</div>
-</aside>

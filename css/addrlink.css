@@ -47,3 +47,169 @@ tr .justi-center .jusoBtn{
     margin-right: 1rem;
     border-radius: 2px;
 }
+.myshop-wrap{
+    height: 300px;
+    position: relative;
+}
+.panel-body{
+    padding:0 !important;
+}
+.myshop-panel{
+    width: 100%;
+    height: 100%;
+    /* background: url('https://source.unsplash.com/featured/?university campus') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 999; */
+}
+
+.myshop-inner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index:999;
+}
+.myshop-left-sec{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://source.unsplash.com/featured/?university campus') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 999;
+    position: relative;
+}
+
+.myshop-left-sec:after {
+	z-index: 777;
+	content: '';
+	position: absolute;
+	background: rgba(126, 121, 119, 0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.myshop-left-sec .img-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+}
+.myshop-left-sec .img-photo img{
+    border: 5px solid #9946c0;
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.myshop-left-sec .img-photo .panel_nick{
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.myshop-left-sec .img-photo a{
+    border: 3px solid #9946c0;
+    border-radius: 2em;
+    padding:5px 20px;
+}
+.myshop-left-sec .img-photo a span{
+    font-size: 1.3em;
+    color:#fff;
+}
+.myshop-right-sec{
+    width: 60%;
+    height: 100%;
+    flex: 1 0 0%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.myshop-right-sec .myshop-author-info{
+    font-size: 18px;
+    height: 75px;
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.myshop-right-sec .myshop-author-info .panel_nick{
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 2.2;
+    margin-right: 20px;
+}
+.myshop-right-sec .myshop-author-info{
+    font-size: 18px;
+    height: 75px;
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.myshop-right-sec .myshop-author-info .myshop-author-specific{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myshop-right-sec .myshop-author-info .myshop-author-specific a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid rgb(216, 215, 221);
+    border-radius: 1.2em;
+}
+.myshop-right-sec .myshop-author-likes p{
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(38, 38, 38);
+}
+.myshop-right-sec .myshop-author-follower{
+    background: none;
+    border: none;
+}
+.myshop-right-sec .myshop-author-follower:first-child{
+    margin-right: 20px;
+}
+.myshop-right-sec .myshop-author-follower span {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(38, 38, 38);
+}
+
+.myshop-right-sec .myshop-author-introduce{
+    margin-top: 20px;
+    height: 100%;
+    border: 1px solid rgb(216, 215, 221);
+    border-radius: 1.2em;
+    padding: 10px;
+}
+.myshop-right-sec .myshop-author-introduce p{
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(38, 38, 38);
+}
+.myshop-authentication-icon{
+    color:#9946c0;
+}
