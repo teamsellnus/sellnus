@@ -239,6 +239,9 @@ if ($w == "" && !$fn) {
 			display: -webkit-flex;
 			display: flex;
 			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
 			align-items: center;
 			border-bottom: 2px solid rgb(30, 29, 41);
 		}
@@ -283,6 +286,9 @@ if ($w == "" && !$fn) {
     		-moz-justify-content: flex-start;
     		-ms-justify-content: flex-start;
     		justify-content: flex-start;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
 			align-items: center;
 			padding-left: 6px;
 			padding-right: 6px;
@@ -304,6 +310,9 @@ if ($w == "" && !$fn) {
     		-moz-justify-content: flex-start;
     		-ms-justify-content: flex-start;
     		justify-content: flex-start;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
 			align-items: center;
 			flex: 1 1 0%;
 		}
@@ -318,7 +327,10 @@ if ($w == "" && !$fn) {
     		-moz-justify-content: center;
     		-ms-justify-content: center;
     		justify-content: center;
-			align-items: flex-start;
+			-webkit-align-items: flex-start;
+			-moz-align-items: flex-start;
+			-ms-align-items: flex-start;
+			align-items: flex-start;;
 			flex: 1 1 0%;
 		}
 		input[type="number"]::-webkit-outer-spin-button,

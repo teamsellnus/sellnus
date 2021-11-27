@@ -84,6 +84,9 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_CSS_URL . '/addrlink.css" ty
 		background: #f8f3fa;
 		display: flex;
 		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
 		align-items: center;
 		-webkit-box-pack: center;
 		-webkit-justify-content: center;

@@ -703,7 +703,10 @@
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 #sns_login {
 	border: 0;
@@ -724,7 +727,10 @@
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	height: 50px;
 	line-height: 40px;
 	width: 50px;

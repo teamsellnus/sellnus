@@ -11,6 +11,9 @@
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
     border-radius: 0.5em;
     padding:10px;
@@ -26,6 +29,9 @@
     -moz-justify-content: space-evenly;
     -ms-justify-content: space-evenly;
     justify-content: space-evenly;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
 }
 .basic-outlogin .profile .profile_myinfo_wrap a{

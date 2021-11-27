@@ -641,7 +641,10 @@ table.list-pc .list-none {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .write-wrap .delete-file {

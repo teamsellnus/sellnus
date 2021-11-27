@@ -119,7 +119,10 @@ blockquote {
     -moz-justify-content: space-evenly;
     -ms-justify-content: space-evenly;
     justify-content: space-evenly;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .is-pc .at-body {
@@ -195,7 +198,10 @@ blockquote {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -228,7 +234,10 @@ blockquote {
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .at-lnb .lnb-right ul {
@@ -244,7 +253,10 @@ blockquote {
     -moz-justify-content: flex-end;
     -ms-justify-content: flex-end;
     justify-content: flex-end;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .at-lnb ul>li {
@@ -287,7 +299,10 @@ blockquote {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -316,7 +331,10 @@ blockquote {
     -moz-justify-content: flex-end;
     -ms-justify-content: flex-end;
     justify-content: flex-end;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	position: relative;
 }
 
@@ -621,7 +639,10 @@ blockquote {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	background-color: #d4b9e1;
 	color: #fff;
 	text-align: center;
@@ -1120,7 +1141,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	-webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
@@ -1267,7 +1291,10 @@ blockquote {
     -ms-justify-content: space-between;
     justify-content: space-between;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin-bottom: 150px;
 }
 
@@ -1286,7 +1313,10 @@ blockquote {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	overflow: hidden;
 }
 
@@ -1312,7 +1342,10 @@ blockquote {
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	height: 50%;
 	margin: 0 0 10px 0;
 }
@@ -1329,7 +1362,10 @@ blockquote {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	background: url('../../assets/img/electronics3.jpg') no-repeat;
 	background-size: cover;
 	margin: 0 10px 0 0;
@@ -1348,7 +1384,10 @@ blockquote {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	background: url('../../assets/img/books.jpg') no-repeat;
 	background-size: cover;
 	margin:0 0 0 10px;
@@ -1367,7 +1406,10 @@ blockquote {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	background: url('../../assets/img/accessories.jpg') no-repeat;
 	background-size: cover;
 	background-position: 50% 30%;
@@ -1396,6 +1438,9 @@ blockquote {
 	.main_category_wrap {
 		height: 120vw;
 		flex-direction: column;
+		-webkit-align-items: stretch;
+		-moz-align-items: stretch;
+		-ms-align-items: stretch;
 		align-items: stretch;
 		margin-bottom: 80px;
 	}
@@ -1435,7 +1480,10 @@ blockquote {
     -ms-justify-content: space-between;
     justify-content: space-between;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin-bottom: 150px;
 	width: 100%;
 	height: 100%;
@@ -1515,7 +1563,10 @@ blockquote {
     -ms-justify-content: space-between;
     justify-content: space-between;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin-bottom: 150px;
 	width: 100%;
 	height: 100%;
@@ -1557,7 +1608,10 @@ blockquote {
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin-bottom: 150px;
 }
 
@@ -1587,7 +1641,10 @@ formspree
 	bottom: 0;
 	width: 100%;
 	flex-direction: column;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin: 125px 0;
 	height: 100%;
 }
@@ -1605,7 +1662,10 @@ formspree
     -ms-justify-content: center;
     justify-content: center;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	width: 100%;
 	height: 250px;
 	background-color: #b7a7ee;
@@ -1624,7 +1684,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	margin: 125px 0;
 	height: 100%;
 }
@@ -1642,7 +1705,10 @@ instagram api
     -ms-justify-content: center;
     justify-content: center;
 	-webkit-box-align: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	width: 100%;
 	height: 250px;
 	background-color: #b7a7ee;
@@ -1685,7 +1751,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	flex-direction: column;
 }
 
@@ -1703,7 +1772,14 @@ instagram api
 	}
 	.col-md-2.at-col.at-side .main_right_side_tagsBx {
 		width: 100% !important;
+		display: -webkit-box !important;
+		display: -moz-box !important;
+		display: -ms-flexbox !important;
+		display: -webkit-flex !important;
 		display: flex !important;
+		-webkit-align-items: stretch;
+		-moz-align-items: stretch;
+		-ms-align-items: stretch;
 		align-items: stretch;
 		flex-wrap: wrap;
 	}
@@ -1711,11 +1787,17 @@ instagram api
 		flex: 1;
 		display:inline-flex !important;
 		margin: 0 4px 4px 4px !important;
+		-webkit-align-items: stretch;
+    	-moz-align-items: stretch;	
+		-ms-align-items: stretch;
 		align-items: stretch;
 		min-width: 96px;
 	}
 	.main_right_side_tagsBx li a {
 		display:flex !important;
+		-webkit-align-items: center !important;
+		-moz-align-items: center !important;
+		-ms-align-items: center !important;
 		align-items: center !important;
 		-webkit-justify-content: center !important;
     	-moz-justify-content: center !important;
@@ -1809,7 +1891,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .main_left_side_board_wrap .categoryBx ul li span {
@@ -1858,7 +1943,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	-webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
@@ -1910,7 +1998,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	padding: 0 20px;
 }
 
@@ -1931,7 +2022,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	/* border:1px solid #783e94; */
 	border-radius: 0.5em;
 	padding: 10px;
@@ -1985,7 +2079,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: flex-start;
+	-webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;;
 	/* border:1px solid #783e94; */
 	border-radius: 0.5em;
 	width: 100%;
@@ -2100,7 +2197,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	width: 100%;
 	height: 100%;
 	min-height: 200px;
@@ -2126,7 +2226,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	color: #888;
 }
 
@@ -2143,7 +2246,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .spec_commu_board_wrap .spec_commu_user_sec .spec_commu_user_box .spec_commu_user {
@@ -2166,7 +2272,10 @@ instagram api
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .spec_commu_board_wrap .spec_commu_subject_sec .spec_commu_subject_title {
@@ -2198,7 +2307,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .table-responsive .spec_commu_href {
@@ -2218,7 +2330,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 @media screen and (max-width: 992px) {
 	.at-container.widget-index {
@@ -2289,7 +2404,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-		align-items: center;
+		-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 		margin-right: 8px;
 	}
 
@@ -2325,7 +2443,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 .write_title{
 	text-align: left !important;
@@ -2404,7 +2525,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -2425,7 +2549,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 .shop-details-wrap th{
 	font-size: 1.2em;
@@ -2480,7 +2607,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 .shop-details-wrap .item-buy-btn li a span{
 	font-size:2em;
@@ -2497,7 +2627,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	border: 1px solid #783e94 !important;
 	background-color: #fff;
 	border-radius: 0.5em;
@@ -2514,6 +2647,9 @@ instagram api
 	display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2548,7 +2684,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 #item-description #itemuse .item-description-sec{
 	width: 60%;
@@ -2558,7 +2697,10 @@ instagram api
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
-	align-items: flex-start;
+	-webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;;
 }
 #item-description #itemuse .item-description-sec p{
 	font-size: 1.3em;
@@ -2591,7 +2733,10 @@ instagram api
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 #item-review .item-seller .img-photo img{
 	border-radius: 50%;
@@ -2690,7 +2835,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 	padding-top:0 !important;
 }
 .privacy_right_side_wrap h1{
@@ -2820,7 +2968,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
     display: flex;
-    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;;
     flex-flow: column wrap;
     width: 100%;
 	padding: 0 10px;
@@ -2883,7 +3034,10 @@ instagram api
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
     font-size: 1.5em;
 	width: 30px;
 	height: 30px;
@@ -3019,7 +3173,10 @@ instagram api
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-	align-items: center;
+	-webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .at-footer .at-about .at-about-logo {
