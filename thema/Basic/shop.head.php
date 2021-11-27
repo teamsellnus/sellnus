@@ -201,6 +201,7 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 						<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
 							<i class="fa fa-user" style="float:left; margin: 12px"></i>
 						</a>
+						<div id="google_translate_element" style="display:none"></div>
 						<ul class="translation-links" style="list-style:none; ">
 						<div class="dropdown">
       						<button class="dropbtn" style="margin: 10px">번역</button>

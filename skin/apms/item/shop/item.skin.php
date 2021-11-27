@@ -111,7 +111,7 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 </style>
 <div class="item-head shop-details-wrap">
 	<div class="row">
-		<div class="col-sm-5">
+		<div class="col-sm-5 col-xs-4">
 			<!-- <div class="item-image">
 				<a href="<?php echo $item_image_href; ?>" id="item_image_href" class="popup_item_image" target="_blank" title="크게보기">
 					<img id="item_image" src="<?php echo $item_image; ?>" alt="">
@@ -163,7 +163,7 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 			<div class="h30 visible-xs"></div>
 		</div>
 
-		<div class="col-sm-7">
+		<div class="col-sm-7 col-xs-7">
 			<!-- 상품명 -->
 			<h1><?php echo stripslashes($it['it_name']); ?></h1>
 			<h2><?php echo display_price(get_price($it)); ?></h2>
@@ -404,11 +404,12 @@ $is_seller = ($it['pt_id'] && $it['pt_id'] != $config['cf_admin']) ? true : fals
 				<?php } ?>
 
 				<?php if ($is_orderable) { ?>
-					<div style="text-align:center; padding:12px 0;">
-						<ul class="item-buy-btn">
-							<li><input class="item-buynow" type="submit" onclick="document.pressed=this.value;" value="Buy NOW" class="btn btn-<?php echo $btn2; ?> btn-block"></li>
-							<li><input class="item-atc" type="submit" onclick="document.pressed=this.value;" value="ADD TO CART" class="btn btn-<?php echo $btn1; ?> btn-block"></li>
-							<li><a class="item-wishlist" href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_wishlist('<?php echo $it['it_id']; ?>'); return false;"><span><i class="fa fa-heart"></i></span></a></li>
+					<div style="text-align:center; padding:12px 0;">		
+					<ul class="item-buy-btn row justify-content-md-center">
+							<div class="col col-lg-2" style="border-color:white !important;"><li style="border-color: white !important;"><input style="padding:5px" class="item-buynow" type="submit" onclick="document.pressed=this.value;" value="Buy NOW" class="btn btn-<?php echo $btn2; ?> btn-block"></li></div>
+							<div class="col-md-auto"><li style="border-color: white !important;"><input style="padding:5px"class="item-atc" type="submit" onclick="document.pressed=this.value;" value="ADD TO CART" class="btn btn-<?php echo $btn1; ?> btn-block"></li></div>
+							<div class="col col-lg-2"><li><a class="item-wishlist" href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_wishlist('<?php echo $it['it_id']; ?>'); return false;"><span><i class="fa fa-heart"></i></span></a></li></div>
+							
 							<!-- <li><a href="#" class="btn btn-<?php echo $btn1; ?> btn-block" onclick="apms_recommend('<?php echo $it['it_id']; ?>', '<?php echo $ca_id; ?>'); return false;">추천하기</a></li> -->
 						</ul>
 					</div>
