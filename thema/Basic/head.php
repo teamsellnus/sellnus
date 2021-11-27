@@ -21,7 +21,7 @@ add_stylesheet('<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-b
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-					Sell&Us
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<div class="lnb-right">

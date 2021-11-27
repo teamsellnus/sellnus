@@ -132,7 +132,7 @@ if(!defined('G5_IS_ADMIN') && $config['cf_add_script']) {
 }
 ?>
 </head>
-<body<?php echo (isset($g5['body_script']) && $g5['body_script']) ? $g5['body_script'].' ' : ''; ?> class="<?php echo (_RESPONSIVE_) ? '' : 'no-';?>responsive <?php echo $body_mode;?>">
+<body onload="jusoCallBack('roadFullAddr','roadAddr','addrDetail','jibunAddr','zipNo','admCd','rnMgtSn','bdKdcd','siNm','sggNm','emdNm','liNm','rn','udrtYn','buldMnnm','buldSlno','mtYn','lnbrMnnm','lnbrSlno','korAddr');" <?php echo (isset($g5['body_script']) && $g5['body_script']) ? $g5['body_script'].' ' : ''; ?> class="<?php echo (_RESPONSIVE_) ? '' : 'no-';?>responsive <?php echo $body_mode;?>">
 <?php
 if(APMS_PRINT) {
 	@include_once($print_skin_path.'/print.head.php');

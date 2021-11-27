@@ -569,18 +569,18 @@ blockquote {
 	margin: 2em 1em;
   }
 .pc-menu .nav-top.nav-both .menu-ul::-webkit-scrollbar {
-	background-color: #783e94;
+	background-color: #d4b9e1;
 	margin-top: 10px;
 	height: 5px;
 }
-.menu-ul::-webkit-scrollbar-button {
+/* .menu-ul::-webkit-scrollbar-button {
 	background-color: red;
 	width: 10px;
 	height: 10px;
-}
+} */
 
 .pc-menu .nav-top.nav-both .menu-ul::-webkit-scrollbar-thumb {
-	background-color: #000;
+	background-color: #9946c0;
 	width: 50px;
 }
 .pc-menu .nav-top.nav-both .menu-li {
@@ -1413,6 +1413,7 @@ blockquote {
 .main_introduce_img_sec {
 	position: relative;
 	height: 500px;
+	background-color: #e8e8e8;
 }
 
 .main_introduce_img_con {
@@ -1467,6 +1468,24 @@ blockquote {
 }
 .main_introduce_reverse_wrap .main_introduce_content_sec{
 	margin-left: 8px;
+}
+
+@media screen and (max-width: 767px) {
+	.main_introduce_wrap {
+		flex-direction: column-reverse;
+	}
+	.main_introduce_content_sec{
+		margin-top: 20px;
+	}
+	.main_introduce_reverse_wrap{
+		flex-direction: column-reverse;
+	}
+	.main_introduce_reverse_wrap .main_introduce_content_sec{
+		text-align: right;
+	}
+	.main_introduce_content_sec p{
+		margin:0 0 20px 0;
+	}
 }
 
 /********************************************************
@@ -1569,6 +1588,7 @@ instagram api
 .main_instagram_image_sec {
 	width: 100%;
 	height: 100%;
+	background-color: #e8e8e8;
 }
 
 .main_instagram_intro_sec .main_instagram_icon {
@@ -1610,6 +1630,31 @@ instagram api
 .main_commu_body {
 	background-color: #f9f9f9;
 	min-height: 100%;
+}
+@media screen and (max-width: 992px) {
+	.col-md-2.at-col.at-side .col-md-12.col-sm-6 {
+		width: 100% !important;
+	}
+	.col-md-2.at-col.at-side .main_right_side_tagsBx {
+		width: 100% !important;
+		display: flex !important;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+	.main_right_side_tagsBx li {
+		flex: 1;
+		display:inline-flex !important;
+		margin: 0 4px 4px 4px !important;
+		align-items: stretch;
+		min-width: 96px;
+	}
+	.main_right_side_tagsBx li a {
+		display:flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		height: 100% !important;
+		word-break: keep-all;
+	}
 }
 
 /********************************************************
@@ -1797,6 +1842,8 @@ instagram api
 .main-center-board-wrap {
 	padding: 20px;
 }
+
+
 
 .main_right_side_mywrite_wrap {
 	display: -webkit-box;
@@ -2068,6 +2115,88 @@ instagram api
 	justify-content: space-between;
 	align-items: center;
 }
+@media screen and (max-width: 992px) {
+	.at-container.widget-index {
+		padding: 0 !important;
+	}
+
+	.at-container.widget-index .h20 {
+		display: none !important;
+	}
+
+	.at-container.widget-index .row.at-row {
+		padding-top: 0 !important;
+	}
+
+	.row.at-row .col-md-7.at-col.at-main {
+		padding-top: 24px !important;
+	}
+
+	#community_side {
+		display: block !important;
+		width: 100vw !important;
+		height: 44px !important;
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid #eaeaea;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	#community_side .main_left_side_searchbx {
+		display: none !important;
+	}
+
+	#community_side .main_left_side_board_wrap {
+		padding: 0 !important;
+	}
+
+	#community_side .main_left_side_board_wrap * {
+		display: none;
+	}
+
+	.main_left_side_board_wrap #topic_categoryBx {
+		display: block !important;
+		width: 100vw !important;
+		height: 44px !important;
+		margin: 0;
+	}
+
+	#topic_categoryBx * {
+		display: block !important;
+	}
+
+	#topic_categoryBx ul {
+		min-width: 100% !important;
+		width: auto !important;
+		height: 44px !important;
+		padding: 0 16px !important;
+		margin-bottom: 0;
+		white-space: nowrap;
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+
+	#topic_categoryBx li {
+		display: inline-flex !important;
+		height: 44px !important;
+		justify-content: center;
+		align-items: center;
+		margin-right: 8px;
+	}
+
+	#topic_categoryBx li * {
+		display: none !important;
+	}
+
+	#topic_categoryBx li a {
+		display: block !important;
+	}
+	.col-md-2.at-col.at-side .col-md-12.col-sm-6 {
+		width: 100% !important;
+	}
+}
+
 /********************************************************
 ■ Write : 글쓰기 페이지
 ********************************************************/
@@ -2277,36 +2406,33 @@ instagram api
 	background-color: #fff;
 	color:#783e94;
 }
-.shop-info-wrap #item-review{
+.shop-info-wrap{
 	width: 100%;
-	height: 200px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	height: 100%;
+	position: relative;
+	margin-bottom: 30px !important;
+}
+#item-description #itemuse{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.shop-info-wrap #item-review #itemuse{
-	flex: 1 1 0%;
+#item-description #itemuse .item-description-sec{
+	width: 60%;
 	height: 100%;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	padding-right: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
-.shop-info-wrap #item-review #itemuse .help-block{
-	color:#000;
-	font-size:1.2em;
-	line-height:2em;
-}
+#item-description #itemuse .item-description-sec p{
+	font-size: 1.3em;
 
-#item-review #itemuse .itemuse_info_tit{
-	font-size: 18px !important;
-    border-bottom: 1px solid rgb(238, 238, 238);
 }
-.shop-info-wrap #item-review .item-seller{
+#item-description #itemuse .item-store-sec{
 	width: 30%;
 	height: 100%;
 	display: -webkit-box;
@@ -2334,20 +2460,16 @@ instagram api
     width: 60px !important;
     height: 60px !important;
     display: inline-block;
-	margin-right: 20px;
+	border-left:1px solid rgb(201, 196, 196);
+	margin: 0 !important;
+	padding: 0 !important;
 }
-#item-review .item-seller .seller-title{
-	width: 100% !important;
-	font-size:1.4em;
+#item-description #itemuse .item-store-sec .seller-title{
+	font-size: 1.7em;
 	font-weight: 700;
 	margin-bottom: 20px;
-	padding-bottom: 9px;
-	border-bottom:1px solid rgb(238, 238, 238);
 }
-.shop-info-wrap #item-review .panel{
-	padding:0 !important;
-	margin:0 !important;
-}
+
 #item-tab ul.nav-tabs li{
 	background: #fff;
 	font-weight: 700;
@@ -2379,6 +2501,13 @@ instagram api
 	font-size:1.6em;
 	padding-bottom: 10px;
 	border-bottom: 1px solid rgb(221, 221, 221);
+	margin-top: 30px;
+}
+.pop-address-search .logo{
+	display: none !important;
+}
+.tooltip-wrap{
+	background-color: #783e94;
 }
 /********************************************************
 ■ Privacy-policy : 개인정보처리방침

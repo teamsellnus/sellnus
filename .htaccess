@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?sellnus.com$
+
+RewriteCond %{REQUEST_URI} !^/sellnus/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /sellnus/$1
+RewriteCond %{HTTP_HOST} ^(www.)?sellnus.com$
+
+RewriteRule ^(/)?$ sellnus/index.php [L]

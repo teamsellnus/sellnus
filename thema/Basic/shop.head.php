@@ -1,4 +1,3 @@
-
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 include_once(THEMA_PATH . '/assets/thema.php');
@@ -7,8 +6,59 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 ?>
 
 <style>
-	.nav-right{
+	.nav-right {
 		display: none;
+	}
+
+	.dropbtn {
+		background-color: #2c2c61;
+		color: white;
+		float: left;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		width: 100px;
+		height: 35px;
+		font-size: small;
+		text-align: center;
+		padding: 0 0 0 0;
+		border-radius: 3px;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #2c2c61;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 100;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #2c2c61;
+		color: white;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
 	}
 </style>
 
@@ -21,11 +71,28 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 				<ul>
 					<li><a href="javascript:;" id="favorite">Favorites</a></li>
 					<li><a href="<?php echo $at_href['rss']; ?>" target="_blank">App Downloads</a></li>
-					<?php
-					$tweek = array("일", "월", "화", "수", "목", "금", "토");
-					?>
-					<!-- <li><a><?php echo date('m월 d일'); ?>(<?php echo $tweek[date("w")]; ?>)</a></li> -->
-				</ul>
+					<li>
+						<div id="google_translate_element" style="display:none"></div>
+					</li>
+					<ul class="translation-links" style="list-style:none;">
+						<div class="dropdown">
+							<button class="dropbtn">번역</button>
+							<div class="dropdown-content">
+								<a data-lang="ko">한국어</a>
+								<a data-lang="en">영어</a>
+								<a data-lang="ja">일본어</a>
+								<a data-lang="vi">베트남어</a>
+								<a data-lang="ja">스페인어</a>
+								<a data-lang="de">독일어</a>
+								<a data-lang="fr">불어</a>
+								<a data-lang="mn">몽골어</a>
+							</div>
+						</div>
+						<?php
+						$tweek = array("일", "월", "화", "수", "목", "금", "토");
+						?>
+						<!-- <li><a><?php echo date('m월 d일'); ?>(<?php echo $tweek[date("w")]; ?>)</a></li> -->
+					</ul>
 			</div>
 			<!-- LNB Right -->
 			<div class="lnb-right">
@@ -72,7 +139,7 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 			<!-- PC Logo -->
 			<div class="header-logo">
 				<a href="<?php echo $at_href['home']; ?>">
-					Sell&Us
+					<img src="<?php echo G5_IMG_URL ?>/sellnus-logo.jpg" alt="">
 				</a>
 			</div>
 			<!-- PC Search -->
@@ -100,13 +167,13 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 							<!-- <li><a href="<?php echo G5_ADMIN_URL; ?>">관리</a></li> -->
 						<?php } ?>
 						<?php if ($member['partner']) { ?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/?ap=item">Sell IT</a></li>
-							<li><a href="<?php echo G5_SHOP_URL;?>/myshop.php?id=<?php echo urlencode($member['mb_id']);?>">My Shop</a></li>
-							<li><a href="<?php echo G5_URL;?>/chat/chat.php"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;Chat</a></li>
-						<?php } else  {?>
-							<li><a href="<?php echo G5_SHOP_URL;?>/partner/register.php">Partner Sign UP!</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/partner/?ap=item">Sell It</a></li>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/myshop.php?id=<?php echo urlencode($member['mb_id']); ?>">My Shop</a></li>
+							<li><a href="<?php echo G5_URL; ?>/chat/chat.php"><i class="fa fa-comment fa-flip-horizontal"></i>&nbsp;Chat</a></li>
+						<?php } else { ?>
+							<li><a href="<?php echo G5_SHOP_URL; ?>/partner/register.php">Partner Sign UP!</a></li>
 						<?php } ?>
-						
+
 					<?php } else { // 로그아웃 상태 
 					?>
 						<li><a href="<?php echo $at_href['login']; ?>" onclick="sidebar_open('sidebar-user'); return false;">로그인</a></li>
@@ -137,35 +204,49 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 				<div class="header-wrap">
 					<div class="header-icon">
 						<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
-							<i class="fa fa-user"></i>
+							<i class="fa fa-user" style="float:left; margin: 12px"></i>
 						</a>
+						<ul class="translation-links" style="list-style:none; ">
+							<div class="dropdown">
+								<button class="dropbtn" style="margin: 10px">번역</button>
+								<div class="dropdown-content">
+									<a data-lang="ko">한국어</a>
+									<a data-lang="en">영어</a>
+									<a data-lang="ja">일본어</a>
+									<a data-lang="vi">베트남어</a>
+									<a data-lang="ja">스페인어</a>
+									<a data-lang="de">독일어</a>
+									<a data-lang="fr">불어</a>
+									<a data-lang="mn">몽골어</a>
+								</div>
+
+							</div>
+							<div class="header-logo en">
+								<!-- Mobile Logo -->
+								<a href="<?php echo $at_href['home']; ?>">
+									<b>Sell&Us</b>
+								</a>
+							</div>
+							<div class="header-icon">
+								<a href="javascript:;" onclick="sidebar_open('sidebar-search');">
+									<i class="fa fa-search"></i>
+								</a>
+							</div>
 					</div>
-					<div class="header-logo en">
-						<!-- Mobile Logo -->
-						<a href="<?php echo $at_href['home']; ?>">
-							<b>Sell&Us</b>
-						</a>
-					</div>
-					<div class="header-icon">
-						<a href="javascript:;" onclick="sidebar_open('sidebar-search');">
-							<i class="fa fa-search"></i>
-						</a>
-					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
-			</div>
 		</header>
 		<!-- Menu -->
-	<nav class="at-menu">
-		<!-- PC Menu -->
-		<div class="pc-menu">
-			<!-- Menu Button & Right Icon Menu -->
-			<div class="at-container">
-				<div class="nav-right nav-height">
-					<ul>
-						<?php if (IS_YC) { //영카트 
-						?>
-							<!-- <li class="nav-show">
+		<nav class="at-menu">
+			<!-- PC Menu -->
+			<div class="pc-menu">
+				<!-- Menu Button & Right Icon Menu -->
+				<div class="at-container">
+					<div class="nav-right nav-height">
+						<ul>
+							<?php if (IS_YC) { //영카트 
+							?>
+								<!-- <li class="nav-show">
 								<a href="<?php echo $at_href['cart']; ?>" onclick="sidebar_open('sidebar-cart'); return false;" <?php echo tooltip('쇼핑'); ?>>
 									<i class="fa fa-shopping-bag"></i>
 									<?php if ($member['cart'] || $member['today']) { ?>
@@ -175,8 +256,8 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 									<?php } ?>
 								</a>
 							</li> -->
-						<?php } ?>
-						<!-- <li>
+							<?php } ?>
+							<!-- <li>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');" <?php echo tooltip('알림'); ?>>
 								<i class="fa fa-bell"></i>
 								<span class="label bg-orangered en" <?php echo ($member['response'] || $member['memo']) ? '' : ' style="display:none;"'; ?>>
@@ -189,91 +270,91 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 								<i class="fa fa-search"></i>
 							</a>
 						</li> -->
-						<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
-							<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
-								<i class="fa fa-bars"></i>
-							</a>
-						</li>
-					</ul>
-					<div class="clearfix"></div>
+							<li class="menu-all-icon" <?php echo tooltip('전체메뉴'); ?>>
+								<a href="javascript:;" data-toggle="collapse" data-target="#menu-all">
+									<i class="fa fa-bars"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
 				</div>
-			</div>
-			<?php include_once(THEMA_PATH . '/menu.php');	// 메뉴 불러오기 
-			?>
-			<div class="clearfix"></div>
-			<div class="nav-back"></div>
-		</div><!-- .pc-menu -->
+				<?php include_once(THEMA_PATH . '/menu.php');	// 메뉴 불러오기 
+				?>
+				<div class="clearfix"></div>
+				<div class="nav-back"></div>
+			</div><!-- .pc-menu -->
 
-		<!-- PC All Menu -->
-		<div class="pc-menu-all">
-			<div id="menu-all" class="collapse">
-				<div class="at-container table-responsive">
-					<table class="table">
-						<tr>
-							<?php
-							$az = 0;
-							for ($i = 1; $i < $menu_cnt; $i++) {
+			<!-- PC All Menu -->
+			<div class="pc-menu-all">
+				<div id="menu-all" class="collapse">
+					<div class="at-container table-responsive">
+						<table class="table">
+							<tr>
+								<?php
+								$az = 0;
+								for ($i = 1; $i < $menu_cnt; $i++) {
 
-								if (!$menu[$i]['gr_id']) continue;
+									if (!$menu[$i]['gr_id']) continue;
 
-								// 줄나눔
-								if ($az && $az % $is_allm == 0) {
-									echo '</tr><tr>' . PHP_EOL;
-								}
-							?>
-								<td class="<?php echo $menu[$i]['on']; ?>">
-									<a class="menu-a" href="<?php echo $menu[$i]['href']; ?>" <?php echo $menu[$i]['target']; ?>>
-										<?php echo $menu[$i]['name']; ?>
-										<?php if ($menu[$i]['new'] == "new") { ?>
-											<i class="fa fa-bolt new"></i>
-										<?php } ?>
-									</a>
-									<?php if ($menu[$i]['is_sub']) { //Is Sub Menu 
-									?>
-										<div class="sub-1div">
-											<ul class="sub-1dul">
-												<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
+									// 줄나눔
+									if ($az && $az % $is_allm == 0) {
+										echo '</tr><tr>' . PHP_EOL;
+									}
+								?>
+									<td class="<?php echo $menu[$i]['on']; ?>">
+										<a class="menu-a" href="<?php echo $menu[$i]['href']; ?>" <?php echo $menu[$i]['target']; ?>>
+											<?php echo $menu[$i]['name']; ?>
+											<?php if ($menu[$i]['new'] == "new") { ?>
+												<i class="fa fa-bolt new"></i>
+											<?php } ?>
+										</a>
+										<?php if ($menu[$i]['is_sub']) { //Is Sub Menu 
+										?>
+											<div class="sub-1div">
+												<ul class="sub-1dul">
+													<?php for ($j = 0; $j < count($menu[$i]['sub']); $j++) { ?>
 
-													<?php if ($menu[$i]['sub'][$j]['line']) { //구분라인 
+														<?php if ($menu[$i]['sub'][$j]['line']) { //구분라인 
+														?>
+															<li class="sub-1line"><a><?php echo $menu[$i]['sub'][$j]['line']; ?></a></li>
+														<?php } ?>
+
+														<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>">
+															<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
+																<?php echo $menu[$i]['sub'][$j]['name']; ?>
+																<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
+																	<i class="fa fa-bolt sub-1new"></i>
+																<?php } ?>
+															</a>
+														</li>
+													<?php } //for 
 													?>
-														<li class="sub-1line"><a><?php echo $menu[$i]['sub'][$j]['line']; ?></a></li>
-													<?php } ?>
-
-													<li class="sub-1dli <?php echo $menu[$i]['sub'][$j]['on']; ?>">
-														<a href="<?php echo $menu[$i]['sub'][$j]['href']; ?>" class="sub-1da<?php echo ($menu[$i]['sub'][$j]['is_sub']) ? ' sub-icon' : ''; ?>" <?php echo $menu[$i]['sub'][$j]['target']; ?>>
-															<?php echo $menu[$i]['sub'][$j]['name']; ?>
-															<?php if ($menu[$i]['sub'][$j]['new'] == "new") { ?>
-																<i class="fa fa-bolt sub-1new"></i>
-															<?php } ?>
-														</a>
-													</li>
-												<?php } //for 
-												?>
-											</ul>
-										</div>
-									<?php } ?>
-								</td>
-							<?php $az++;
-							} //for 
-							?>
-						</tr>
-					</table>
-					<div class="menu-all-btn">
-						<div class="btn-group">
-							<a class="btn btn-lightgray" href="<?php echo $at_href['main']; ?>"><i class="fa fa-home"></i></a>
-							<a href="javascript:;" class="btn btn-lightgray" data-toggle="collapse" data-target="#menu-all"><i class="fa fa-times"></i></a>
+												</ul>
+											</div>
+										<?php } ?>
+									</td>
+								<?php $az++;
+								} //for 
+								?>
+							</tr>
+						</table>
+						<div class="menu-all-btn">
+							<div class="btn-group">
+								<a class="btn btn-lightgray" href="<?php echo $at_href['main']; ?>"><i class="fa fa-home"></i></a>
+								<a href="javascript:;" class="btn btn-lightgray" data-toggle="collapse" data-target="#menu-all"><i class="fa fa-times"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div><!-- .pc-menu-all -->
+			</div><!-- .pc-menu-all -->
 
-		<!-- Mobile Menu -->
-		<div class="m-menu">
-			<?php include_once(THEMA_PATH . '/menu-m.php');	// 메뉴 불러오기 
-			?>
-		</div><!-- .m-menu -->
-	</nav><!-- .at-menu -->
+			<!-- Mobile Menu -->
+			<div class="m-menu">
+				<?php include_once(THEMA_PATH . '/menu-m.php');	// 메뉴 불러오기 
+				?>
+			</div><!-- .m-menu -->
+		</nav><!-- .at-menu -->
 	</header>
 
 	<div class="clearfix"></div>

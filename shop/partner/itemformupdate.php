@@ -198,86 +198,40 @@ if ($it_img10_del) {
 }
 
 // 이미지업로드
-if ($_FILES['it_img1']['name']) {
-    if($w == 'u' && $it_img1) {
-        $file_img1 = $it_img_dir.'/'.clean_relative_paths($it_img1);
-        @unlink($file_img1);
-        delete_item_thumbnail(dirname($file_img1), basename($file_img1));
+$images = $_FILES['images'];
+$num_of_imgs = count($images['name']);
+// print_r($images['name']);
+for($i=0; $i< $num_of_imgs; $i++) {
+    $image_name = $images['name'][$i];
+    $tmp_name   = $images['tmp_name'][$i];
+    $error      = $images['error'][$i];
+    if ($error === 0) {
+        $img_ex = pathinfo($image_name, PATHINFO_EXTENSION);
+        $img_ex_lc = strtolower($img_ex);
+        $allowed_exs = array('jpg', 'jpeg', 'png');
+         if (in_array($img_ex_lc, $allowed_exs)){
+            $new_img_name = uniqid('IMG-', true). '.'.$img_ex_lc;
+
+            $img_upload_path = 'uploads/'.$new_img_name;
+            
+            ${'it_img'.(string)((int)$i+1)} = it_img_upload($tmp_name, $image_name, $it_img_dir.'/'.$it_id);
+            
+            // header("Location: index.php");
+        }
     }
-    $it_img1 = it_img_upload($_FILES['it_img1']['tmp_name'], $_FILES['it_img1']['name'], $it_img_dir.'/'.$it_id);
 }
-if ($_FILES['it_img2']['name']) {
-    if($w == 'u' && $it_img2) {
-        $file_img2 = $it_img_dir.'/'.clean_relative_paths($it_img2);
-        @unlink($file_img2);
-        delete_item_thumbnail(dirname($file_img2), basename($file_img2));
-    }
-    $it_img2 = it_img_upload($_FILES['it_img2']['tmp_name'], $_FILES['it_img2']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img3']['name']) {
-    if($w == 'u' && $it_img3) {
-        $file_img3 = $it_img_dir.'/'.clean_relative_paths($it_img3);
-        @unlink($file_img3);
-        delete_item_thumbnail(dirname($file_img3), basename($file_img3));
-    }
-    $it_img3 = it_img_upload($_FILES['it_img3']['tmp_name'], $_FILES['it_img3']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img4']['name']) {
-    if($w == 'u' && $it_img4) {
-        $file_img4 = $it_img_dir.'/'.clean_relative_paths($it_img4);
-        @unlink($file_img4);
-        delete_item_thumbnail(dirname($file_img4), basename($file_img4));
-    }
-    $it_img4 = it_img_upload($_FILES['it_img4']['tmp_name'], $_FILES['it_img4']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img5']['name']) {
-    if($w == 'u' && $it_img5) {
-        $file_img5 = $it_img_dir.'/'.clean_relative_paths($it_img5);
-        @unlink($file_img5);
-        delete_item_thumbnail(dirname($file_img5), basename($file_img5));
-    }
-    $it_img5 = it_img_upload($_FILES['it_img5']['tmp_name'], $_FILES['it_img5']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img6']['name']) {
-    if($w == 'u' && $it_img6) {
-        $file_img6 = $it_img_dir.'/'.clean_relative_paths($it_img6);
-        @unlink($file_img6);
-        delete_item_thumbnail(dirname($file_img6), basename($file_img6));
-    }
-    $it_img6 = it_img_upload($_FILES['it_img6']['tmp_name'], $_FILES['it_img6']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img7']['name']) {
-    if($w == 'u' && $it_img7) {
-        $file_img7 = $it_img_dir.'/'.clean_relative_paths($it_img7);
-        @unlink($file_img7);
-        delete_item_thumbnail(dirname($file_img7), basename($file_img7));
-    }
-    $it_img7 = it_img_upload($_FILES['it_img7']['tmp_name'], $_FILES['it_img7']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img8']['name']) {
-    if($w == 'u' && $it_img8) {
-        $file_img8 = $it_img_dir.'/'.clean_relative_paths($it_img8);
-        @unlink($file_img8);
-        delete_item_thumbnail(dirname($file_img8), basename($file_img8));
-    }
-    $it_img8 = it_img_upload($_FILES['it_img8']['tmp_name'], $_FILES['it_img8']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img9']['name']) {
-    if($w == 'u' && $it_img9) {
-        $file_img9 = $it_img_dir.'/'.clean_relative_paths($it_img9);
-        @unlink($file_img9);
-        delete_item_thumbnail(dirname($file_img9), basename($file_img9));
-    }
-    $it_img9 = it_img_upload($_FILES['it_img9']['tmp_name'], $_FILES['it_img9']['name'], $it_img_dir.'/'.$it_id);
-}
-if ($_FILES['it_img10']['name']) {
-    if($w == 'u' && $it_img10) {
-        $file_img10 = $it_img_dir.'/'.clean_relative_paths($it_img10);
-        @unlink($file_img10);
-        delete_item_thumbnail(dirname($file_img10), basename($file_img10));
-    }
-    $it_img10 = it_img_upload($_FILES['it_img10']['tmp_name'], $_FILES['it_img10']['name'], $it_img_dir.'/'.$it_id);
-}
+
+
+// 총 10개
+// if ($_FILES['it_img1']['name']) {
+//     if($w == 'u' && $it_img1) {
+//         $file_img1 = $it_img_dir.'/'.clean_relative_paths($it_img1);
+//         @unlink($file_img1);
+//         delete_item_thumbnail(dirname($file_img1), basename($file_img1));
+//     }
+//     $it_img1 = it_img_upload($_FILES['it_img1']['tmp_name'], $_FILES['it_img1']['name'], $it_img_dir.'/'.$it_id);
+// }
+
 
 if ($w == "" || $w == "u")
 {
