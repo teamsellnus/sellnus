@@ -115,7 +115,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-evenly;
+	-webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    -ms-justify-content: space-evenly;
+    justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -194,7 +197,10 @@ blockquote {
 	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	margin: 0px auto;
 	border-bottom: 0.0625rem solid rgb(215, 215, 215);
 	padding: 0.75rem 2rem;
@@ -218,7 +224,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	align-items: center;
 }
 
@@ -231,7 +240,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
 	align-items: center;
 }
 
@@ -277,7 +289,10 @@ blockquote {
 	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	margin: 0px auto;
 	border-bottom: 0.0625rem solid rgb(215, 215, 215);
 	padding: 0.75rem 1.75rem;
@@ -297,7 +312,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
 	align-items: center;
 	position: relative;
 }
@@ -599,7 +617,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	background-color: #d4b9e1;
 	color: #fff;
@@ -1100,7 +1121,10 @@ blockquote {
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	color: #fff;
 }
 @media screen and (max-width: 767px) {
@@ -1137,7 +1161,10 @@ blockquote {
 	flex-direction: column;
 	height: 100%;
 	-webkit-box-pack: center;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-contentcenter;
+    justify-content: center;
 	padding: 8rem 0px;
 }
 
@@ -1152,7 +1179,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	flex-direction: column;
 }
 .main-slide-content > p{
@@ -1232,7 +1262,10 @@ blockquote {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	-webkit-box-align: center;
 	align-items: center;
 	margin-bottom: 150px;
@@ -1249,7 +1282,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	overflow: hidden;
 }
@@ -1272,7 +1308,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	height: 50%;
 	margin: 0 0 10px 0;
@@ -1286,7 +1325,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	background: url('../../assets/img/electronics3.jpg') no-repeat;
 	background-size: cover;
@@ -1302,7 +1344,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	background: url('../../assets/img/books.jpg') no-repeat;
 	background-size: cover;
@@ -1318,7 +1363,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	background: url('../../assets/img/accessories.jpg') no-repeat;
 	background-size: cover;
@@ -1382,7 +1430,10 @@ blockquote {
 	display: flex;
 	flex-direction: row;
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	-webkit-box-align: center;
 	align-items: center;
 	margin-bottom: 150px;
@@ -1459,7 +1510,10 @@ blockquote {
 	display: flex;
 	flex-direction: row-reverse;
 	-webkit-box-pack: justify;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	-webkit-box-align: center;
 	align-items: center;
 	margin-bottom: 150px;
@@ -1499,7 +1553,10 @@ blockquote {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	margin-bottom: 150px;
 }
@@ -1543,7 +1600,10 @@ formspree
 	display: flex;
 	flex-direction: column;
 	-webkit-box-pack: justify;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
 	width: 100%;
@@ -1577,7 +1637,10 @@ instagram api
 	display: flex;
 	flex-direction: column;
 	-webkit-box-pack: justify;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
 	width: 100%;
@@ -1618,7 +1681,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
@@ -1651,7 +1717,10 @@ instagram api
 	.main_right_side_tagsBx li a {
 		display:flex !important;
 		align-items: center !important;
-		justify-content: center !important;
+		-webkit-justify-content: center !important;
+    	-moz-justify-content: center !important;
+    	-ms-justify-content: center !important;
+    	justify-content: center !important;
 		height: 100% !important;
 		word-break: keep-all;
 	}
@@ -1790,7 +1859,10 @@ instagram api
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	margin-bottom: 40px;
 }
 
@@ -1834,7 +1906,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
 }
@@ -1852,7 +1927,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	/* border:1px solid #783e94; */
 	border-radius: 0.5em;
@@ -1878,7 +1956,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	padding: 10px 10px 10px 15px;
 	background-color: #f1e7f5;
 	border-radius: 3px;
@@ -1900,7 +1981,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: flex-start;
 	/* border:1px solid #783e94; */
 	border-radius: 0.5em;
@@ -1934,7 +2018,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	padding: 10px 10px 10px 15px;
 	width: 100%;
 	background-color: #e8e8e8;
@@ -1967,7 +2054,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 }
 
 .main_commu_tit1 {
@@ -2006,7 +2096,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 100%;
@@ -2029,7 +2122,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	color: #888;
 }
@@ -2066,7 +2162,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	align-items: center;
 }
 
@@ -2095,7 +2194,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 }
 
@@ -2112,7 +2214,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 }
 @media screen and (max-width: 992px) {
@@ -2180,7 +2285,10 @@ instagram api
 	#topic_categoryBx li {
 		display: inline-flex !important;
 		height: 44px !important;
-		justify-content: center;
+		-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 		align-items: center;
 		margin-right: 8px;
 	}
@@ -2313,7 +2421,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 }
 .shop-details-wrap th{
@@ -2338,7 +2449,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 }
 .shop-details-wrap .item-buy-btn{
 	width: 100%;
@@ -2347,7 +2461,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 }
 .shop-details-wrap .item-buy-btn li{
 	margin-right:20px;
@@ -2359,7 +2476,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 }
 .shop-details-wrap .item-buy-btn li a span{
@@ -2373,7 +2493,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
 	border: 1px solid #783e94 !important;
 	background-color: #fff;
@@ -2393,6 +2516,9 @@ instagram api
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
     line-height: 1;	
 	border:none !important;
@@ -2418,14 +2544,20 @@ instagram api
 }
 #item-description #itemuse{
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 }
 #item-description #itemuse .item-description-sec{
 	width: 60%;
 	height: 100%;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	align-items: flex-start;
 }
 #item-description #itemuse .item-description-sec p{
@@ -2441,7 +2573,10 @@ instagram api
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	border-left: 1px solid rgb(238, 238, 238);
 }
 #item-review .item-seller .auth-photo{
@@ -2452,7 +2587,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 	align-items: center;
 }
 #item-review .item-seller .img-photo img{
@@ -2639,7 +2777,10 @@ instagram api
 		display: -webkit-flex;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		-webkit-justify-content: center;
+    	-moz-justify-content: center;
+    	-ms-justify-content: center;
+    	justify-content: center;
 		align-items: stretch;
 	}
 	.footer_menu_links_sec {
@@ -2727,6 +2868,9 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     justify-content: flex-end;
 }
 .footer_menu_social_sec .footer_icon_linksBx .icon_link{
@@ -2735,7 +2879,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 	align-items: center;
     font-size: 1.5em;
 	width: 30px;
@@ -2868,7 +3015,10 @@ instagram api
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: space-between;
+	-webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 }
 

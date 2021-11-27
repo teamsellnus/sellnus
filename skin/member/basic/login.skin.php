@@ -100,7 +100,10 @@ if ($header_skin)
 		display: flex;
 		width: 50%;
 		height: 100%;
-		justify-content: center;
+		-webkit-justify-content: center;
+    	-moz-justify-content: center;
+    	-ms-justify-content: center;
+    	justify-content: center;
 		align-items: center;
 	}
 
@@ -168,7 +171,10 @@ if ($header_skin)
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
-		justify-content: space-between;
+		-webkit-justify-content: space-between;
+    	-moz-justify-content: space-between;
+    	-ms-justify-content: space-between;
+    	justify-content: space-between;
 		align-items: center;
 		padding: 0;
 		margin-bottom: 20px;
@@ -181,7 +187,10 @@ if ($header_skin)
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
-		justify-content: center;
+		-webkit-justify-content: center;
+    	-moz-justify-content: center;
+    	-ms-justify-content: center;
+    	justify-content: center;
 		align-items: center;
 	}
 
@@ -208,7 +217,10 @@ if ($header_skin)
 		display: -ms-flexbox;
 		display: -webkit-flex;
         display: flex;
-        justify-content: center;
+        -webkit-justify-content: center;
+    	-moz-justify-content: center;
+    	-ms-justify-content: center;
+    	justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;

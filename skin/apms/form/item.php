@@ -86,7 +86,10 @@ add_stylesheet('<link rel="stylesheet" href="' . G5_CSS_URL . '/addrlink.css" ty
 		-webkit-box-align: center;
 		align-items: center;
 		-webkit-box-pack: center;
-		justify-content: center;
+		-webkit-justify-content: center;
+    	-moz-justify-content: center;
+    	-ms-justify-content: center;
+    	justify-content: center;
 		flex-direction: column;
 		color: rgb(155, 153, 169);
 		font-size: 1rem;

@@ -279,7 +279,10 @@ if ($w == "" && !$fn) {
 			display: -ms-flexbox;
 			display: -webkit-flex;
 			display: flex;
-			justify-content: flex-start;
+			-webkit-justify-content: flex-start;
+    		-moz-justify-content: flex-start;
+    		-ms-justify-content: flex-start;
+    		justify-content: flex-start;
 			align-items: center;
 			padding-left: 6px;
 			padding-right: 6px;
@@ -297,7 +300,10 @@ if ($w == "" && !$fn) {
 			display: -ms-flexbox;
 			display: -webkit-flex;
 			display: flex;
-			justify-content: flex-start;
+			-webkit-justify-content: flex-start;
+    		-moz-justify-content: flex-start;
+    		-ms-justify-content: flex-start;
+    		justify-content: flex-start;
 			align-items: center;
 			flex: 1 1 0%;
 		}
@@ -308,7 +314,10 @@ if ($w == "" && !$fn) {
 			display: -webkit-flex;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			-webkit-justify-content: center;
+    		-moz-justify-content: center;
+    		-ms-justify-content: center;
+    		justify-content: center;
 			align-items: flex-start;
 			flex: 1 1 0%;
 		}
@@ -320,7 +329,10 @@ if ($w == "" && !$fn) {
 		.new_win .tbl_wrap td.center{
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			-webkit-justify-content: center;
+    		-moz-justify-content: center;
+    		-ms-justify-content: center;
+    		justify-content: center;
 			flex: 1 1 0%;
 		}
 
