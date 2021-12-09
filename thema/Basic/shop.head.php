@@ -199,23 +199,8 @@ add_stylesheet('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/l
 				<div class="header-wrap">
 					<div class="header-icon">
 						<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
-							<i class="fa fa-user" style="float:left; margin: 12px"></i>
+							<i class="fa fa-user"></i>
 						</a>
-						<!-- <div id="google_translate_element" style="display:none"></div>
-						<ul class="translation-links" style="list-style:none; ">
-						<div class="dropdown">
-      						<button class="dropbtn" style="margin: 10px">번역</button>
-      						<div class="dropdown-content">
-        					<a data-lang="ko">한국어</a>
-        					<a data-lang="en">영어</a>
-        					<a data-lang="ja">일본어</a>
-							<a data-lang="vi">베트남어</a>
-							<a data-lang="ja">스페인어</a>
-							<a data-lang="de">독일어</a>
-							<a data-lang="fr">불어</a>
-							<a data-lang="mn">몽골어</a>
-      						</div>
-    					</div> -->
 					</div>
 					<div class="header-logo en">
 						<!-- Mobile Logo -->
